@@ -72,6 +72,35 @@
       "sheets": "Buchhaltungs-Logging"
     }
   },
+  "about": {
+    "title": "Über das Projekt",
+    "subtitle": "Die Geschichte hinter ShopControl AI",
+    "author": {
+      "name": "Lucas Nessel",
+      "role": "Entwickler & Gründer",
+      "description": "Lucas Nessel ist Schüler der HTL Lastenstraße Klagenfurt, Abteilung Mechatronik. ShopControl AI ist seine Diplomarbeit — ein vollständig eigenständig entwickeltes Projekt, das KI-Automatisierung für Online-Shops zugänglich macht. Lucas besitzt bereits einen Gewerbeschein und plant die kommerzielle Weiterentwicklung als SaaS-Produkt."
+    },
+    "school": {
+      "title": "HTL Lastenstraße Klagenfurt",
+      "department": "Abteilung Mechatronik",
+      "description": "Die HTL Lastenstraße ist eine der führenden technischen Schulen Kärntens. Das Projekt wurde im Rahmen des Mechatronik-Diploms umgesetzt."
+    },
+    "supervisors": {
+      "title": "Betreuer",
+      "supervisor1": {
+        "name": "Mag. Albin Weiss B.Sc.",
+        "role": "Erstbetreuer"
+      },
+      "supervisor2": {
+        "name": "MMag. Dr. Mario Kraiger",
+        "role": "Zweitbetreuer"
+      }
+    },
+    "competition": {
+      "title": "Jugend Innovativ",
+      "description": "ShopControl AI tritt in der Kategorie Entrepreneurship / Businesskonzepte beim Jugend Innovativ Wettbewerb an — Österreichs größtem Innovationswettbewerb für Schülerinnen und Schüler."
+    }
+  },
   "technology": {
     "title": "Technologie",
     "subtitle": "So funktioniert ShopControl AI unter der Haube",
