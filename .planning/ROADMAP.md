@@ -27,7 +27,7 @@ This roadmap delivers a bilingual presentation website for the ShopControl AI di
 
 Plans:
 - [ ] 01-01-PLAN.md — i18n infrastructure, dark blue theme, locale routing setup
-- [ ] 01-02-PLAN.md — Navbar, language switcher, hero section, footer
+- [ ] 01-02-PLAN.md — Navbar, language switcher, hero section, footer, Vercel deploy
 
 ### Phase 2: Core Content Pages
 **Goal**: Users can read the full project story across dedicated content pages in both languages
