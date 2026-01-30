@@ -5,33 +5,34 @@
 See: .planning/PROJECT.md (updated 2026-01-30)
 
 **Core value:** Jury und Besucher verstehen auf einen Blick was ShopControl AI macht, warum es innovativ ist, und wie es technisch funktioniert.
-**Current focus:** Phase 1 - Foundation & Layout
+**Current focus:** Phase 2 - Core Content Pages
 
 ## Current Position
 
-Phase: 1 of 4 (Foundation & Layout)
-Plan: 1 of 2 in current phase
+Phase: 2 of 4 (Core Content Pages)
+Plan: 1 of 3 in current phase
 Status: In progress
-Last activity: 2026-01-30 -- Completed 01-01-PLAN.md
+Last activity: 2026-01-31 -- Completed 02-01-PLAN.md
 
-Progress: [█░░░░░░░░░] 10%
+Progress: [██░░░░░░░░] 20%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: 8min
-- Total execution time: 8min
+- Total plans completed: 2
+- Average duration: 6.5min
+- Total execution time: 13min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1 | 1 | 8min | 8min |
+| 2 | 1 | 5min | 5min |
 
 **Recent Trend:**
-- Last 5 plans: 01-01 (8min)
-- Trend: -
+- Last 5 plans: 01-01 (8min), 02-01 (5min)
+- Trend: improving
 
 *Updated after each plan completion*
 
@@ -47,6 +48,8 @@ Recent decisions affecting current work:
 - 01-01: Used getTranslations (server) for async page components in Next.js 16
 - 01-01: Copied Web design template to project root as foundation
 - 01-01: Inter font replaces custom fonts from template
+- 02-01: FeatureCard for simple cards, inline Card for complex pillar layouts
+- 02-01: Kebab-case image naming convention for public/images/
 
 ### Pending Todos
 
@@ -59,6 +62,6 @@ None.
 
 ## Session Continuity
 
-Last session: 2026-01-30
-Stopped at: Completed 01-01-PLAN.md
+Last session: 2026-01-31
+Stopped at: Completed 02-01-PLAN.md
 Resume file: None
