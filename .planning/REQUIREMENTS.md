@@ -71,7 +71,7 @@
 | CONT-01 | Phase 2 | Complete |
 | CONT-02 | Phase 2 | Complete |
 | CONT-03 | Phase 2 | Complete |
-| CONT-04 | Phase 3 | Pending |
+| CONT-04 | Phase 3 | Complete |
 | META-01 | Phase 2 | Complete |
 | META-02 | Phase 2 | Complete |
 | META-03 | Phase 4 | Pending |
