@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "problem": "Problem",
+    "solution": "Lösung",
+    "technology": "Technologie",
+    "results": "Ergebnisse",
+    "about": "Über uns"
+  },
+  "hero": {
+    "headline": "ShopControl AI",
+    "subheadline": "KI-gestützte Automatisierung für Online-Shops",
+    "cta": "Mehr erfahren"
+  },
+  "footer": {
+    "project": "Ein Projekt der HTL Klagenfurt",
+    "copyright": "ShopControl AI - Jugend Innovativ 2026"
+  }
+}
