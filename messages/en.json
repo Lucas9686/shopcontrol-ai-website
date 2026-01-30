@@ -14,7 +14,8 @@
   },
   "footer": {
     "project": "Diploma thesis by Lucas Nessel — HTL Lastenstraße",
-    "copyright": "© 2026 ShopControl AI"
+    "copyright": "© 2026 ShopControl AI",
+    "impressum": "Legal Notice"
   },
   "problem": {
     "title": "The Problem",
@@ -175,6 +176,31 @@
         "description": "When the agent cannot confidently answer a request, it automatically escalates to human support."
       },
       "caption": "The error trigger notifies on workflow errors"
+    }
+  },
+  "impressum": {
+    "title": "Legal Notice & Privacy",
+    "subtitle": "Legal Information",
+    "impressum": {
+      "title": "Legal Notice",
+      "responsible": "Responsible for content",
+      "name": "Lucas Nessel",
+      "school": "HTL Lastenstraße Klagenfurt",
+      "address": "Lastenstraße 1, 9020 Klagenfurt am Wörthersee",
+      "country": "Austria",
+      "context": "This website was created as part of the diploma thesis at HTL Lastenstraße and serves as a presentation for the Jugend Innovativ competition."
+    },
+    "datenschutz": {
+      "title": "Privacy Policy",
+      "intro": "This website does not collect or store any personal data. No cookies are set, no tracking is used, and no data is shared with third parties.",
+      "hosting": {
+        "title": "Hosting",
+        "description": "This website is hosted on Vercel (Vercel Inc., San Francisco, USA). When accessing the website, technically necessary connection data (e.g., IP address) is processed by Vercel. Details: https://vercel.com/legal/privacy-policy"
+      },
+      "rights": {
+        "title": "Your Rights",
+        "description": "You have the right to information, correction, and deletion of your data in accordance with GDPR. Contact us with any privacy questions."
+      }
     }
   }
 }

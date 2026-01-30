@@ -14,7 +14,8 @@
   },
   "footer": {
     "project": "Diplomarbeit von Lucas Nessel — HTL Lastenstraße",
-    "copyright": "© 2026 ShopControl AI"
+    "copyright": "© 2026 ShopControl AI",
+    "impressum": "Impressum"
   },
   "problem": {
     "title": "Das Problem",
@@ -175,6 +176,31 @@
         "description": "Wenn der Agent eine Anfrage nicht sicher beantworten kann, wird automatisch an den menschlichen Support eskaliert."
       },
       "caption": "Der Error-Trigger benachrichtigt bei Workflow-Fehlern"
+    }
+  },
+  "impressum": {
+    "title": "Impressum & Datenschutz",
+    "subtitle": "Rechtliche Informationen",
+    "impressum": {
+      "title": "Impressum",
+      "responsible": "Verantwortlich für den Inhalt",
+      "name": "Lucas Nessel",
+      "school": "HTL Lastenstraße Klagenfurt",
+      "address": "Lastenstraße 1, 9020 Klagenfurt am Wörthersee",
+      "country": "Österreich",
+      "context": "Diese Webseite wurde im Rahmen der Diplomarbeit an der HTL Lastenstraße erstellt und dient der Präsentation beim Wettbewerb Jugend Innovativ."
+    },
+    "datenschutz": {
+      "title": "Datenschutzerklärung",
+      "intro": "Diese Webseite erhebt und speichert keine personenbezogenen Daten. Es werden keine Cookies gesetzt, kein Tracking verwendet und keine Daten an Dritte weitergegeben.",
+      "hosting": {
+        "title": "Hosting",
+        "description": "Diese Webseite wird auf Vercel (Vercel Inc., San Francisco, USA) gehostet. Beim Aufrufen der Webseite werden technisch notwendige Verbindungsdaten (z.B. IP-Adresse) von Vercel verarbeitet. Details: https://vercel.com/legal/privacy-policy"
+      },
+      "rights": {
+        "title": "Ihre Rechte",
+        "description": "Sie haben das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten gemäß DSGVO. Kontaktieren Sie uns bei Fragen zum Datenschutz."
+      }
     }
   }
 }
