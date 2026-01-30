@@ -15,5 +15,61 @@
   "footer": {
     "project": "Diploma thesis by Lucas Nessel — HTL Lastenstraße",
     "copyright": "© 2026 ShopControl AI"
+  },
+  "problem": {
+    "title": "The Problem",
+    "subtitle": "Why small online shops need AI automation",
+    "intro": "Small and medium online shops face growing challenges: customers expect fast 24/7 support, accounting consumes valuable time, and personnel costs keep rising. Meanwhile, they lack the resources of large corporations.",
+    "challenges": {
+      "title": "Core Challenges",
+      "support": {
+        "title": "24/7 Customer Service",
+        "description": "Customers expect instant answers — even at 11 PM. Small shops can't afford a round-the-clock support team. Dissatisfied customers switch to competitors."
+      },
+      "accounting": {
+        "title": "Manual Accounting",
+        "description": "Writing invoices, booking payments, sending reminders — all of this costs hours per week and is error-prone. Small shops don't have a dedicated accountant."
+      },
+      "scaling": {
+        "title": "Growth Without Extra Costs",
+        "description": "More orders mean more support requests and more accounting work. Staff doesn't scale linearly — AI does."
+      }
+    },
+    "conclusion": "ShopControl AI solves exactly these problems: A fully autonomous AI agent handles customer service while accounting runs automatically in the background."
+  },
+  "solution": {
+    "title": "The Solution",
+    "subtitle": "Two AI pillars for the modern online shop",
+    "intro": "ShopControl AI combines two powerful automation systems in one solution: an intelligent support agent and fully automatic accounting.",
+    "pillars": {
+      "support": {
+        "title": "AI Support Agent",
+        "description": "A fully autonomous chatbot that instantly answers customer inquiries about orders, products, and returns — with access to real-time shop data via Shopify.",
+        "features": {
+          "f1": "24/7 available without personnel costs",
+          "f2": "RAG-based knowledge from shop documents",
+          "f3": "Shopify integration for order status & products",
+          "f4": "Escalation to human support when needed"
+        }
+      },
+      "accounting": {
+        "title": "Automatic Accounting",
+        "description": "Invoices are automatically created, sent via email, and logged in Google Sheets — completely without manual intervention.",
+        "features": {
+          "f1": "Automatic invoice creation on order",
+          "f2": "PDF generation and email delivery",
+          "f3": "Accounting logging in Google Sheets",
+          "f4": "Error notification on issues"
+        }
+      }
+    },
+    "techStack": {
+      "title": "Technology Stack",
+      "n8n": "Workflow automation",
+      "pinecone": "Vector database for RAG",
+      "shopify": "E-commerce integration",
+      "openai": "GPT-4 language model",
+      "sheets": "Accounting logging"
+    }
   }
 }

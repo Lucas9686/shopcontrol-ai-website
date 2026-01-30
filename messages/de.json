@@ -15,5 +15,61 @@
   "footer": {
     "project": "Diplomarbeit von Lucas Nessel — HTL Lastenstraße",
     "copyright": "© 2026 ShopControl AI"
+  },
+  "problem": {
+    "title": "Das Problem",
+    "subtitle": "Warum kleine Online-Shops KI-Automatisierung brauchen",
+    "intro": "Kleine und mittlere Online-Shops stehen vor wachsenden Herausforderungen: Kunden erwarten schnellen 24/7-Support, die Buchhaltung frisst wertvolle Zeit, und Personalkosten steigen. Gleichzeitig fehlen die Ressourcen großer Konzerne.",
+    "challenges": {
+      "title": "Die Kernprobleme",
+      "support": {
+        "title": "Kundenservice rund um die Uhr",
+        "description": "Kunden erwarten sofortige Antworten — auch um 23 Uhr. Kleine Shops können sich kein 24/7-Support-Team leisten. Unzufriedene Kunden wechseln zur Konkurrenz."
+      },
+      "accounting": {
+        "title": "Manuelle Buchhaltung",
+        "description": "Rechnungen schreiben, Zahlungen verbuchen, Mahnungen versenden — all das kostet Stunden pro Woche und ist fehleranfällig. Kleine Shops haben keinen eigenen Buchhalter."
+      },
+      "scaling": {
+        "title": "Wachstum ohne Mehrkosten",
+        "description": "Mehr Bestellungen bedeuten mehr Support-Anfragen und mehr Buchhaltungsaufwand. Personal skaliert nicht linear — KI schon."
+      }
+    },
+    "conclusion": "ShopControl AI löst genau diese Probleme: Ein vollautonomer KI-Agent übernimmt den Kundenservice, während die Buchhaltung automatisch im Hintergrund läuft."
+  },
+  "solution": {
+    "title": "Die Lösung",
+    "subtitle": "Zwei KI-Säulen für den modernen Online-Shop",
+    "intro": "ShopControl AI kombiniert zwei leistungsstarke Automatisierungssysteme in einer Lösung: einen intelligenten Support-Agenten und eine vollautomatische Buchhaltung.",
+    "pillars": {
+      "support": {
+        "title": "KI-Support-Agent",
+        "description": "Ein vollautonomer Chatbot, der Kundenanfragen zu Bestellungen, Produkten und Retouren sofort beantwortet — mit Zugriff auf Echtzeit-Shopdaten über Shopify.",
+        "features": {
+          "f1": "24/7 verfügbar ohne Personalkosten",
+          "f2": "RAG-basiertes Wissen aus Shop-Dokumenten",
+          "f3": "Shopify-Integration für Bestellstatus & Produkte",
+          "f4": "Eskalation an menschlichen Support bei Bedarf"
+        }
+      },
+      "accounting": {
+        "title": "Automatische Buchhaltung",
+        "description": "Rechnungen werden automatisch erstellt, per E-Mail versendet und in Google Sheets protokolliert — vollständig ohne manuellen Eingriff.",
+        "features": {
+          "f1": "Automatische Rechnungserstellung bei Bestellung",
+          "f2": "PDF-Generierung und E-Mail-Versand",
+          "f3": "Buchhaltungs-Logging in Google Sheets",
+          "f4": "Fehler-Benachrichtigung bei Problemen"
+        }
+      }
+    },
+    "techStack": {
+      "title": "Technologie-Stack",
+      "n8n": "Workflow-Automatisierung",
+      "pinecone": "Vektor-Datenbank für RAG",
+      "shopify": "E-Commerce-Integration",
+      "openai": "GPT-4 Sprachmodell",
+      "sheets": "Buchhaltungs-Logging"
+    }
   }
 }
