@@ -23,11 +23,11 @@ This roadmap delivers a bilingual presentation website for the ShopControl AI di
   3. User sees a hero section on the landing page with project headline and call-to-action
   4. User sees a consistent dark blue SaaS-style theme across all pages with footer visible
   5. Site is live on Vercel with optimized images loading via Next.js Image component
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [ ] 01-01-PLAN.md — i18n infrastructure, dark blue theme, locale routing setup
+- [ ] 01-02-PLAN.md — Navbar, language switcher, hero section, footer
 
 ### Phase 2: Core Content Pages
 **Goal**: Users can read the full project story across dedicated content pages in both languages
@@ -78,7 +78,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
-| 1. Foundation & Layout | 0/TBD | Not started | - |
+| 1. Foundation & Layout | 0/2 | Planned | - |
 | 2. Core Content Pages | 0/TBD | Not started | - |
 | 3. Results & Financials | 0/TBD | Not started | - |
 | 4. Polish & Media | 0/TBD | Not started | - |
