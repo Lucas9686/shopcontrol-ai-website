@@ -178,6 +178,59 @@
       "caption": "The error trigger notifies on workflow errors"
     }
   },
+  "results": {
+    "title": "Results & Financials",
+    "subtitle": "Project results, market positioning, and financial projections of ShopControl AI",
+    "market": {
+      "title": "Results & Market Differentiation",
+      "subtitle": "What we achieved and how we stand out",
+      "results": {
+        "title": "Project Results",
+        "description": "ShopControl AI was developed as a fully functional prototype and tested with a real Shopify shop. The AI support agent answers customer inquiries autonomously while automatic accounting creates, sends, and logs invoices — all without manual intervention."
+      },
+      "differentiation": {
+        "title": "Market Differentiation",
+        "description": "Unlike enterprise solutions like Zendesk or Freshdesk, ShopControl AI combines customer service and accounting in one solution — specifically designed for small Shopify shops and affordably priced. No more expensive individual solutions."
+      },
+      "competitors": {
+        "title": "Competitive Comparison",
+        "shopcontrol": "ShopControl AI",
+        "features": ["AI Support Agent", "Accounting Automation", "Shopify Integration", "Affordable for Small Shops"]
+      }
+    },
+    "financials": {
+      "title": "Financial Plan",
+      "subtitle": "Revenue projections and pricing model for the next three years",
+      "pricing": {
+        "title": "Pricing Model",
+        "description": "Three pricing tiers for different shop sizes — from solo entrepreneurs to growing e-commerce businesses."
+      },
+      "forecast": {
+        "title": "3-Year Forecast",
+        "description": "Projected revenue and cost development based on conservative customer acquisition rates."
+      },
+      "scenario": {
+        "title": "Scenario Analysis",
+        "description": "Three scenarios show possible revenue development depending on market success."
+      }
+    },
+    "charts": {
+      "revenue": "Revenue",
+      "costs": "Costs",
+      "profit": "Profit",
+      "year1": "Year 1",
+      "year2": "Year 2",
+      "year3": "Year 3",
+      "optimistic": "Optimistic",
+      "realistic": "Realistic",
+      "pessimistic": "Pessimistic",
+      "basic": "Basic",
+      "pro": "Pro",
+      "enterprise": "Enterprise",
+      "pricePerMonth": "Price/Month",
+      "currency": "€"
+    }
+  },
   "impressum": {
     "title": "Legal Notice & Privacy",
     "subtitle": "Legal Information",

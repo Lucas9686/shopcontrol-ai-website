@@ -178,6 +178,59 @@
       "caption": "Der Error-Trigger benachrichtigt bei Workflow-Fehlern"
     }
   },
+  "results": {
+    "title": "Ergebnisse & Finanzplan",
+    "subtitle": "Projektergebnisse, Marktpositionierung und finanzielle Prognosen von ShopControl AI",
+    "market": {
+      "title": "Ergebnisse & Marktabgrenzung",
+      "subtitle": "Was wir erreicht haben und wie wir uns unterscheiden",
+      "results": {
+        "title": "Projektergebnisse",
+        "description": "ShopControl AI wurde als voll funktionsfaehiger Prototyp entwickelt und mit einem echten Shopify-Shop getestet. Der KI-Support-Agent beantwortet Kundenanfragen autonom, waehrend die automatische Buchhaltung Rechnungen erstellt, versendet und protokolliert — alles ohne manuellen Eingriff."
+      },
+      "differentiation": {
+        "title": "Marktabgrenzung",
+        "description": "Im Gegensatz zu Enterprise-Loesungen wie Zendesk oder Freshdesk kombiniert ShopControl AI Kundenservice und Buchhaltung in einer Loesung — speziell fuer kleine Shopify-Shops konzipiert und preislich zugaenglich. Keine teuren Einzelloesungen mehr."
+      },
+      "competitors": {
+        "title": "Wettbewerbsvergleich",
+        "shopcontrol": "ShopControl AI",
+        "features": ["KI-Support-Agent", "Buchhaltungsautomatisierung", "Shopify-Integration", "Preislich fuer kleine Shops"]
+      }
+    },
+    "financials": {
+      "title": "Finanzplan",
+      "subtitle": "Umsatzprognosen und Preismodell fuer die naechsten drei Jahre",
+      "pricing": {
+        "title": "Preismodell",
+        "description": "Drei Preisstufen fuer unterschiedliche Shopgroessen — von Einzelunternehmern bis hin zu wachsenden E-Commerce-Unternehmen."
+      },
+      "forecast": {
+        "title": "3-Jahres-Prognose",
+        "description": "Geplante Umsatz- und Kostenentwicklung basierend auf konservativen Kundengewinnungsraten."
+      },
+      "scenario": {
+        "title": "Szenarioanalyse",
+        "description": "Drei Szenarien zeigen die moegliche Umsatzentwicklung je nach Markterfolg."
+      }
+    },
+    "charts": {
+      "revenue": "Umsatz",
+      "costs": "Kosten",
+      "profit": "Gewinn",
+      "year1": "Jahr 1",
+      "year2": "Jahr 2",
+      "year3": "Jahr 3",
+      "optimistic": "Optimistisch",
+      "realistic": "Realistisch",
+      "pessimistic": "Pessimistisch",
+      "basic": "Basic",
+      "pro": "Pro",
+      "enterprise": "Enterprise",
+      "pricePerMonth": "Preis/Monat",
+      "currency": "€"
+    }
+  },
   "impressum": {
     "title": "Impressum & Datenschutz",
     "subtitle": "Rechtliche Informationen",
