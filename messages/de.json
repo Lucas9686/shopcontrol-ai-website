@@ -71,5 +71,81 @@
       "openai": "GPT-4 Sprachmodell",
       "sheets": "Buchhaltungs-Logging"
     }
+  },
+  "technology": {
+    "title": "Technologie",
+    "subtitle": "So funktioniert ShopControl AI unter der Haube",
+    "overview": "ShopControl AI basiert auf n8n-Workflows, die zwei Hauptsysteme orchestrieren: einen KI-Support-Agenten mit RAG-Wissensabfrage und eine vollautomatische Buchhaltung. Hier zeigen wir Schritt für Schritt, wie jede Anfrage verarbeitet wird.",
+    "workflow": {
+      "title": "Der Workflow in 6 Schritten",
+      "step1": {
+        "title": "Kundenanfrage empfangen",
+        "description": "Eine Nachricht kommt über das Chat-Widget oder per E-Mail herein. Der n8n-Trigger startet automatisch den Support-Workflow und leitet die Anfrage an den KI-Agenten weiter."
+      },
+      "step2": {
+        "title": "KI-Agent analysiert",
+        "description": "Der GPT-4-basierte Agent analysiert die Kundenanfrage, versteht den Kontext und entscheidet selbstständig, welches Tool oder welcher Sub-Agent benötigt wird, um die Frage zu beantworten."
+      },
+      "step3": {
+        "title": "RAG-Wissensabfrage",
+        "description": "Wenn Shop-spezifisches Wissen benötigt wird, durchsucht der Agent die Pinecone-Vektordatenbank. Relevante Dokumente wie FAQs, Produktbeschreibungen und Richtlinien werden als Kontext bereitgestellt."
+      },
+      "step4": {
+        "title": "Shopify-Datenabfrage",
+        "description": "Für Fragen zu Bestellungen, Produkten oder Kundendaten aktiviert der Agent den Shopify-Sub-Agenten, der in Echtzeit auf die Shop-API zugreift und aktuelle Daten abruft."
+      },
+      "step5": {
+        "title": "Antwort generieren",
+        "description": "Basierend auf allen gesammelten Daten — RAG-Dokumente, Shopify-Daten und Konversationsverlauf — formuliert der Agent eine personalisierte, präzise Antwort für den Kunden."
+      },
+      "step6": {
+        "title": "Buchhaltung automatisch",
+        "description": "Parallel zum Support läuft die automatische Buchhaltung: Rechnungen werden erstellt, als PDF generiert, per E-Mail versendet und in Google Sheets protokolliert — vollständig ohne manuellen Eingriff."
+      }
+    },
+    "rag": {
+      "title": "RAG-System",
+      "subtitle": "Retrieval-Augmented Generation im Detail",
+      "description": "RAG (Retrieval-Augmented Generation) ermöglicht dem KI-Agenten, auf shop-spezifisches Wissen zuzugreifen. Dokumente wie FAQs, Produktkataloge und Rückgaberichtlinien werden in Vektoren umgewandelt und in Pinecone gespeichert. Bei jeder Anfrage werden die relevantesten Textabschnitte automatisch gefunden und dem Agenten als Kontext übergeben.",
+      "caption": "Der RAG-Upload-Workflow konvertiert Dokumente automatisch in Vektoren"
+    },
+    "tools": {
+      "title": "Tools & Sub-Agenten",
+      "subtitle": "Die Werkzeuge des KI-Agenten",
+      "shopify": {
+        "title": "Shopify-Agent",
+        "description": "Bestellungen, Produkte und Kundendaten in Echtzeit abfragen"
+      },
+      "sheets": {
+        "title": "Google Sheets-Agent",
+        "description": "Buchhaltungsdaten lesen und schreiben"
+      },
+      "email": {
+        "title": "E-Mail-Tool",
+        "description": "Rechnungen und Benachrichtigungen automatisch versenden"
+      },
+      "vision": {
+        "title": "Bildanalyse",
+        "description": "Produktbilder analysieren und beschreiben"
+      },
+      "caption": "Die Bildanalyse-Sektion des Support-Agenten"
+    },
+    "security": {
+      "title": "Sicherheit & Zuverlässigkeit",
+      "subtitle": "Schutzmechanismen für den Produktiveinsatz",
+      "injection": {
+        "title": "Prompt Injection Schutz",
+        "description": "Systemprompts und Guardrails verhindern, dass der Agent durch manipulative Eingaben missbraucht wird."
+      },
+      "errors": {
+        "title": "Fehler-Trigger",
+        "description": "Bei Fehlern im Workflow wird automatisch eine Benachrichtigung ausgelöst, damit Probleme sofort erkannt werden."
+      },
+      "escalation": {
+        "title": "Eskalation an Menschen",
+        "description": "Wenn der Agent eine Anfrage nicht sicher beantworten kann, wird automatisch an den menschlichen Support eskaliert."
+      },
+      "caption": "Der Error-Trigger benachrichtigt bei Workflow-Fehlern"
+    }
   }
 }

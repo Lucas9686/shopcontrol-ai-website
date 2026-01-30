@@ -71,5 +71,81 @@
       "openai": "GPT-4 language model",
       "sheets": "Accounting logging"
     }
+  },
+  "technology": {
+    "title": "Technology",
+    "subtitle": "How ShopControl AI works under the hood",
+    "overview": "ShopControl AI is built on n8n workflows that orchestrate two main systems: an AI support agent with RAG knowledge retrieval and fully automatic accounting. Here we show step by step how each request is processed.",
+    "workflow": {
+      "title": "The Workflow in 6 Steps",
+      "step1": {
+        "title": "Receive Customer Request",
+        "description": "A message arrives via the chat widget or email. The n8n trigger automatically starts the support workflow and routes the request to the AI agent."
+      },
+      "step2": {
+        "title": "AI Agent Analyzes",
+        "description": "The GPT-4-based agent analyzes the customer request, understands the context, and autonomously decides which tool or sub-agent is needed to answer the question."
+      },
+      "step3": {
+        "title": "RAG Knowledge Query",
+        "description": "When shop-specific knowledge is needed, the agent searches the Pinecone vector database. Relevant documents like FAQs, product descriptions, and policies are provided as context."
+      },
+      "step4": {
+        "title": "Shopify Data Query",
+        "description": "For questions about orders, products, or customer data, the agent activates the Shopify sub-agent, which accesses the shop API in real time to retrieve current data."
+      },
+      "step5": {
+        "title": "Generate Response",
+        "description": "Based on all collected data — RAG documents, Shopify data, and conversation history — the agent formulates a personalized, precise answer for the customer."
+      },
+      "step6": {
+        "title": "Automatic Accounting",
+        "description": "In parallel with support, automatic accounting runs: invoices are created, generated as PDFs, sent via email, and logged in Google Sheets — completely without manual intervention."
+      }
+    },
+    "rag": {
+      "title": "RAG System",
+      "subtitle": "Retrieval-Augmented Generation in Detail",
+      "description": "RAG (Retrieval-Augmented Generation) enables the AI agent to access shop-specific knowledge. Documents like FAQs, product catalogs, and return policies are converted into vectors and stored in Pinecone. With each request, the most relevant text passages are automatically found and provided to the agent as context.",
+      "caption": "The RAG upload workflow automatically converts documents into vectors"
+    },
+    "tools": {
+      "title": "Tools & Sub-Agents",
+      "subtitle": "The AI Agent's Toolkit",
+      "shopify": {
+        "title": "Shopify Agent",
+        "description": "Query orders, products, and customer data in real time"
+      },
+      "sheets": {
+        "title": "Google Sheets Agent",
+        "description": "Read and write accounting data"
+      },
+      "email": {
+        "title": "Email Tool",
+        "description": "Automatically send invoices and notifications"
+      },
+      "vision": {
+        "title": "Image Analysis",
+        "description": "Analyze and describe product images"
+      },
+      "caption": "The image analysis section of the support agent"
+    },
+    "security": {
+      "title": "Security & Reliability",
+      "subtitle": "Safeguards for production use",
+      "injection": {
+        "title": "Prompt Injection Protection",
+        "description": "System prompts and guardrails prevent the agent from being exploited through manipulative inputs."
+      },
+      "errors": {
+        "title": "Error Triggers",
+        "description": "When errors occur in the workflow, a notification is automatically triggered so problems are detected immediately."
+      },
+      "escalation": {
+        "title": "Human Escalation",
+        "description": "When the agent cannot confidently answer a request, it automatically escalates to human support."
+      },
+      "caption": "The error trigger notifies on workflow errors"
+    }
   }
 }
