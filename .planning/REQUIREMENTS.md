@@ -68,12 +68,12 @@
 | NAV-03 | Phase 1 | Pending |
 | NAV-04 | Phase 1 | Pending |
 | NAV-05 | Phase 4 | Pending |
-| CONT-01 | Phase 2 | Pending |
-| CONT-02 | Phase 2 | Pending |
-| CONT-03 | Phase 2 | Pending |
+| CONT-01 | Phase 2 | Complete |
+| CONT-02 | Phase 2 | Complete |
+| CONT-03 | Phase 2 | Complete |
 | CONT-04 | Phase 3 | Pending |
-| META-01 | Phase 2 | Pending |
-| META-02 | Phase 2 | Pending |
+| META-01 | Phase 2 | Complete |
+| META-02 | Phase 2 | Complete |
 | META-03 | Phase 4 | Pending |
 | META-04 | Phase 4 | Pending |
 | TECH-01 | Phase 1 | Pending |

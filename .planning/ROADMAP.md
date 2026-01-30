@@ -7,7 +7,7 @@ This roadmap delivers a bilingual presentation website for the ShopControl AI di
 ## Phases
 
 - [ ] **Phase 1: Foundation & Layout** - Bilingual navigation shell with dark theme deployed on Vercel
-- [ ] **Phase 2: Core Content Pages** - Problem, solution, technical deep-dive, about, and legal pages
+- [x] **Phase 2: Core Content Pages** - Problem, solution, technical deep-dive, about, and legal pages
 - [ ] **Phase 3: Results & Financials** - Business results, market differentiation, and financial projections
 - [ ] **Phase 4: Polish & Media** - Scroll animations, SEO metadata, and demo video
 
@@ -42,9 +42,9 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 02-01-PLAN.md — Problem & solution pages with shared components and images
-- [ ] 02-02-PLAN.md — Technology deep-dive page with workflow steps and screenshots
-- [ ] 02-03-PLAN.md — About and Impressum/Datenschutz pages
+- [x] 02-01-PLAN.md — Problem & solution pages with shared components and images
+- [x] 02-02-PLAN.md — Technology deep-dive page with workflow steps and screenshots
+- [x] 02-03-PLAN.md — About and Impressum/Datenschutz pages
 
 ### Phase 3: Results & Financials
 **Goal**: Users can explore business viability through results, market differentiation, and financial projections
@@ -79,7 +79,7 @@ Phases execute in numeric order: 1 -> 2 -> 3 -> 4
 
 | Phase | Plans Complete | Status | Completed |
 |-------|---------------|--------|-----------|
-| 1. Foundation & Layout | 0/2 | Planned | - |
-| 2. Core Content Pages | 0/TBD | Not started | - |
+| 1. Foundation & Layout | 2/2 | Complete | 2026-01-30 |
+| 2. Core Content Pages | 3/3 | Complete | 2026-01-31 |
 | 3. Results & Financials | 0/TBD | Not started | - |
 | 4. Polish & Media | 0/TBD | Not started | - |
