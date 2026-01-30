@@ -39,11 +39,12 @@ Plans:
   3. User can explore the technical deep-dive with 6 workflow steps, RAG explanation, tools, and security -- with diagrams and screenshots
   4. User can visit the about page showing Lucas Nessel, HTL Klagenfurt, and supervisors
   5. User can access Impressum/Datenschutz page with legally required information
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
+- [ ] 02-01-PLAN.md — Problem & solution pages with shared components and images
+- [ ] 02-02-PLAN.md — Technology deep-dive page with workflow steps and screenshots
+- [ ] 02-03-PLAN.md — About and Impressum/Datenschutz pages
 
 ### Phase 3: Results & Financials
 **Goal**: Users can explore business viability through results, market differentiation, and financial projections
