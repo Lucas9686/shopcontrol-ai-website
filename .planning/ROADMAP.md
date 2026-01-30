@@ -67,10 +67,11 @@ Plans:
   1. User experiences smooth Framer Motion animations (text reveal, shimmer, scroll-triggered effects) across all pages
   2. Page has proper SEO meta tags and Open Graph image that renders correctly when shared on social media
   3. User can watch an embedded demo video showing the ShopControl AI agent in action
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 04-01: TBD
+- [ ] 04-01-PLAN.md — Framer Motion hero animations, shimmer CSS, SmoothScroll integration
+- [ ] 04-02-PLAN.md — SEO generateMetadata with OG image, demo video embed
 
 ## Progress
 
