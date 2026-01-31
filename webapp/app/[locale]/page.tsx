@@ -5,13 +5,15 @@ import { HeroAnimated } from "@/components/shared/hero-animated";
 import { FadeInSection } from "@/components/shared/fade-in-section";
 import { SectionHeader } from "@/components/shared/section-header";
 import { DemoVideo } from "@/components/shared/demo-video";
-import { ArrowRight } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ArrowRight, CheckCircle, Briefcase, Users, TrendingUp } from "lucide-react";
 
 const overviewCards = [
   { key: "supportAgent", href: "/support-agent" },
   { key: "accounting", href: "/accounting" },
-  { key: "results", href: "/results" },
   { key: "financePlan", href: "/finance-plan" },
+  { key: "technology", href: "/technology" },
+  { key: "about", href: "/about" },
 ] as const;
 
 export default async function HomePage({
@@ -24,6 +26,9 @@ export default async function HomePage({
   const t = await getTranslations("hero");
   const td = await getTranslations("demo");
   const to = await getTranslations("overview");
+  const tr = await getTranslations("results");
+
+  const achievementItems = tr.raw("achievements.items") as string[];
 
   return (
     <>
@@ -55,7 +60,7 @@ export default async function HomePage({
             <SectionHeader title={to("title")} subtitle={to("subtitle")} />
           </FadeInSection>
           <FadeInSection>
-            <div className="mt-10 grid gap-6 md:grid-cols-2">
+            <div className="mt-10 grid gap-6 md:grid-cols-2 [&>:last-child:nth-child(odd)]:md:col-span-2 [&>:last-child:nth-child(odd)]:md:max-w-[calc(50%-0.75rem)]  [&>:last-child:nth-child(odd)]:md:mx-auto">
               {overviewCards.map(({ key, href }) => (
                 <Link
                   key={key}
@@ -83,6 +88,112 @@ export default async function HomePage({
           </FadeInSection>
           <FadeInSection>
             <DemoVideo videoId="dQw4w9WgXcQ" title={td("heading")} />
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Erreichte Ergebnisse */}
+      <section className="relative py-24">
+        <div className="mx-auto max-w-5xl px-6">
+          <FadeInSection>
+            <SectionHeader
+              title={tr("achievements.title")}
+              subtitle={tr("achievements.subtitle")}
+            />
+          </FadeInSection>
+          <FadeInSection>
+            <div className="mt-10 grid gap-4 sm:grid-cols-2 [&>:last-child:nth-child(odd)]:sm:col-span-2 [&>:last-child:nth-child(odd)]:sm:max-w-[calc(50%-0.5rem)] [&>:last-child:nth-child(odd)]:sm:mx-auto">
+              {achievementItems.map((item, index) => (
+                <Card key={index}>
+                  <CardContent className="flex items-start gap-3 pt-6">
+                    <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-green-600" />
+                    <p className="text-muted-foreground leading-relaxed">{item}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Zielgruppe */}
+      <section className="relative py-24">
+        <div className="mx-auto max-w-5xl px-6">
+          <FadeInSection>
+            <SectionHeader
+              title={tr("targetGroup.title")}
+              subtitle={tr("targetGroup.subtitle")}
+            />
+          </FadeInSection>
+          <FadeInSection>
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              <Card>
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                      <Users className="h-5 w-5 text-primary" />
+                    </div>
+                    <CardTitle>{tr("targetGroup.primary.title")}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {tr("targetGroup.primary.description")}
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex items-center gap-3">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                      <TrendingUp className="h-5 w-5 text-primary" />
+                    </div>
+                    <CardTitle>{tr("targetGroup.secondary.title")}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground leading-relaxed">
+                    {tr("targetGroup.secondary.description")}
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </FadeInSection>
+        </div>
+      </section>
+
+      {/* Geschäftsmodell */}
+      <section className="relative py-24">
+        <div className="mx-auto max-w-5xl px-6">
+          <FadeInSection>
+            <SectionHeader
+              title={tr("businessModel.title")}
+              subtitle={tr("businessModel.subtitle")}
+            />
+          </FadeInSection>
+          <FadeInSection>
+            <Card className="mt-10">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-4">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                    <Briefcase className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <p className="text-muted-foreground leading-relaxed">
+                      {tr("businessModel.description")}
+                    </p>
+                    <Link
+                      href="/finance-plan"
+                      className="mt-4 inline-flex items-center gap-2 text-primary font-medium hover:underline"
+                    >
+                      {tr("businessModel.cta")}
+                      <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </FadeInSection>
         </div>
       </section>
