@@ -14,11 +14,11 @@
   },
   "demo": {
     "heading": "ShopControl AI in Action",
-    "subheading": "Watch how the AI agent answers customer inquiries and automates accounting"
+    "subheading": "Watch how the AI agent answers customer inquiries via email and automates financial reporting"
   },
   "footer": {
-    "project": "Diploma thesis by Lucas Nessel — HTL Lastenstraße",
-    "copyright": "© 2026 ShopControl AI",
+    "project": "Diploma thesis by Lucas Nessel \u2014 HTL Lastenstrasse",
+    "copyright": "\u00a9 2026 ShopControl AI",
     "impressum": "Legal Notice"
   },
   "problem": {
@@ -29,52 +29,54 @@
       "title": "Core Challenges",
       "support": {
         "title": "24/7 Customer Service",
-        "description": "Customers expect instant answers — even at 11 PM. Small shops can't afford a round-the-clock support team. Dissatisfied customers switch to competitors."
+        "description": "Customers expect instant answers \u2014 even at 11 PM. Small shops can't afford a round-the-clock support team. Dissatisfied customers switch to competitors."
       },
       "accounting": {
         "title": "Manual Accounting",
-        "description": "Writing invoices, booking payments, sending reminders — all of this costs hours per week and is error-prone. Small shops don't have a dedicated accountant."
+        "description": "Consolidating financial data from multiple sources, calculating KPIs, and creating reports \u2014 all of this costs hours per week and is error-prone."
       },
       "scaling": {
         "title": "Growth Without Extra Costs",
-        "description": "More orders mean more support requests and more accounting work. Staff doesn't scale linearly — AI does."
+        "description": "More orders mean more support requests and more administrative work. Staff doesn't scale linearly \u2014 AI does."
       }
     },
-    "conclusion": "ShopControl AI solves exactly these problems: A fully autonomous AI agent handles customer service while accounting runs automatically in the background."
+    "conclusion": "ShopControl AI solves exactly these problems: A fully autonomous AI email support agent handles customer service while financial reporting runs automatically in the background."
   },
   "solution": {
     "title": "The Solution",
     "subtitle": "Two AI pillars for the modern online shop",
-    "intro": "ShopControl AI combines two powerful automation systems in one solution: an intelligent support agent and fully automatic accounting.",
+    "intro": "ShopControl AI combines two powerful automation systems in one solution: an intelligent email support agent and fully automatic financial reporting.",
     "pillars": {
       "support": {
-        "title": "AI Support Agent",
-        "description": "A fully autonomous chatbot that instantly answers customer inquiries about orders, products, and returns — with access to real-time shop data via Shopify.",
+        "title": "AI Email Support Agent",
+        "description": "A fully autonomous email support agent that independently analyzes, processes, and answers incoming customer inquiries via email \u2014 with access to real-time shop data via Shopify and a company-specific knowledge base.",
         "features": {
           "f1": "24/7 available without personnel costs",
-          "f2": "RAG-based knowledge from shop documents",
-          "f3": "Shopify integration for order status & products",
-          "f4": "Escalation to human support when needed"
+          "f2": "RAG-based knowledge from shop documents via Pinecone",
+          "f3": "Shopify integration for order status, products & returns",
+          "f4": "Escalation to human support when needed via Google Sheets"
         }
       },
       "accounting": {
-        "title": "Automatic Accounting",
-        "description": "Invoices are automatically created, sent via email, and logged in Google Sheets — completely without manual intervention.",
+        "title": "Automatic Financial Reporting",
+        "description": "Financial data from Shopify, Facebook Ads, and bank accounts is automatically consolidated and sent as visualized reports with relevant KPIs via WhatsApp \u2014 on demand or automatically every month.",
         "features": {
-          "f1": "Automatic invoice creation on order",
-          "f2": "PDF generation and email delivery",
-          "f3": "Accounting logging in Google Sheets",
-          "f4": "Error notification on issues"
+          "f1": "Data retrieval from Shopify, Facebook Ads & bank accounts",
+          "f2": "Automatic calculation of key KPIs (revenue, ad spend, profit)",
+          "f3": "Visualized reports with charts sent via WhatsApp",
+          "f4": "Triggered monthly automatically or manually via WhatsApp message"
         }
       }
     },
     "techStack": {
       "title": "Technology Stack",
-      "n8n": "Workflow automation",
-      "pinecone": "Vector database for RAG",
-      "shopify": "E-commerce integration",
-      "openai": "GPT-4 language model",
-      "sheets": "Accounting logging"
+      "n8n": "n8n \u2014 Workflow Automation",
+      "llm": "Claude & GPT \u2014 Language Models",
+      "pinecone": "Pinecone \u2014 Vector Database",
+      "supabase": "Supabase/PostgreSQL \u2014 Database",
+      "cohere": "Cohere \u2014 Reranking",
+      "shopify": "Shopify API \u2014 E-Commerce",
+      "whatsapp": "WhatsApp Business API \u2014 Reports"
     }
   },
   "about": {
@@ -83,12 +85,12 @@
     "author": {
       "name": "Lucas Nessel",
       "role": "Developer & Founder",
-      "description": "Lucas Nessel is a student at HTL Lastenstraße Klagenfurt, Department of Mechatronics. ShopControl AI is his diploma thesis — a fully independently developed project that makes AI automation accessible for online shops. Lucas already holds a business license and plans to commercially develop the product as a SaaS solution."
+      "description": "Lucas Nessel is a student at HTL Lastenstrasse Klagenfurt, Department of Mechatronics. ShopControl AI is his diploma thesis \u2014 a fully independently developed project that makes AI automation accessible for online shops. Lucas already holds a business license and plans to commercially develop the product as a SaaS solution."
     },
     "school": {
-      "title": "HTL Lastenstraße Klagenfurt",
+      "title": "HTL Lastenstrasse Klagenfurt",
       "department": "Department of Mechatronics",
-      "description": "HTL Lastenstraße is one of the leading technical schools in Carinthia. The project was developed as part of the Mechatronics diploma program."
+      "description": "HTL Lastenstrasse is one of the leading technical schools in Carinthia. The project was developed as part of the Mechatronics diploma program."
     },
     "supervisors": {
       "title": "Supervisors",
@@ -103,83 +105,82 @@
     },
     "competition": {
       "title": "Jugend Innovativ",
-      "description": "ShopControl AI competes in the Entrepreneurship / Business Concepts category at the Jugend Innovativ competition — Austria's largest innovation competition for students."
+      "description": "ShopControl AI competes in the Entrepreneurship / Business Concepts category at the Jugend Innovativ competition \u2014 Austria's largest innovation competition for students."
     }
   },
   "technology": {
     "title": "Technology",
     "subtitle": "How ShopControl AI works under the hood",
-    "overview": "ShopControl AI is built on n8n workflows that orchestrate two main systems: an AI support agent with RAG knowledge retrieval and fully automatic accounting. Here we show step by step how each request is processed.",
+    "overview": "ShopControl AI is built on n8n workflows that orchestrate two main systems: a fully autonomous AI email support agent with RAG knowledge retrieval and automated financial reporting. Here we show step by step how each email inquiry is processed.",
     "workflow": {
       "title": "The Workflow in 6 Steps",
       "step1": {
-        "title": "Receive Customer Request",
-        "description": "A message arrives via the chat widget or email. The n8n trigger automatically starts the support workflow and routes the request to the AI agent."
+        "title": "Email Retrieval",
+        "description": "The workflow starts by retrieving all new emails from Gmail. From each email thread, only the latest message is extracted, as it contains the current customer inquiry. This ensures that in ongoing conversations, the most recent message is always processed."
       },
       "step2": {
-        "title": "AI Agent Analyzes",
-        "description": "The GPT-4-based agent analyzes the customer request, understands the context, and autonomously decides which tool or sub-agent is needed to answer the question."
+        "title": "Filtering",
+        "description": "In the second step, all emails are automatically filtered. Promotional emails, automated notifications, and newsletters are sorted out. An AI checks whether the remaining messages are genuine support requests. Additionally, emails are checked for policy violations. Only genuine, appropriate customer inquiries proceed further."
       },
       "step3": {
-        "title": "RAG Knowledge Query",
-        "description": "When shop-specific knowledge is needed, the agent searches the Pinecone vector database. Relevant documents like FAQs, product descriptions, and policies are provided as context."
+        "title": "Image Analysis",
+        "description": "If images are attached to the email, such as photos of damaged products, they are analyzed separately by an AI. The system recognizes what is shown in the images and creates a textual description as additional context for the support agent."
       },
       "step4": {
-        "title": "Shopify Data Query",
-        "description": "For questions about orders, products, or customer data, the agent activates the Shopify sub-agent, which accesses the shop API in real time to retrieve current data."
+        "title": "Support Agent Processing",
+        "description": "The AI support agent processes the inquiry. It takes the email text along with any image descriptions and autonomously decides which tools it needs \u2014 e.g., the Shopify agent for order data or the RAG knowledge base for return policies. Based on all collected information, it generates a well-founded response."
       },
       "step5": {
-        "title": "Generate Response",
-        "description": "Based on all collected data — RAG documents, Shopify data, and conversation history — the agent formulates a personalized, precise answer for the customer."
+        "title": "Email Dispatch",
+        "description": "Before the response is sent, it passes through an automatic security check (Output Guardrails) that verifies the response is correct, complete, and appropriately worded. Only after this validation passes is the reply email actually sent."
       },
       "step6": {
-        "title": "Automatic Accounting",
-        "description": "In parallel with support, automatic accounting runs: invoices are created, generated as PDFs, sent via email, and logged in Google Sheets — completely without manual intervention."
+        "title": "Performance Logging",
+        "description": "In the final step, the entire process is documented: which inquiry came in, which tools were used, what was answered, and how long processing took. This performance data is stored in Google Sheets, enabling long-term monitoring and optimization."
       }
     },
     "rag": {
       "title": "RAG System",
       "subtitle": "Retrieval-Augmented Generation in Detail",
-      "description": "RAG (Retrieval-Augmented Generation) enables the AI agent to access shop-specific knowledge. Documents like FAQs, product catalogs, and return policies are converted into vectors and stored in Pinecone. With each request, the most relevant text passages are automatically found and provided to the agent as context.",
-      "caption": "The RAG upload workflow automatically converts documents into vectors"
+      "description": "RAG (Retrieval-Augmented Generation) enables the AI agent to access company-specific knowledge. Documents like FAQs, product catalogs, and return policies are converted into vectors and stored in the Pinecone vector database. With each inquiry, the most relevant text passages are automatically found, ranked by a Cohere Reranker for relevance, and provided to the agent as context. An embedding model converts texts into mathematical representations, so the search works by meaning rather than exact words.",
+      "caption": "The RAG upload workflow automatically converts documents into vectors for Pinecone"
     },
     "tools": {
       "title": "Tools & Sub-Agents",
       "subtitle": "The AI Agent's Toolkit",
-      "shopify": {
+      "tool1": {
+        "title": "Chat Memory / PostgreSQL",
+        "description": "The agent has a memory stored in a Supabase/PostgreSQL database. For returning customers, it can retrieve previous communication and specifically reference it."
+      },
+      "tool2": {
         "title": "Shopify Agent",
-        "description": "Query orders, products, and customer data in real time"
+        "description": "A specialized sub-agent that communicates directly with the Shopify API: retrieve order data, check shipping status, create returns in the system, and query customer data for personalized responses."
       },
-      "sheets": {
-        "title": "Google Sheets Agent",
-        "description": "Read and write accounting data"
-      },
-      "email": {
-        "title": "Email Tool",
-        "description": "Automatically send invoices and notifications"
-      },
-      "vision": {
-        "title": "Image Analysis",
-        "description": "Analyze and describe product images"
-      },
-      "caption": "The image analysis section of the support agent"
+      "tool3": {
+        "title": "Support Case Agent / Sheets Agent",
+        "description": "When the agent cannot resolve an inquiry on its own, the Sheets Agent creates a documented support case in Google Sheets \u2014 a structured request that a human specialist can process later."
+      }
     },
     "security": {
       "title": "Security & Reliability",
-      "subtitle": "Safeguards for production use",
-      "injection": {
-        "title": "Prompt Injection Protection",
-        "description": "System prompts and guardrails prevent the agent from being exploited through manipulative inputs."
+      "subtitle": "Four layers of protection for production use",
+      "security1": {
+        "title": "Jailbreak Detection",
+        "description": "Detection of manipulation attempts where people try to trick the system with specially crafted messages to bypass security guidelines. The agent does not respond to such requests."
       },
-      "errors": {
-        "title": "Error Triggers",
-        "description": "When errors occur in the workflow, a notification is automatically triggered so problems are detected immediately."
+      "security2": {
+        "title": "NSFW Content Filter",
+        "description": "Automatic filtering of inappropriate or offensive content. For such requests, a polite standard response is sent referencing the communication guidelines."
       },
-      "escalation": {
-        "title": "Human Escalation",
-        "description": "When the agent cannot confidently answer a request, it automatically escalates to human support."
+      "security3": {
+        "title": "Topical Alignment",
+        "description": "Topic relevance check that ensures the inquiry fits the defined scope. General knowledge questions or off-topic content are detected and answered accordingly."
       },
-      "caption": "The error trigger notifies on workflow errors"
+      "security4": {
+        "title": "Output Guardrails",
+        "description": "Output safety barriers: A separate AI model checks the generated response for correctness, completeness, and appropriateness. Only when all checks pass is the response actually sent."
+      },
+      "caption": "Multi-layered security mechanisms protect against manipulation and errors"
     }
   },
   "results": {
@@ -190,16 +191,16 @@
       "subtitle": "What we achieved and how we stand out",
       "results": {
         "title": "Project Results",
-        "description": "ShopControl AI was developed as a fully functional prototype and tested with a real Shopify shop. The AI support agent answers customer inquiries autonomously while automatic accounting creates, sends, and logs invoices — all without manual intervention."
+        "description": "ShopControl AI was developed as a fully functional prototype and tested with a real Shopify shop. The AI support agent answers customer inquiries via email autonomously, while automated financial reporting consolidates data from Shopify, Facebook Ads, and bank accounts and sends visualized reports via WhatsApp \u2014 all without manual intervention."
       },
       "differentiation": {
         "title": "Market Differentiation",
-        "description": "Unlike enterprise solutions like Zendesk or Freshdesk, ShopControl AI combines customer service and accounting in one solution — specifically designed for small Shopify shops and affordably priced. No more expensive individual solutions."
+        "description": "Unlike enterprise solutions like Zendesk or Freshdesk, ShopControl AI combines customer service and financial reporting in one solution \u2014 specifically designed for small Shopify shops and affordably priced. No more expensive individual solutions."
       },
       "competitors": {
         "title": "Competitive Comparison",
         "shopcontrol": "ShopControl AI",
-        "features": ["AI Support Agent", "Accounting Automation", "Shopify Integration", "Affordable for Small Shops"]
+        "features": ["AI Email Support Agent", "Financial Reporting", "Shopify Integration", "Affordable for Small Shops"]
       }
     },
     "financials": {
@@ -207,7 +208,7 @@
       "subtitle": "Revenue projections and pricing model for the next three years",
       "pricing": {
         "title": "Pricing Model",
-        "description": "Three pricing tiers for different shop sizes — from solo entrepreneurs to growing e-commerce businesses."
+        "description": "Three pricing tiers for different shop sizes \u2014 from solo entrepreneurs to growing e-commerce businesses."
       },
       "forecast": {
         "title": "3-Year Forecast",
@@ -232,7 +233,7 @@
       "pro": "Pro",
       "enterprise": "Enterprise",
       "pricePerMonth": "Price/Month",
-      "currency": "€"
+      "currency": "\u20ac"
     }
   },
   "impressum": {
@@ -242,10 +243,10 @@
       "title": "Legal Notice",
       "responsible": "Responsible for content",
       "name": "Lucas Nessel",
-      "school": "HTL Lastenstraße Klagenfurt",
-      "address": "Lastenstraße 1, 9020 Klagenfurt am Wörthersee",
+      "school": "HTL Lastenstrasse Klagenfurt",
+      "address": "Lastenstrasse 1, 9020 Klagenfurt am Woerthersee",
       "country": "Austria",
-      "context": "This website was created as part of the diploma thesis at HTL Lastenstraße and serves as a presentation for the Jugend Innovativ competition."
+      "context": "This website was created as part of the diploma thesis at HTL Lastenstrasse and serves as a presentation for the Jugend Innovativ competition."
     },
     "datenschutz": {
       "title": "Privacy Policy",
