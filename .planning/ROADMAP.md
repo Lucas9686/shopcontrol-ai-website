@@ -14,7 +14,7 @@
 | 3. Results & Financials | v1.0 | 1/1 | Complete | 2026-01-31 |
 | 4. Polish & Media | v1.0 | 2/2 | Complete | 2026-01-31 |
 | 5. Deploy Fix & Content Accuracy | v1.1 | 2/2 | Complete | 2026-01-31 |
-| 6. OG Image & Performance | v1.1 | 0/TBD | Not started | - |
+| 6. OG Image & Performance | v1.1 | 0/2 | Not started | - |
 
 ---
 
@@ -48,7 +48,8 @@ Plans:
   1. Sharing a page URL on social media / messaging apps shows a branded ShopControl AI preview image (not placeholder)
   2. Lighthouse performance score is 90+ on mobile for the home page
   3. No render-blocking resources or unoptimized images flagged by Lighthouse
-**Plans**: TBD
+**Plans**: 2 plans
 
 Plans:
-- [ ] 06-01: TBD
+- [ ] 06-01-PLAN.md — Generate branded OG image and replace placeholder logo
+- [ ] 06-02-PLAN.md — Lighthouse performance optimization (image opt, next/image, smooth scroll)
