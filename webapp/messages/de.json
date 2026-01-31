@@ -351,6 +351,55 @@
   },
   "financePlan": {
     "title": "Finanzplan",
-    "placeholder": "Inhalte werden in Kürze hinzugefügt."
+    "subtitle": "Kostenstruktur, Preismodell und Wachstumsprognose",
+    "costStructure": {
+      "title": "Kostenstruktur",
+      "subtitle": "KI vs. menschlicher Support",
+      "tokenCosts": "Pro Anfrage: ~4.000 Input-Tokens + ~17.000 Output-Tokens",
+      "monthlyCosts": "Monatliche KI-Kosten: 50\u201380 EUR",
+      "humanCosts": "Vergleich menschlicher Agent: 800\u20131.500 EUR/Monat",
+      "savings": "Kosteneinsparung: \u00fcber 90%"
+    },
+    "pricing": {
+      "title": "Preismodell \u2014 3 Stufen",
+      "description": "SaaS-Abo mit margenstarker Struktur",
+      "starter": { "name": "Starter", "price": "99 EUR/Monat", "original": "149 EUR/Monat (Einf\u00fchrungspreis)", "target": "Kleine Shops" },
+      "pro": { "name": "Pro", "price": "179 EUR/Monat", "original": "249 EUR/Monat (Einf\u00fchrungspreis)", "target": "Wachsende Shops" },
+      "enterprise": { "name": "Enterprise", "price": "Individuell", "target": "Gro\u00dfe H\u00e4ndler" },
+      "margin": "Marge: 60\u201390%"
+    },
+    "assumptions": {
+      "title": "Kernannahmen",
+      "avgRevenue": "Durchschnittlicher Umsatz pro Kunde: 180 EUR/Monat",
+      "cac": "Customer Acquisition Cost: 80\u2013120 EUR",
+      "churn": "Monatliche Churn-Rate: 5\u20138%",
+      "customers": "Kundenentwicklung: 15 \u2192 60 \u2192 180 (\u00fcber 3 Jahre)"
+    },
+    "forecast": {
+      "title": "3-Jahres-Prognose",
+      "description": "Umsatz- und Gewinnentwicklung",
+      "year1": { "revenue": "32.400 EUR", "profit": "28.800 EUR" },
+      "year2": { "revenue": "129.600 EUR", "profit": "106.100 EUR" },
+      "year3": { "revenue": "388.800 EUR", "profit": "321.800 EUR" }
+    },
+    "scenario": {
+      "title": "Szenarioanalyse",
+      "description": "Optimistisches vs. konservatives Szenario",
+      "conservative": "Konservativ: 40% weniger Kunden"
+    },
+    "charts": {
+      "basic": "Starter",
+      "pro": "Pro",
+      "enterprise": "Enterprise",
+      "pricePerMonth": "Preis / Monat",
+      "revenue": "Umsatz",
+      "costs": "Kosten",
+      "year1": "Jahr 1",
+      "year2": "Jahr 2",
+      "year3": "Jahr 3",
+      "optimistic": "Optimistisch",
+      "realistic": "Realistisch",
+      "pessimistic": "Konservativ"
+    }
   }
 }

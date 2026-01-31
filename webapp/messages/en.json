@@ -351,6 +351,55 @@
   },
   "financePlan": {
     "title": "Finance Plan",
-    "placeholder": "Content coming soon."
+    "subtitle": "Cost structure, pricing model, and growth forecast",
+    "costStructure": {
+      "title": "Cost Structure",
+      "subtitle": "AI vs. human support",
+      "tokenCosts": "Per request: ~4,000 input tokens + ~17,000 output tokens",
+      "monthlyCosts": "Monthly AI costs: 50\u201380 EUR",
+      "humanCosts": "Human agent comparison: 800\u20131,500 EUR/month",
+      "savings": "Cost savings: over 90%"
+    },
+    "pricing": {
+      "title": "Pricing Model \u2014 3 Tiers",
+      "description": "SaaS subscription with high-margin structure",
+      "starter": { "name": "Starter", "price": "99 EUR/month", "original": "149 EUR/month (introductory price)", "target": "Small shops" },
+      "pro": { "name": "Pro", "price": "179 EUR/month", "original": "249 EUR/month (introductory price)", "target": "Growing shops" },
+      "enterprise": { "name": "Enterprise", "price": "Custom", "target": "Large retailers" },
+      "margin": "Margin: 60\u201390%"
+    },
+    "assumptions": {
+      "title": "Key Assumptions",
+      "avgRevenue": "Average revenue per customer: 180 EUR/month",
+      "cac": "Customer Acquisition Cost: 80\u2013120 EUR",
+      "churn": "Monthly churn rate: 5\u20138%",
+      "customers": "Customer growth: 15 \u2192 60 \u2192 180 (over 3 years)"
+    },
+    "forecast": {
+      "title": "3-Year Forecast",
+      "description": "Revenue and profit development",
+      "year1": { "revenue": "32,400 EUR", "profit": "28,800 EUR" },
+      "year2": { "revenue": "129,600 EUR", "profit": "106,100 EUR" },
+      "year3": { "revenue": "388,800 EUR", "profit": "321,800 EUR" }
+    },
+    "scenario": {
+      "title": "Scenario Analysis",
+      "description": "Optimistic vs. conservative scenario",
+      "conservative": "Conservative: 40% fewer customers"
+    },
+    "charts": {
+      "basic": "Starter",
+      "pro": "Pro",
+      "enterprise": "Enterprise",
+      "pricePerMonth": "Price / month",
+      "revenue": "Revenue",
+      "costs": "Costs",
+      "year1": "Year 1",
+      "year2": "Year 2",
+      "year3": "Year 3",
+      "optimistic": "Optimistic",
+      "realistic": "Realistic",
+      "pessimistic": "Conservative"
+    }
   }
 }
