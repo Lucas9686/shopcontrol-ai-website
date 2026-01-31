@@ -13,6 +13,7 @@ import {
   SheetTitle,
   SheetClose,
 } from "@/components/ui/sheet";
+import Image from "next/image";
 import { LanguageSwitcher } from "./language-switcher";
 
 const navItems = [
@@ -33,8 +34,15 @@ export function Navbar() {
     <header className="fixed top-4 left-1/2 z-50 w-[calc(100%-2rem)] max-w-4xl -translate-x-1/2">
       <nav className="flex items-center justify-between rounded-full border border-border bg-background/40 px-4 py-2 backdrop-blur-md">
         {/* Logo */}
-        <Link href="/" className="text-sm font-bold tracking-tight text-foreground">
-          ShopControl AI
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/placeholder-logo.png"
+            alt="ShopControl AI"
+            width={140}
+            height={38}
+            className="h-7 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
