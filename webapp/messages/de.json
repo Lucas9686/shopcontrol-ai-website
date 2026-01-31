@@ -13,6 +13,26 @@
     "subheadline": "KI-gestützte Automatisierung für Online-Shops",
     "cta": "Mehr erfahren"
   },
+  "overview": {
+    "title": "Was ShopControl AI bietet",
+    "subtitle": "Zwei KI-gestützte Systeme für Online-Shops",
+    "supportAgent": {
+      "title": "KI-Support-Agent",
+      "description": "Vollautonome E-Mail-Beantwortung mit RAG-System und Shopify-Integration."
+    },
+    "accounting": {
+      "title": "Buchhaltungstool",
+      "description": "Automatische Finanzberichte per WhatsApp — Umsatz, Gewinn, Trends."
+    },
+    "results": {
+      "title": "Ergebnisse",
+      "description": "Erreichte Ergebnisse, Marktabgrenzung und Geschäftsmodell."
+    },
+    "financePlan": {
+      "title": "Finanzplan",
+      "description": "Kostenstruktur, Preismodell und 3-Jahres-Wachstumsprognose."
+    }
+  },
   "demo": {
     "heading": "ShopControl AI in Aktion",
     "subheading": "Sehen Sie, wie der KI-Agent Kundenanfragen per E-Mail beantwortet und Finanzberichte automatisiert"

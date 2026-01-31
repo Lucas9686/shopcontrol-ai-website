@@ -13,6 +13,26 @@
     "subheadline": "AI-Powered Automation for Online Shops",
     "cta": "Learn more"
   },
+  "overview": {
+    "title": "What ShopControl AI Offers",
+    "subtitle": "Two AI-powered systems for online shops",
+    "supportAgent": {
+      "title": "AI Support Agent",
+      "description": "Fully autonomous email responses with RAG system and Shopify integration."
+    },
+    "accounting": {
+      "title": "Accounting Tool",
+      "description": "Automatic financial reports via WhatsApp — revenue, profit, trends."
+    },
+    "results": {
+      "title": "Results",
+      "description": "Achieved results, market differentiation, and business model."
+    },
+    "financePlan": {
+      "title": "Finance Plan",
+      "description": "Cost structure, pricing model, and 3-year growth forecast."
+    }
+  },
   "demo": {
     "heading": "ShopControl AI in Action",
     "subheading": "Watch how the AI agent answers customer inquiries via email and automates financial reporting"
