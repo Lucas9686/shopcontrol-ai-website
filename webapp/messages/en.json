@@ -76,7 +76,8 @@
       "supabase": "Supabase/PostgreSQL \u2014 Database",
       "cohere": "Cohere \u2014 Reranking",
       "shopify": "Shopify API \u2014 E-Commerce",
-      "whatsapp": "WhatsApp Business API \u2014 Reports"
+      "whatsapp": "WhatsApp Business API \u2014 Reports",
+      "telegram": "Telegram \u2014 Error Notifications"
     }
   },
   "about": {
