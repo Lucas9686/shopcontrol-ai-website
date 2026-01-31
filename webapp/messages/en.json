@@ -264,8 +264,41 @@
     }
   },
   "supportAgent": {
-    "title": "Support Agent",
-    "placeholder": "Content coming soon."
+    "title": "AI Support Agent",
+    "subtitle": "Fully autonomous AI-powered email customer support",
+    "problem": {
+      "title": "The Problem",
+      "description": "Small online store owners spend hours daily handling repetitive support inquiries — order status, returns, product questions. This ties up valuable time that could be spent on growth."
+    },
+    "solution": {
+      "title": "The Solution",
+      "description": "A fully autonomous AI agent that handles email inquiries independently — from analysis through research to personalized responses. Without human intervention, around the clock."
+    },
+    "workflow": {
+      "title": "6-Step Workflow",
+      "subtitle": "How the agent processes each customer inquiry",
+      "step1": { "title": "Fetch Emails", "description": "The workflow is triggered on a schedule and retrieves all new emails from the support inbox via IMAP." },
+      "step2": { "title": "Filter Emails", "description": "Auto-replies, newsletters, and irrelevant messages are filtered out. Only genuine customer inquiries are processed further." },
+      "step3": { "title": "Image Analysis", "description": "If the email contains images (e.g., photos of damaged products), these are analyzed using GPT-4o Vision and the description is added to the context." },
+      "step4": { "title": "AI Agent Processes Request", "description": "The main agent analyzes the inquiry, uses RAG for knowledge base search, and accesses tools like the Shopify API and Google Sheets to retrieve relevant data." },
+      "step5": { "title": "Send Response", "description": "The generated response is formatted as a professional email and automatically sent to the customer." },
+      "step6": { "title": "Performance Logging", "description": "Every processed inquiry is logged — response time, token usage, model used, and category — for quality control and optimization." }
+    },
+    "rag": {
+      "title": "RAG Knowledge System",
+      "description": "The agent uses Retrieval-Augmented Generation (RAG) with a Qdrant vector database. Product information, FAQ entries, and company policies are stored as embeddings and searched with every inquiry.",
+      "link": "More about the technical architecture on the Technology page."
+    },
+    "tools": {
+      "title": "Tools & Sub-Agents",
+      "description": "The agent accesses specialized tools: Shopify API for order data, Google Sheets for internal data, and a returns management sub-agent for complex return cases.",
+      "link": "Details about tool integration on the Technology page."
+    },
+    "security": {
+      "title": "Security Features",
+      "description": "Four security layers protect against malfunctions: error triggers on workflow failures, confidence-based escalation to humans, automatic backup responses, and complete response logging.",
+      "link": "More about security concepts on the Technology page."
+    }
   },
   "accounting": {
     "title": "Accounting Tool",

@@ -264,8 +264,41 @@
     }
   },
   "supportAgent": {
-    "title": "Supportagent",
-    "placeholder": "Inhalte werden in Kürze hinzugefügt."
+    "title": "KI-Supportagent",
+    "subtitle": "Vollautonome E-Mail-Kundenbetreuung mit KI",
+    "problem": {
+      "title": "Das Problem",
+      "description": "Kleine Online-Shop-Betreiber verbringen Stunden täglich mit repetitiven Support-Anfragen — Bestellstatus, Retouren, Produktfragen. Das bindet wertvolle Zeit, die für Wachstum fehlt."
+    },
+    "solution": {
+      "title": "Die Lösung",
+      "description": "Ein vollautonomer KI-Agent, der E-Mail-Anfragen selbstständig bearbeitet — von der Analyse über die Recherche bis zur personalisierten Antwort. Ohne menschliches Eingreifen, rund um die Uhr."
+    },
+    "workflow": {
+      "title": "6-Schritte-Workflow",
+      "subtitle": "So verarbeitet der Agent jede Kundenanfrage",
+      "step1": { "title": "E-Mails abrufen", "description": "Der Workflow wird durch einen Zeitplan-Trigger gestartet und ruft alle neuen E-Mails aus dem Support-Postfach über IMAP ab." },
+      "step2": { "title": "E-Mails filtern", "description": "Automatische Antworten, Newsletter und irrelevante Nachrichten werden herausgefiltert. Nur echte Kundenanfragen werden weiterverarbeitet." },
+      "step3": { "title": "Bildanalyse", "description": "Falls die E-Mail Bilder enthält (z.B. Fotos von beschädigten Produkten), werden diese mit GPT-4o Vision analysiert und die Beschreibung wird dem Kontext hinzugefügt." },
+      "step4": { "title": "KI-Agent verarbeitet Anfrage", "description": "Der Haupt-Agent analysiert die Anfrage, nutzt RAG für Wissensbasis-Suche und greift auf Tools wie Shopify-API und Google Sheets zu, um relevante Daten abzurufen." },
+      "step5": { "title": "Antwort senden", "description": "Die generierte Antwort wird als professionelle E-Mail formatiert und automatisch an den Kunden gesendet." },
+      "step6": { "title": "Performance-Logging", "description": "Jede verarbeitete Anfrage wird protokolliert — Antwortzeit, Token-Verbrauch, genutztes Modell und Kategorie — für Qualitätskontrolle und Optimierung." }
+    },
+    "rag": {
+      "title": "RAG-Wissenssystem",
+      "description": "Der Agent nutzt Retrieval-Augmented Generation (RAG) mit einer Qdrant-Vektordatenbank. Produktinformationen, FAQ-Einträge und Unternehmensrichtlinien werden als Embeddings gespeichert und bei jeder Anfrage durchsucht.",
+      "link": "Mehr zur technischen Architektur auf der Technologien-Seite."
+    },
+    "tools": {
+      "title": "Tools & Sub-Agents",
+      "description": "Der Agent greift auf spezialisierte Tools zu: Shopify-API für Bestelldaten, Google Sheets für interne Daten, und einen Retourenmanagement-Sub-Agent für komplexe Rücksendungen.",
+      "link": "Details zur Tool-Integration auf der Technologien-Seite."
+    },
+    "security": {
+      "title": "Sicherheitsfeatures",
+      "description": "Vier Sicherheitsebenen schützen vor Fehlfunktionen: Error-Trigger bei Workflow-Fehlern, Confidence-basierte Eskalation an Menschen, automatische Backup-Antworten und vollständige Antwortprotokollierung.",
+      "link": "Mehr zu Sicherheitskonzepten auf der Technologien-Seite."
+    }
   },
   "accounting": {
     "title": "Buchhaltungstool",
