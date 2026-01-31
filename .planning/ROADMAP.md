@@ -4,7 +4,7 @@
 
 - **v1.0 Jugend Innovativ Webseite** — Phases 1-4 (shipped 2026-01-31) | [Archive](milestones/v1.0-ROADMAP.md)
 - **v1.1 Content Accuracy & Deploy Fix** — Phases 5-6 (shipped 2026-01-31) | [Archive](milestones/v1.1-ROADMAP.md)
-- **v1.2 Content Restructure & Accuracy** — Phases 7-9 (active)
+- **v1.2 Content Restructure & Accuracy** — Phases 7-9 (shipped 2026-01-31)
 
 ## Progress
 
@@ -18,7 +18,7 @@
 | 6. OG Image & Performance | v1.1 | 2/2 | Complete | 2026-01-31 |
 | 7. Umlauts & Route Restructure | v1.2 | 2/2 | Complete | 2026-01-31 |
 | 8. Supportagent & Buchhaltungstool Pages | v1.2 | 2/2 | Complete | 2026-01-31 |
-| 9. Content Updates & Verification | v1.2 | 0/4 | Not started | — |
+| 9. Content Updates & Verification | v1.2 | 4/4 | Complete | 2026-01-31 |
 
 ## v1.2 Phase Details
 
@@ -66,10 +66,10 @@ Plans:
 
 **Plans:** 4 plans
 Plans:
-- [ ] 09-01-PLAN.md — Build full Finanzplan page with charts and content from PDF
-- [ ] 09-02-PLAN.md — Restructure Results page (remove financials, add Zielgruppe/Geschaeftsmodell)
-- [ ] 09-03-PLAN.md — Add homepage overview CTA grid linking to key pages
-- [ ] 09-04-PLAN.md — Fix Technology discrepancies, verify About page, final content sweep
+- [x] 09-01-PLAN.md — Build full Finanzplan page with charts and content from PDF
+- [x] 09-02-PLAN.md — Restructure Results page (remove financials, add Zielgruppe/Geschaeftsmodell)
+- [x] 09-03-PLAN.md — Add homepage overview CTA grid linking to key pages
+- [x] 09-04-PLAN.md — Fix Technology discrepancies, verify About page, final content sweep
 
 **Success criteria:**
 1. Finanzplan-Seite zeigt: Kostenstruktur, Preismodell (3 Stufen), 3-Jahres-Prognose mit Charts, Szenarioanalyse
