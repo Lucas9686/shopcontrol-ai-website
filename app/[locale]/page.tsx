@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/button";
 import { Link } from "@/i18n/navigation";
+import { HeroAnimated } from "@/components/shared/hero-animated";
 
 export default async function HomePage({
   params,
@@ -23,19 +24,15 @@ export default async function HomePage({
         }}
       />
 
-      <div className="relative z-10 mx-auto max-w-3xl px-4 text-center">
-        <h1 className="text-4xl font-bold tracking-tight md:text-6xl">
-          {t("headline")}
-        </h1>
-        <p className="mt-4 text-lg text-muted-foreground md:text-xl">
-          {t("subheadline")}
-        </p>
-        <div className="mt-8">
-          <Button asChild size="lg">
+      <HeroAnimated
+        headline={t("headline")}
+        subheadline={t("subheadline")}
+        cta={
+          <Button asChild size="lg" className="shimmer-btn">
             <Link href="/technology">{t("cta")}</Link>
           </Button>
-        </div>
-      </div>
+        }
+      />
     </section>
   );
 }
