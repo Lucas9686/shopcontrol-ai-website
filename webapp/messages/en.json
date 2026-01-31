@@ -302,7 +302,33 @@
   },
   "accounting": {
     "title": "Accounting Tool",
-    "placeholder": "Content coming soon."
+    "subtitle": "Automated financial reporting via WhatsApp",
+    "problem": {
+      "title": "The Problem",
+      "description": "Online store owners must manually consolidate financial data from various sources — Shopify, Facebook Ads, bank accounts. Calculating metrics and creating reports costs hours per week and is error-prone."
+    },
+    "solution": {
+      "title": "The Solution",
+      "description": "An automated workflow that collects all relevant financial data, calculates key KPIs, and sends them as a clear report via WhatsApp — on demand or automatically on a monthly basis."
+    },
+    "workflow": {
+      "title": "5-Step Workflow",
+      "subtitle": "How the automatic financial report is created",
+      "step1": { "title": "Fetch Data", "description": "The workflow automatically queries revenue data from Shopify, advertising spend from Facebook Ads, and account movements from the bank." },
+      "step2": { "title": "Calculate KPIs", "description": "Key metrics are calculated from the raw data: total revenue, advertising costs, Return on Ad Spend (ROAS), profit margin, and other KPIs." },
+      "step3": { "title": "Generate Report", "description": "The calculated KPIs are compiled into a clear, formatted report — with comparisons to the previous month and trend analyses." },
+      "step4": { "title": "WhatsApp Delivery", "description": "The finished report is automatically sent via WhatsApp to the store owner. Delivery can be triggered by message or configured as a monthly schedule." },
+      "step5": { "title": "Archival", "description": "All reports are archived in Google Sheets to track long-term trends and compare historical data." }
+    },
+    "overview": {
+      "title": "Workflow Overview",
+      "caption": "Complete accounting workflow process"
+    },
+    "n8n": {
+      "title": "Technical Implementation",
+      "description": "The entire workflow is implemented in n8n as an automated pipeline — from API queries through calculation to WhatsApp delivery.",
+      "caption": "The accounting workflow in n8n"
+    }
   },
   "financePlan": {
     "title": "Finance Plan",

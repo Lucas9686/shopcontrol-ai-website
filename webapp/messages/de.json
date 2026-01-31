@@ -302,7 +302,33 @@
   },
   "accounting": {
     "title": "Buchhaltungstool",
-    "placeholder": "Inhalte werden in Kürze hinzugefügt."
+    "subtitle": "Automatische Finanzberichterstattung per WhatsApp",
+    "problem": {
+      "title": "Das Problem",
+      "description": "Online-Shop-Betreiber müssen Finanzdaten aus verschiedenen Quellen — Shopify, Facebook Ads, Bankkonten — manuell zusammenführen. Kennzahlen berechnen, Berichte erstellen: Das kostet Stunden pro Woche und ist fehleranfällig."
+    },
+    "solution": {
+      "title": "Die Lösung",
+      "description": "Ein automatisierter Workflow, der alle relevanten Finanzdaten sammelt, zentrale KPIs berechnet und als übersichtlichen Bericht per WhatsApp versendet — auf Knopfdruck oder automatisch monatlich."
+    },
+    "workflow": {
+      "title": "5-Schritte-Workflow",
+      "subtitle": "So entsteht der automatische Finanzbericht",
+      "step1": { "title": "Daten abrufen", "description": "Der Workflow fragt automatisch Umsatzdaten von Shopify, Werbeausgaben von Facebook Ads und Kontobewegungen von der Bank ab." },
+      "step2": { "title": "KPIs berechnen", "description": "Aus den Rohdaten werden zentrale Kennzahlen berechnet: Gesamtumsatz, Werbekosten, Return on Ad Spend (ROAS), Gewinnmarge und weitere KPIs." },
+      "step3": { "title": "Bericht generieren", "description": "Die berechneten KPIs werden in einen übersichtlichen, formatierten Bericht zusammengestellt — mit Vergleichen zum Vormonat und Trendanalysen." },
+      "step4": { "title": "WhatsApp-Versand", "description": "Der fertige Bericht wird automatisch per WhatsApp an den Shop-Betreiber gesendet. Der Versand kann per Nachricht ausgelöst oder als monatlicher Zeitplan konfiguriert werden." },
+      "step5": { "title": "Archivierung", "description": "Alle Berichte werden in Google Sheets archiviert, um langfristige Trends nachverfolgen und historische Daten vergleichen zu können." }
+    },
+    "overview": {
+      "title": "Workflow-Überblick",
+      "caption": "Gesamtablauf des Buchhaltungs-Workflows"
+    },
+    "n8n": {
+      "title": "Technische Umsetzung",
+      "description": "Der gesamte Workflow ist in n8n als automatisierte Pipeline implementiert — von den API-Abfragen über die Berechnung bis zum WhatsApp-Versand.",
+      "caption": "Der Buchhaltungs-Workflow in n8n"
+    }
   },
   "financePlan": {
     "title": "Finanzplan",
