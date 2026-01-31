@@ -183,6 +183,25 @@
         "description": "Output safety barriers: A separate AI model checks the generated response for correctness, completeness, and appropriateness. Only when all checks pass is the response actually sent."
       },
       "caption": "Multi-layered security mechanisms protect against manipulation and errors"
+    },
+    "techStack": {
+      "title": "Technology Stack",
+      "subtitle": "The building blocks of ShopControl AI",
+      "n8n": { "title": "n8n", "description": "Open-source workflow automation platform for all processes" },
+      "openai": { "title": "OpenAI GPT-4o", "description": "Multimodal AI model for text understanding, image analysis, and response generation" },
+      "qdrant": { "title": "Qdrant", "description": "Vector database for the RAG system — stores and searches knowledge embeddings" },
+      "shopify": { "title": "Shopify API", "description": "Access to orders, products, and customer data from the online store" },
+      "sheets": { "title": "Google Sheets API", "description": "Data storage for configurations, logs, and financial reports" },
+      "whatsapp": { "title": "WhatsApp Business API", "description": "Automated financial report delivery directly to smartphone" }
+    },
+    "architecture": {
+      "title": "Architecture Overview",
+      "description": "All components are connected through n8n as the central automation platform. The AI support agent processes emails with GPT-4o and RAG, while the accounting tool collects financial data from multiple sources and delivers reports via WhatsApp."
+    },
+    "detailPages": {
+      "title": "In Detail",
+      "supportAgent": { "title": "AI Support Agent", "description": "6-step workflow for autonomous email customer support" },
+      "accounting": { "title": "Accounting Tool", "description": "5-step workflow for automated financial reporting" }
     }
   },
   "results": {

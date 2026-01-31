@@ -183,6 +183,25 @@
         "description": "Ausgabe-Sicherheitsschranken: Ein separates KI-Modell kontrolliert die generierte Antwort auf Korrektheit, Vollständigkeit und Angemessenheit. Erst wenn alle Checks bestanden sind, wird die Antwort tatsächlich versendet."
       },
       "caption": "Mehrstufige Sicherheitsmechanismen schützen vor Manipulation und Fehlern"
+    },
+    "techStack": {
+      "title": "Technologie-Stack",
+      "subtitle": "Die Bausteine von ShopControl AI",
+      "n8n": { "title": "n8n", "description": "Open-Source Workflow-Automatisierungsplattform für alle Prozesse" },
+      "openai": { "title": "OpenAI GPT-4o", "description": "Multimodales KI-Modell für Textverständnis, Bildanalyse und Antwortgenerierung" },
+      "qdrant": { "title": "Qdrant", "description": "Vektordatenbank für das RAG-System — speichert und durchsucht Wissensembeddings" },
+      "shopify": { "title": "Shopify API", "description": "Zugriff auf Bestellungen, Produkte und Kundendaten des Online-Shops" },
+      "sheets": { "title": "Google Sheets API", "description": "Datenspeicher für Konfigurationen, Logs und Finanzberichte" },
+      "whatsapp": { "title": "WhatsApp Business API", "description": "Versand automatisierter Finanzberichte direkt aufs Smartphone" }
+    },
+    "architecture": {
+      "title": "Architektur-Überblick",
+      "description": "Alle Komponenten sind über n8n als zentrale Automatisierungsplattform verbunden. Der KI-Supportagent verarbeitet E-Mails mit GPT-4o und RAG, während das Buchhaltungstool Finanzdaten aus mehreren Quellen sammelt und per WhatsApp versendet."
+    },
+    "detailPages": {
+      "title": "Im Detail",
+      "supportAgent": { "title": "KI-Supportagent", "description": "6-Schritte-Workflow für autonome E-Mail-Kundenbetreuung" },
+      "accounting": { "title": "Buchhaltungstool", "description": "5-Schritte-Workflow für automatische Finanzberichterstattung" }
     }
   },
   "results": {

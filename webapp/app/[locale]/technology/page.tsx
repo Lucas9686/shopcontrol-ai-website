@@ -1,10 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Database, ShoppingCart, FileSpreadsheet, Shield, EyeOff, Target, ShieldCheck } from "lucide-react";
+import { Workflow, Brain, Database, ShoppingCart, FileSpreadsheet, MessageCircle, ArrowRight } from "lucide-react";
 import { SectionHeader } from "@/components/shared/section-header";
 import { FadeInSection } from "@/components/shared/fade-in-section";
 import { FeatureCard } from "@/components/features/feature-card";
-import { WorkflowStep } from "@/components/technology/workflow-step";
-import { ScreenshotFigure } from "@/components/technology/screenshot-figure";
+import { Link } from "@/i18n/navigation";
 
 export default async function TechnologyPage({
   params,
@@ -15,26 +14,13 @@ export default async function TechnologyPage({
   setRequestLocale(locale);
   const t = await getTranslations("technology");
 
-  const steps = [
-    { key: "step1", image: "/images/workflows/get-emails.png" },
-    { key: "step2", image: "/images/workflows/filter-sektion.png" },
-    { key: "step3", image: "/images/workflows/bildanalyse-sektion.png" },
-    { key: "step4", image: "/images/workflows/support-agent-mit-tools.png" },
-    { key: "step5", image: "/images/workflows/send-emails.png" },
-    { key: "step6", image: "/images/workflows/performance-logging.png" },
-  ] as const;
-
-  const securityItems = [
-    { key: "security1", icon: Shield },
-    { key: "security2", icon: EyeOff },
-    { key: "security3", icon: Target },
-    { key: "security4", icon: ShieldCheck },
-  ] as const;
-
-  const toolItems = [
-    { key: "tool1", icon: Database },
-    { key: "tool2", icon: ShoppingCart },
-    { key: "tool3", icon: FileSpreadsheet },
+  const techStackItems = [
+    { key: "n8n", icon: Workflow },
+    { key: "openai", icon: Brain },
+    { key: "qdrant", icon: Database },
+    { key: "shopify", icon: ShoppingCart },
+    { key: "sheets", icon: FileSpreadsheet },
+    { key: "whatsapp", icon: MessageCircle },
   ] as const;
 
   return (
@@ -51,74 +37,60 @@ export default async function TechnologyPage({
         {t("overview")}
       </p>
 
-      {/* Workflow Steps */}
+      {/* Tech Stack */}
       <FadeInSection className="mt-16">
-        <SectionHeader title={t("workflow.title")} />
-      </FadeInSection>
-
-      <div className="mt-10 space-y-16">
-        {steps.map((step, i) => (
-          <WorkflowStep
-            key={step.key}
-            number={i + 1}
-            title={t(`workflow.${step.key}.title`)}
-            description={t(`workflow.${step.key}.description`)}
-            imageSrc={step.image}
-            imageAlt={t(`workflow.${step.key}.title`)}
-            reverse={i % 2 === 1}
-          />
-        ))}
-      </div>
-
-      {/* RAG Section */}
-      <FadeInSection className="mt-20">
-        <SectionHeader title={t("rag.title")} subtitle={t("rag.subtitle")} />
-        <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
-          {t("rag.description")}
-        </p>
-        <div className="mt-8">
-          <ScreenshotFigure
-            src="/images/workflows/rag-upload.png"
-            alt={t("rag.title")}
-            caption={t("rag.caption")}
-          />
-        </div>
-      </FadeInSection>
-
-      {/* Tools & Sub-Agents */}
-      <FadeInSection className="mt-20">
-        <SectionHeader title={t("tools.title")} subtitle={t("tools.subtitle")} />
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
-          {toolItems.map((tool) => (
-            <FeatureCard
-              key={tool.key}
-              icon={tool.icon}
-              title={t(`tools.${tool.key}.title`)}
-              description={t(`tools.${tool.key}.description`)}
-            />
-          ))}
-        </div>
-      </FadeInSection>
-
-      {/* Security */}
-      <FadeInSection className="mt-20">
-        <SectionHeader title={t("security.title")} subtitle={t("security.subtitle")} />
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {securityItems.map((item) => (
+        <SectionHeader
+          title={t("techStack.title")}
+          subtitle={t("techStack.subtitle")}
+        />
+        <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          {techStackItems.map((item) => (
             <FeatureCard
               key={item.key}
               icon={item.icon}
-              title={t(`security.${item.key}.title`)}
-              description={t(`security.${item.key}.description`)}
+              title={t(`techStack.${item.key}.title`)}
+              description={t(`techStack.${item.key}.description`)}
             />
           ))}
         </div>
-        <div className="mt-8">
-          <ScreenshotFigure
-            src="/images/workflows/error-trigger.png"
-            alt={t("security.title")}
-            caption={t("security.caption")}
-          />
+      </FadeInSection>
+
+      {/* Architecture */}
+      <FadeInSection className="mt-16">
+        <h2 className="text-2xl font-bold">{t("architecture.title")}</h2>
+        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
+          {t("architecture.description")}
+        </p>
+      </FadeInSection>
+
+      {/* Detail Pages */}
+      <FadeInSection className="mt-16">
+        <SectionHeader title={t("detailPages.title")} />
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+          <Link
+            href="/support-agent"
+            className="group rounded-lg border border-border bg-card/50 p-6 transition-colors hover:border-primary/50 hover:bg-card"
+          >
+            <h3 className="text-xl font-semibold group-hover:text-primary">
+              {t("detailPages.supportAgent.title")}
+              <ArrowRight className="ml-2 inline-block h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </h3>
+            <p className="mt-2 text-muted-foreground">
+              {t("detailPages.supportAgent.description")}
+            </p>
+          </Link>
+          <Link
+            href="/accounting"
+            className="group rounded-lg border border-border bg-card/50 p-6 transition-colors hover:border-primary/50 hover:bg-card"
+          >
+            <h3 className="text-xl font-semibold group-hover:text-primary">
+              {t("detailPages.accounting.title")}
+              <ArrowRight className="ml-2 inline-block h-4 w-4 transition-transform group-hover:translate-x-1" />
+            </h3>
+            <p className="mt-2 text-muted-foreground">
+              {t("detailPages.accounting.description")}
+            </p>
+          </Link>
         </div>
       </FadeInSection>
     </article>
