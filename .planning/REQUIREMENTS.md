@@ -32,14 +32,20 @@
 
 ## Traceability
 
-| Requirement | Phase |
-|-------------|-------|
-| DEPLOY-01 | TBD |
-| TECH-01–06 | TBD |
-| SOL-01–02 | TBD |
-| CROSS-01 | TBD |
-| OG-01 | TBD |
-| PERF-01 | TBD |
+| Requirement | Phase | Status |
+|-------------|-------|--------|
+| DEPLOY-01 | Phase 5 | Pending |
+| TECH-01 | Phase 5 | Pending |
+| TECH-02 | Phase 5 | Pending |
+| TECH-03 | Phase 5 | Pending |
+| TECH-04 | Phase 5 | Pending |
+| TECH-05 | Phase 5 | Pending |
+| TECH-06 | Phase 5 | Pending |
+| SOL-01 | Phase 5 | Pending |
+| SOL-02 | Phase 5 | Pending |
+| CROSS-01 | Phase 5 | Pending |
+| OG-01 | Phase 6 | Pending |
+| PERF-01 | Phase 6 | Pending |
 
 ## Future Requirements
 
