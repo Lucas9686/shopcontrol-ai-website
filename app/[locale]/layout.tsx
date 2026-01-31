@@ -15,11 +15,40 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-export const metadata: Metadata = {
-  title: "ShopControl AI - Jugend Innovativ 2026",
-  description:
-    "KI-gestützte Automatisierung für Online-Shops. Ein Projekt der HTL Klagenfurt.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const isDE = locale === "de";
+  return {
+    metadataBase: new URL(
+      process.env.VERCEL_PROJECT_PRODUCTION_URL
+        ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+        : "https://shopcontrol-ai.vercel.app"
+    ),
+    title: {
+      default: "ShopControl AI - Jugend Innovativ 2026",
+      template: "%s | ShopControl AI",
+    },
+    description: isDE
+      ? "KI-gestützte Automatisierung für Online-Shops. Ein Projekt der HTL Klagenfurt."
+      : "AI-powered automation for online shops. A project by HTL Klagenfurt.",
+    openGraph: {
+      title: "ShopControl AI - Jugend Innovativ 2026",
+      description: isDE
+        ? "KI-gestützte Automatisierung für Online-Shops."
+        : "AI-powered automation for online shops.",
+      images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+      type: "website",
+      locale: isDE ? "de_AT" : "en_US",
+    },
+    twitter: {
+      card: "summary_large_image",
+    },
+  };
+}
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
