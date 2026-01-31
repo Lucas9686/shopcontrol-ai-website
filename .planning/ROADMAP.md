@@ -17,7 +17,7 @@
 | 5. Deploy Fix & Content Accuracy | v1.1 | 2/2 | Complete | 2026-01-31 |
 | 6. OG Image & Performance | v1.1 | 2/2 | Complete | 2026-01-31 |
 | 7. Umlauts & Route Restructure | v1.2 | 2/2 | Complete | 2026-01-31 |
-| 8. Supportagent & Buchhaltungstool Pages | v1.2 | 0/1 | Not started | — |
+| 8. Supportagent & Buchhaltungstool Pages | v1.2 | 0/2 | Not started | — |
 | 9. Content Updates & Verification | v1.2 | 0/1 | Not started | — |
 
 ## v1.2 Phase Details
@@ -45,6 +45,11 @@ Plans:
 **Goal:** Zwei neue Seiten mit Problem->Lösung->Step-by-Step-Struktur erstellen, mit Screenshots aus dem Projektbericht.
 
 **Requirements:** PAGE-01, PAGE-02
+
+**Plans:** 2 plans
+Plans:
+- [ ] 08-01-PLAN.md — Support Agent page with WorkflowStepVertical component and DE/EN translations
+- [ ] 08-02-PLAN.md — Accounting page with images, DE/EN translations, and Technology page restructure
 
 **Success criteria:**
 1. Supportagent-Seite zeigt: Problem (Zeitfresser Support) -> Lösung (autonomer Agent) -> 6-Schritte-Workflow mit Bildern -> RAG-System -> Tools & Sub-Agents -> Sicherheitsfeatures
