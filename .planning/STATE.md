@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-01-31)
 ## Current Position
 
 Phase: 5 of 6 (Deploy Fix & Content Accuracy)
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-01-31 — Completed 05-01-PLAN.md
+Plan: 2 of 2 in current phase
+Status: Phase complete
+Last activity: 2026-01-31 — Completed 05-02-PLAN.md
 
-Progress: [#####-----] 50% (v1.1)
+Progress: [##########] 100% (v1.1)
 
 ## Performance Metrics
 
@@ -24,11 +24,22 @@ Progress: [#####-----] 50% (v1.1)
 - Total LOC: ~9,600
 - Timeline: 1 day (2026-01-30 to 2026-01-31)
 
+**v1.1 Velocity:**
+- Total plans completed: 2
+- Total commits: 3
+- Timeline: 2026-01-31
+
 ## Accumulated Context
 
 ### Decisions
 
 All decisions logged in PROJECT.md Key Decisions table.
+
+| Decision | Phase | Rationale |
+|----------|-------|-----------|
+| ASCII-safe German text in JSON | 05-02 | Consistent with codebase, avoids encoding issues |
+| Agent is email-based, not chat-based | 05-02 | Report describes email support agent, not chatbot |
+| Accounting = financial KPI reporting via WhatsApp | 05-02 | Report section 4.6 describes WhatsApp-based reports |
 
 ### Pending Todos
 
@@ -41,6 +52,6 @@ All decisions logged in PROJECT.md Key Decisions table.
 
 ## Session Continuity
 
-Last session: 2026-01-31T02:03Z
-Stopped at: Completed 05-01-PLAN.md
+Last session: 2026-01-31T02:15Z
+Stopped at: Completed 05-02-PLAN.md — v1.1 milestone complete
 Resume file: None
