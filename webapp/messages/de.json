@@ -1,10 +1,11 @@
 {
   "nav": {
     "home": "Startseite",
-    "problem": "Problem",
-    "solution": "Lösung",
-    "technology": "Technologie",
+    "supportAgent": "Supportagent",
+    "accounting": "Buchhaltungstool",
+    "technology": "Technologien",
     "results": "Ergebnisse",
+    "financePlan": "Finanzplan",
     "about": "Über uns"
   },
   "hero": {
@@ -261,5 +262,17 @@
         "description": "Sie haben das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten gemäß DSGVO. Kontaktieren Sie uns bei Fragen zum Datenschutz."
       }
     }
+  },
+  "supportAgent": {
+    "title": "Supportagent",
+    "placeholder": "Inhalte werden in Kürze hinzugefügt."
+  },
+  "accounting": {
+    "title": "Buchhaltungstool",
+    "placeholder": "Inhalte werden in Kürze hinzugefügt."
+  },
+  "financePlan": {
+    "title": "Finanzplan",
+    "placeholder": "Inhalte werden in Kürze hinzugefügt."
   }
 }

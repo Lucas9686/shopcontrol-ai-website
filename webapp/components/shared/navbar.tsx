@@ -18,10 +18,11 @@ import { LanguageSwitcher } from "./language-switcher";
 
 const navItems = [
   { key: "home", href: "/" },
-  { key: "problem", href: "/problem" },
-  { key: "solution", href: "/solution" },
+  { key: "supportAgent", href: "/support-agent" },
+  { key: "accounting", href: "/accounting" },
   { key: "technology", href: "/technology" },
   { key: "results", href: "/results" },
+  { key: "financePlan", href: "/finance-plan" },
   { key: "about", href: "/about" },
 ] as const;
 
