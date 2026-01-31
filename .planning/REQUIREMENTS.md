@@ -24,11 +24,11 @@
 
 ## OG Image
 
-- [ ] **OG-01**: Replace placeholder OG image with branded version
+- [x] **OG-01**: Replace placeholder OG image with branded version
 
 ## Performance
 
-- [ ] **PERF-01**: Lighthouse audit and optimization pass
+- [x] **PERF-01**: Lighthouse audit and optimization pass
 
 ## Traceability
 
@@ -44,8 +44,8 @@
 | SOL-01 | Phase 5 | Complete |
 | SOL-02 | Phase 5 | Complete |
 | CROSS-01 | Phase 5 | Complete |
-| OG-01 | Phase 6 | Pending |
-| PERF-01 | Phase 6 | Pending |
+| OG-01 | Phase 6 | Complete |
+| PERF-01 | Phase 6 | Complete |
 
 ## Future Requirements
 

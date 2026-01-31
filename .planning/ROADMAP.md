@@ -3,7 +3,7 @@
 ## Milestones
 
 - **v1.0 Jugend Innovativ Webseite** — Phases 1-4 (shipped 2026-01-31) | [Archive](milestones/v1.0-ROADMAP.md)
-- **v1.1 Content Accuracy & Deploy Fix** — Phases 5-6 (in progress)
+- **v1.1 Content Accuracy & Deploy Fix** — Phases 5-6 (shipped 2026-01-31)
 
 ## Progress
 
@@ -14,7 +14,7 @@
 | 3. Results & Financials | v1.0 | 1/1 | Complete | 2026-01-31 |
 | 4. Polish & Media | v1.0 | 2/2 | Complete | 2026-01-31 |
 | 5. Deploy Fix & Content Accuracy | v1.1 | 2/2 | Complete | 2026-01-31 |
-| 6. OG Image & Performance | v1.1 | 0/2 | Not started | - |
+| 6. OG Image & Performance | v1.1 | 2/2 | Complete | 2026-01-31 |
 
 ---
 
@@ -51,5 +51,5 @@ Plans:
 **Plans**: 2 plans
 
 Plans:
-- [ ] 06-01-PLAN.md — Generate branded OG image and replace placeholder logo
-- [ ] 06-02-PLAN.md — Lighthouse performance optimization (image opt, next/image, smooth scroll)
+- [x] 06-01-PLAN.md — Generate branded OG image and replace placeholder logo
+- [x] 06-02-PLAN.md — Lighthouse performance optimization (image opt, next/image, smooth scroll)
