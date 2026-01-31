@@ -1,10 +1,11 @@
 {
   "nav": {
     "home": "Home",
-    "problem": "Problem",
-    "solution": "Solution",
-    "technology": "Technology",
+    "supportAgent": "Support Agent",
+    "accounting": "Accounting Tool",
+    "technology": "Technologies",
     "results": "Results",
+    "financePlan": "Finance Plan",
     "about": "About"
   },
   "hero": {
@@ -17,7 +18,7 @@
     "subheading": "Watch how the AI agent answers customer inquiries via email and automates financial reporting"
   },
   "footer": {
-    "project": "Diploma thesis by Lucas Nessel \u2014 HTL Lastenstrasse",
+    "project": "Diploma thesis by Lucas Nessel \u2014 HTL Lastenstraße",
     "copyright": "\u00a9 2026 ShopControl AI",
     "impressum": "Legal Notice"
   },
@@ -86,12 +87,12 @@
     "author": {
       "name": "Lucas Nessel",
       "role": "Developer & Founder",
-      "description": "Lucas Nessel is a student at HTL Lastenstrasse Klagenfurt, Department of Mechatronics. ShopControl AI is his diploma thesis \u2014 a fully independently developed project that makes AI automation accessible for online shops. Lucas already holds a business license and plans to commercially develop the product as a SaaS solution."
+      "description": "Lucas Nessel is a student at HTL Lastenstraße Klagenfurt, Department of Mechatronics. ShopControl AI is his diploma thesis \u2014 a fully independently developed project that makes AI automation accessible for online shops. Lucas already holds a business license and plans to commercially develop the product as a SaaS solution."
     },
     "school": {
-      "title": "HTL Lastenstrasse Klagenfurt",
+      "title": "HTL Lastenstraße Klagenfurt",
       "department": "Department of Mechatronics",
-      "description": "HTL Lastenstrasse is one of the leading technical schools in Carinthia. The project was developed as part of the Mechatronics diploma program."
+      "description": "HTL Lastenstraße is one of the leading technical schools in Carinthia. The project was developed as part of the Mechatronics diploma program."
     },
     "supervisors": {
       "title": "Supervisors",
@@ -244,10 +245,10 @@
       "title": "Legal Notice",
       "responsible": "Responsible for content",
       "name": "Lucas Nessel",
-      "school": "HTL Lastenstrasse Klagenfurt",
-      "address": "Lastenstrasse 1, 9020 Klagenfurt am Woerthersee",
+      "school": "HTL Lastenstraße Klagenfurt",
+      "address": "Lastenstraße 1, 9020 Klagenfurt am Wörthersee",
       "country": "Austria",
-      "context": "This website was created as part of the diploma thesis at HTL Lastenstrasse and serves as a presentation for the Jugend Innovativ competition."
+      "context": "This website was created as part of the diploma thesis at HTL Lastenstraße and serves as a presentation for the Jugend Innovativ competition."
     },
     "datenschutz": {
       "title": "Privacy Policy",
@@ -261,5 +262,17 @@
         "description": "You have the right to information, correction, and deletion of your data in accordance with GDPR. Contact us with any privacy questions."
       }
     }
+  },
+  "supportAgent": {
+    "title": "Support Agent",
+    "placeholder": "Content coming soon."
+  },
+  "accounting": {
+    "title": "Accounting Tool",
+    "placeholder": "Content coming soon."
+  },
+  "financePlan": {
+    "title": "Finance Plan",
+    "placeholder": "Content coming soon."
   }
 }
