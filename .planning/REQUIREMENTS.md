@@ -11,8 +11,8 @@
 
 - [x] **NAV-01**: Navigation umstrukturieren: Startseite | Supportagent | Buchhaltungstool | Technologien | Ergebnisse | Finanzplan | Über uns
 - [x] **ROUTE-01**: Neue Routen anlegen (/support-agent, /accounting, /finance-plan), alte entfernen (/problem, /solution)
-- [ ] **PAGE-01**: Supportagent-Seite: Problem → Lösung → 6-Schritte-Workflow step-by-step mit Bildern, RAG-System, Tools & Sub-Agents, Sicherheitsfeatures
-- [ ] **PAGE-02**: Buchhaltungstool-Seite: Problem → Lösung → 5-Schritte-Workflow step-by-step mit Bildern, Datenquellen, WhatsApp-Trigger
+- [x] **PAGE-01**: Supportagent-Seite: Problem → Lösung → 6-Schritte-Workflow step-by-step mit Bildern, RAG-System, Tools & Sub-Agents, Sicherheitsfeatures
+- [x] **PAGE-02**: Buchhaltungstool-Seite: Problem → Lösung → 5-Schritte-Workflow step-by-step mit Bildern, Datenquellen, WhatsApp-Trigger
 - [ ] **PAGE-03**: Finanzplan als eigene Seite (Kostenstruktur, Preismodell, 3-Jahres-Prognose, Szenarioanalyse)
 - [ ] **PAGE-04**: Ergebnisse-Seite aktualisieren (Erreichte Ergebnisse, Marktabgrenzung, Zielgruppe, Geschäftsmodell — ohne Finanzplan)
 
