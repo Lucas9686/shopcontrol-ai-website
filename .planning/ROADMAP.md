@@ -4,6 +4,7 @@
 
 - **v1.0 Jugend Innovativ Webseite** — Phases 1-4 (shipped 2026-01-31) | [Archive](milestones/v1.0-ROADMAP.md)
 - **v1.1 Content Accuracy & Deploy Fix** — Phases 5-6 (shipped 2026-01-31) | [Archive](milestones/v1.1-ROADMAP.md)
+- **v1.2 Content Restructure & Accuracy** — Phases 7-9 (active)
 
 ## Progress
 
@@ -15,3 +16,48 @@
 | 4. Polish & Media | v1.0 | 2/2 | Complete | 2026-01-31 |
 | 5. Deploy Fix & Content Accuracy | v1.1 | 2/2 | Complete | 2026-01-31 |
 | 6. OG Image & Performance | v1.1 | 2/2 | Complete | 2026-01-31 |
+| 7. Umlauts & Route Restructure | v1.2 | 0/1 | Not started | — |
+| 8. Supportagent & Buchhaltungstool Pages | v1.2 | 0/1 | Not started | — |
+| 9. Content Updates & Verification | v1.2 | 0/1 | Not started | — |
+
+## v1.2 Phase Details
+
+### Phase 7: Umlauts & Route Restructure
+
+**Goal:** Alle ASCII-Umlaute durch echte Zeichen ersetzen, Routen-Struktur umbauen, Navigation aktualisieren.
+
+**Requirements:** UML-01, UML-02, NAV-01, ROUTE-01
+
+**Success criteria:**
+1. de.json und en.json enthalten keine ae/oe/ue/ss Ersatzzeichen mehr
+2. Navigation zeigt: Startseite | Supportagent | Buchhaltungstool | Technologien | Ergebnisse | Finanzplan | Über uns
+3. Routen /support-agent, /accounting, /finance-plan existieren und laden
+4. Alte Routen /problem, /solution sind entfernt
+5. Site baut fehlerfrei und deployed auf Vercel
+
+### Phase 8: Supportagent & Buchhaltungstool Pages
+
+**Goal:** Zwei neue Seiten mit Problem→Lösung→Step-by-Step-Struktur erstellen, mit Screenshots aus dem Projektbericht.
+
+**Requirements:** PAGE-01, PAGE-02
+
+**Success criteria:**
+1. Supportagent-Seite zeigt: Problem (Zeitfresser Support) → Lösung (autonomer Agent) → 6-Schritte-Workflow mit Bildern → RAG-System → Tools & Sub-Agents → Sicherheitsfeatures
+2. Buchhaltungstool-Seite zeigt: Problem (verstreute Finanzdaten) → Lösung (automatische Berichte) → 5-Schritte-Workflow mit Bildern → Datenquellen → WhatsApp-Trigger
+3. Alle Inhalte stimmen mit dem Projektbericht überein
+4. Bilder aus dem Bericht (Workflow-Screenshots) sind eingebunden
+5. Beide Sprachen (DE/EN) vollständig
+
+### Phase 9: Content Updates & Verification
+
+**Goal:** Verbleibende Seiten aktualisieren, Finanzplan als eigene Seite, alle Inhalte gegen Bericht verifizieren.
+
+**Requirements:** PAGE-03, PAGE-04, CONTENT-01, CONTENT-02, CONTENT-03, CONTENT-04
+
+**Success criteria:**
+1. Finanzplan-Seite zeigt: Kostenstruktur, Preismodell (3 Stufen), 3-Jahres-Prognose mit Charts, Szenarioanalyse
+2. Ergebnisse-Seite zeigt: Erreichte Ergebnisse, Marktabgrenzung, Zielgruppe, Geschäftsmodell (ohne Finanzplan)
+3. Startseite CTAs und Links verweisen auf neue Seitenstruktur
+4. Technologien-Seite stimmt mit Bericht überein (Tech-Stack-Tabelle, Herausforderungen)
+5. Über-uns-Seite ist korrekt
+6. Alle Texte sind gegen beide PDFs verifiziert — keine inhaltlichen Fehler

@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-31)
 
 **Core value:** Jury und Besucher verstehen auf einen Blick was ShopControl AI macht, warum es innovativ ist, und wie es technisch funktioniert.
-**Current focus:** Planning next milestone
+**Current focus:** v1.2 Content Restructure & Accuracy
 
 ## Current Position
 
-Phase: 6 of 6 (all complete)
-Plan: All complete
-Status: v1.1 milestone shipped and archived
-Last activity: 2026-01-31 — v1.1 milestone complete
+Phase: 7 (not started)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-01-31 — Milestone v1.2 started
 
-Progress: [##########] 100% (v1.0 + v1.1)
+Progress: [..........] 0% (v1.2)
 
 ## Performance Metrics
 
@@ -34,6 +34,7 @@ Progress: [##########] 100% (v1.0 + v1.1)
 ### Decisions
 
 All decisions logged in PROJECT.md Key Decisions table.
+ASCII-safe German reversed in v1.2 — switching to real umlauts.
 
 ### Pending Todos
 
@@ -41,10 +42,10 @@ All decisions logged in PROJECT.md Key Decisions table.
 
 ### Blockers/Concerns
 
-None — all resolved.
+None.
 
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: v1.1 milestone archived
+Stopped at: v1.2 milestone requirements defined
 Resume file: None

@@ -12,6 +12,18 @@ Eine mehrseitige, zweisprachige (DE/EN) Prasentationswebseite fuer die Diplomarb
 
 v1.1 baut auf v1.0 auf: Vercel-Deployment repariert, alle Inhalte mit Projektbericht abgeglichen (6 Workflow-Schritte, 4 Sicherheitsebenen, 3 Tools, WhatsApp-basierte Finanzberichterstattung), gebrandetes OG-Bild, Lighthouse 90+ mobile. 7 Seiten in DE/EN, dunkles SaaS-Design, Framer Motion, 3 Finanz-Charts.
 
+## Current Milestone: v1.2 Content Restructure & Accuracy
+
+**Goal:** Seitenstruktur umbauen (je eine Seite für Supportagent und Buchhaltungstool mit Problem→Lösung→Detail-Aufbau), Finanzplan als eigene Seite, alle ASCII-Umlaute durch echte Zeichen ersetzen, alle Inhalte gegen Projektbericht verifizieren.
+
+**Target features:**
+- Neue Seitenstruktur: Startseite | Supportagent | Buchhaltungstool | Technologien | Ergebnisse | Finanzplan | Über uns
+- Supportagent-Seite: Problem → Lösung → 6-Schritte-Workflow step-by-step mit Bildern
+- Buchhaltungstool-Seite: Problem → Lösung → 5-Schritte-Workflow step-by-step mit Bildern
+- Finanzplan als eigene Seite (aus Results herausgelöst)
+- Echte Umlaute (ä, ö, ü, ß) statt ASCII-Ersatz (ae, oe, ue, ss)
+- Content-Accuracy gegen beide PDFs
+
 ## Core Value
 
 Die Jury und Besucher muessen auf einen Blick verstehen, was ShopControl AI macht, warum es innovativ ist, und wie es technisch funktioniert — visuell ansprechend und professionell.
@@ -43,7 +55,10 @@ Die Jury und Besucher muessen auf einen Blick verstehen, was ShopControl AI mach
 
 ### Active
 
-(None — start next milestone with `/gsd:new-milestone`)
+- Echte Umlaute in allen Translations — v1.2
+- Seitenstruktur: Supportagent + Buchhaltungstool eigene Seiten mit Problem→Lösung→Detail — v1.2
+- Finanzplan als eigene Seite — v1.2
+- Content-Accuracy gegen Projektbericht — v1.2
 
 ### Out of Scope
 
@@ -83,10 +98,10 @@ Die Jury und Besucher muessen auf einen Blick verstehen, was ShopControl AI mach
 | getTranslations (server) | Next.js 16 async pages erfordern Server-Side API | Good |
 | Chart data hardcoded | Nur Labels aus Translations, Daten fix im Component | Good |
 | Web-App in webapp/ | Trennung von Projektdateien (Berichte, Screenshots) | Good |
-| ASCII-safe German in JSON | Konsistent mit Codebase, vermeidet Encoding-Probleme | Good |
+| ASCII-safe German in JSON | Konsistent mit Codebase, vermeidet Encoding-Probleme | Reversed in v1.2 — echte Umlaute |
 | Agent ist email-basiert | Report beschreibt E-Mail-Support-Agent, kein Chatbot | Good |
 | Buchhaltung = WhatsApp KPI-Reporting | Report Kapitel 4.6 beschreibt WhatsApp-basierte Berichte | Good |
 | Lenis autoRaf | Saubereres Lifecycle-Management statt manueller RAF-Loop | Good |
 
 ---
-*Last updated: 2026-01-31 after v1.1 milestone completion*
+*Last updated: 2026-01-31 after v1.2 milestone start*
