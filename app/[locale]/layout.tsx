@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/shared/navbar";
 import { Footer } from "@/components/shared/footer";
+import { SmoothScroll } from "@/components/smooth-scroll";
 import "../globals.css";
 
 const inter = Inter({
@@ -44,10 +45,12 @@ export default async function LocaleLayout({
     <html lang={locale} className="dark">
       <body className={`${inter.variable} font-sans antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <div className="noise-overlay" aria-hidden="true" />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          <SmoothScroll>
+            <div className="noise-overlay" aria-hidden="true" />
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </SmoothScroll>
         </NextIntlClientProvider>
       </body>
     </html>
