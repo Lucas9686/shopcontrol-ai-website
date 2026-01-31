@@ -16,7 +16,7 @@
 | 4. Polish & Media | v1.0 | 2/2 | Complete | 2026-01-31 |
 | 5. Deploy Fix & Content Accuracy | v1.1 | 2/2 | Complete | 2026-01-31 |
 | 6. OG Image & Performance | v1.1 | 2/2 | Complete | 2026-01-31 |
-| 7. Umlauts & Route Restructure | v1.2 | 0/2 | Not started | — |
+| 7. Umlauts & Route Restructure | v1.2 | 2/2 | Complete | 2026-01-31 |
 | 8. Supportagent & Buchhaltungstool Pages | v1.2 | 0/1 | Not started | — |
 | 9. Content Updates & Verification | v1.2 | 0/1 | Not started | — |
 
@@ -30,8 +30,8 @@
 
 **Plans:** 2 plans
 Plans:
-- [ ] 07-01-PLAN.md — Replace ASCII umlauts with real Unicode characters in de.json and en.json
-- [ ] 07-02-PLAN.md — Restructure routes (3 new, 2 removed) and update navigation
+- [x] 07-01-PLAN.md — Replace ASCII umlauts with real Unicode characters in de.json and en.json
+- [x] 07-02-PLAN.md — Restructure routes (3 new, 2 removed) and update navigation
 
 **Success criteria:**
 1. de.json und en.json enthalten keine ae/oe/ue/ss Ersatzzeichen mehr

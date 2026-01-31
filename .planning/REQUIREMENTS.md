@@ -4,13 +4,13 @@
 
 ### Umlauts
 
-- [ ] **UML-01**: Alle ASCII-Umlaute (ae→ä, oe→ö, ue→ü, ss→ß) in de.json durch echte Zeichen ersetzen
-- [ ] **UML-02**: Alle ASCII-Umlaute in en.json durch echte Zeichen ersetzen (falls vorhanden)
+- [x] **UML-01**: Alle ASCII-Umlaute (ae→ä, oe→ö, ue→ü, ss→ß) in de.json durch echte Zeichen ersetzen
+- [x] **UML-02**: Alle ASCII-Umlaute in en.json durch echte Zeichen ersetzen (falls vorhanden)
 
 ### Seitenstruktur
 
-- [ ] **NAV-01**: Navigation umstrukturieren: Startseite | Supportagent | Buchhaltungstool | Technologien | Ergebnisse | Finanzplan | Über uns
-- [ ] **ROUTE-01**: Neue Routen anlegen (/support-agent, /accounting, /finance-plan), alte entfernen (/problem, /solution)
+- [x] **NAV-01**: Navigation umstrukturieren: Startseite | Supportagent | Buchhaltungstool | Technologien | Ergebnisse | Finanzplan | Über uns
+- [x] **ROUTE-01**: Neue Routen anlegen (/support-agent, /accounting, /finance-plan), alte entfernen (/problem, /solution)
 - [ ] **PAGE-01**: Supportagent-Seite: Problem → Lösung → 6-Schritte-Workflow step-by-step mit Bildern, RAG-System, Tools & Sub-Agents, Sicherheitsfeatures
 - [ ] **PAGE-02**: Buchhaltungstool-Seite: Problem → Lösung → 5-Schritte-Workflow step-by-step mit Bildern, Datenquellen, WhatsApp-Trigger
 - [ ] **PAGE-03**: Finanzplan als eigene Seite (Kostenstruktur, Preismodell, 3-Jahres-Prognose, Szenarioanalyse)
