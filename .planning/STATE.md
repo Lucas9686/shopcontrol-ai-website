@@ -5,16 +5,16 @@
 See: .planning/PROJECT.md (updated 2026-01-31)
 
 **Core value:** Jury und Besucher verstehen auf einen Blick was ShopControl AI macht, warum es innovativ ist, und wie es technisch funktioniert.
-**Current focus:** v1.0 shipped — planning next milestone or accepting as final
+**Current focus:** v1.1 Content Accuracy & Deploy Fix
 
 ## Current Position
 
-Phase: All v1.0 phases complete (4/4)
-Plan: N/A
-Status: Milestone v1.0 shipped
-Last activity: 2026-01-31 — v1.0 milestone archived
+Phase: Not started (defining requirements)
+Plan: —
+Status: Defining requirements
+Last activity: 2026-01-31 — Milestone v1.1 started
 
-Progress: [##########] 100%
+Progress: [----------] 0%
 
 ## Performance Metrics
 
@@ -37,10 +37,11 @@ All decisions logged in PROJECT.md Key Decisions table.
 
 ### Blockers/Concerns
 
-None.
+- Vercel build fails: Root Directory "webapp" does not exist in git
+- Git working tree has deleted files (tracked at root, exist in webapp/)
 
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: v1.0 milestone archived
+Stopped at: Defining v1.1 requirements
 Resume file: None

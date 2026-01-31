@@ -39,7 +39,18 @@ Die Jury und Besucher muessen auf einen Blick verstehen, was ShopControl AI mach
 
 ### Active
 
-(None — define with /gsd:new-milestone)
+## Current Milestone: v1.1 Content Accuracy & Deploy Fix
+
+**Goal:** Fix Vercel deployment, correct all website content to match the Projektbericht exactly, replace OG image, optimize performance.
+
+**Target features:**
+- Fix Vercel build error (webapp/ root directory)
+- Correct 6 workflow steps on Technology page to match report (E-Mail-Abruf, Filterung, Bild-Analyse, Support-Agent, E-Mail-Versand, Performance-Logging)
+- Correct solution page accounting description (financial KPI reporting, not invoicing)
+- Fix tech stack references (Claude/GPT, Supabase/PostgreSQL)
+- Complete security section (4 layers instead of 3)
+- Replace placeholder OG image
+- Lighthouse performance optimization
 
 ### Out of Scope
 
@@ -81,4 +92,4 @@ Die Jury und Besucher muessen auf einen Blick verstehen, was ShopControl AI mach
 | Web-App in webapp/ | Trennung von Projektdateien (Berichte, Screenshots) | Good |
 
 ---
-*Last updated: 2026-01-31 after v1.0 milestone*
+*Last updated: 2026-01-31 after v1.1 milestone started*
