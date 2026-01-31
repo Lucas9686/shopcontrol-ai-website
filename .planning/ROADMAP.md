@@ -16,7 +16,7 @@
 | 4. Polish & Media | v1.0 | 2/2 | Complete | 2026-01-31 |
 | 5. Deploy Fix & Content Accuracy | v1.1 | 2/2 | Complete | 2026-01-31 |
 | 6. OG Image & Performance | v1.1 | 2/2 | Complete | 2026-01-31 |
-| 7. Umlauts & Route Restructure | v1.2 | 0/1 | Not started | — |
+| 7. Umlauts & Route Restructure | v1.2 | 0/2 | Not started | — |
 | 8. Supportagent & Buchhaltungstool Pages | v1.2 | 0/1 | Not started | — |
 | 9. Content Updates & Verification | v1.2 | 0/1 | Not started | — |
 
@@ -28,6 +28,11 @@
 
 **Requirements:** UML-01, UML-02, NAV-01, ROUTE-01
 
+**Plans:** 2 plans
+Plans:
+- [ ] 07-01-PLAN.md — Replace ASCII umlauts with real Unicode characters in de.json and en.json
+- [ ] 07-02-PLAN.md — Restructure routes (3 new, 2 removed) and update navigation
+
 **Success criteria:**
 1. de.json und en.json enthalten keine ae/oe/ue/ss Ersatzzeichen mehr
 2. Navigation zeigt: Startseite | Supportagent | Buchhaltungstool | Technologien | Ergebnisse | Finanzplan | Über uns
@@ -37,13 +42,13 @@
 
 ### Phase 8: Supportagent & Buchhaltungstool Pages
 
-**Goal:** Zwei neue Seiten mit Problem→Lösung→Step-by-Step-Struktur erstellen, mit Screenshots aus dem Projektbericht.
+**Goal:** Zwei neue Seiten mit Problem->Lösung->Step-by-Step-Struktur erstellen, mit Screenshots aus dem Projektbericht.
 
 **Requirements:** PAGE-01, PAGE-02
 
 **Success criteria:**
-1. Supportagent-Seite zeigt: Problem (Zeitfresser Support) → Lösung (autonomer Agent) → 6-Schritte-Workflow mit Bildern → RAG-System → Tools & Sub-Agents → Sicherheitsfeatures
-2. Buchhaltungstool-Seite zeigt: Problem (verstreute Finanzdaten) → Lösung (automatische Berichte) → 5-Schritte-Workflow mit Bildern → Datenquellen → WhatsApp-Trigger
+1. Supportagent-Seite zeigt: Problem (Zeitfresser Support) -> Lösung (autonomer Agent) -> 6-Schritte-Workflow mit Bildern -> RAG-System -> Tools & Sub-Agents -> Sicherheitsfeatures
+2. Buchhaltungstool-Seite zeigt: Problem (verstreute Finanzdaten) -> Lösung (automatische Berichte) -> 5-Schritte-Workflow mit Bildern -> Datenquellen -> WhatsApp-Trigger
 3. Alle Inhalte stimmen mit dem Projektbericht überein
 4. Bilder aus dem Bericht (Workflow-Screenshots) sind eingebunden
 5. Beide Sprachen (DE/EN) vollständig
@@ -60,4 +65,4 @@
 3. Startseite CTAs und Links verweisen auf neue Seitenstruktur
 4. Technologien-Seite stimmt mit Bericht überein (Tech-Stack-Tabelle, Herausforderungen)
 5. Über-uns-Seite ist korrekt
-6. Alle Texte sind gegen beide PDFs verifiziert — keine inhaltlichen Fehler
+6. Alle Texte sind gegen beide PDFs verifiziert -- keine inhaltlichen Fehler
