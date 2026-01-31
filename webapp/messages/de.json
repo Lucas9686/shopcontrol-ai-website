@@ -2,14 +2,14 @@
   "nav": {
     "home": "Startseite",
     "problem": "Problem",
-    "solution": "Loesung",
+    "solution": "Lösung",
     "technology": "Technologie",
     "results": "Ergebnisse",
-    "about": "Ueber uns"
+    "about": "Über uns"
   },
   "hero": {
     "headline": "ShopControl AI",
-    "subheadline": "KI-gestuetzte Automatisierung fuer Online-Shops",
+    "subheadline": "KI-gestützte Automatisierung für Online-Shops",
     "cta": "Mehr erfahren"
   },
   "demo": {
@@ -17,54 +17,54 @@
     "subheading": "Sehen Sie, wie der KI-Agent Kundenanfragen per E-Mail beantwortet und Finanzberichte automatisiert"
   },
   "footer": {
-    "project": "Diplomarbeit von Lucas Nessel — HTL Lastenstrasse",
+    "project": "Diplomarbeit von Lucas Nessel — HTL Lastenstraße",
     "copyright": "\u00a9 2026 ShopControl AI",
     "impressum": "Impressum"
   },
   "problem": {
     "title": "Das Problem",
     "subtitle": "Warum kleine Online-Shops KI-Automatisierung brauchen",
-    "intro": "Kleine und mittlere Online-Shops stehen vor wachsenden Herausforderungen: Kunden erwarten schnellen 24/7-Support, die Buchhaltung frisst wertvolle Zeit, und Personalkosten steigen. Gleichzeitig fehlen die Ressourcen grosser Konzerne.",
+    "intro": "Kleine und mittlere Online-Shops stehen vor wachsenden Herausforderungen: Kunden erwarten schnellen 24/7-Support, die Buchhaltung frisst wertvolle Zeit, und Personalkosten steigen. Gleichzeitig fehlen die Ressourcen großer Konzerne.",
     "challenges": {
       "title": "Die Kernprobleme",
       "support": {
         "title": "Kundenservice rund um die Uhr",
-        "description": "Kunden erwarten sofortige Antworten — auch um 23 Uhr. Kleine Shops koennen sich kein 24/7-Support-Team leisten. Unzufriedene Kunden wechseln zur Konkurrenz."
+        "description": "Kunden erwarten sofortige Antworten — auch um 23 Uhr. Kleine Shops können sich kein 24/7-Support-Team leisten. Unzufriedene Kunden wechseln zur Konkurrenz."
       },
       "accounting": {
         "title": "Manuelle Buchhaltung",
-        "description": "Finanzdaten aus verschiedenen Quellen zusammenfuehren, Kennzahlen berechnen und Berichte erstellen — all das kostet Stunden pro Woche und ist fehleranfaellig."
+        "description": "Finanzdaten aus verschiedenen Quellen zusammenführen, Kennzahlen berechnen und Berichte erstellen — all das kostet Stunden pro Woche und ist fehleranfällig."
       },
       "scaling": {
         "title": "Wachstum ohne Mehrkosten",
         "description": "Mehr Bestellungen bedeuten mehr Support-Anfragen und mehr Verwaltungsaufwand. Personal skaliert nicht linear — KI schon."
       }
     },
-    "conclusion": "ShopControl AI loest genau diese Probleme: Ein vollautonomer KI-E-Mail-Support-Agent uebernimmt den Kundenservice, waehrend die Finanzberichterstattung automatisch im Hintergrund laeuft."
+    "conclusion": "ShopControl AI löst genau diese Probleme: Ein vollautonomer KI-E-Mail-Support-Agent übernimmt den Kundenservice, während die Finanzberichterstattung automatisch im Hintergrund läuft."
   },
   "solution": {
-    "title": "Die Loesung",
-    "subtitle": "Zwei KI-Saeulen fuer den modernen Online-Shop",
-    "intro": "ShopControl AI kombiniert zwei leistungsstarke Automatisierungssysteme in einer Loesung: einen intelligenten E-Mail-Support-Agenten und eine vollautomatische Finanzberichterstattung.",
+    "title": "Die Lösung",
+    "subtitle": "Zwei KI-Säulen für den modernen Online-Shop",
+    "intro": "ShopControl AI kombiniert zwei leistungsstarke Automatisierungssysteme in einer Lösung: einen intelligenten E-Mail-Support-Agenten und eine vollautomatische Finanzberichterstattung.",
     "pillars": {
       "support": {
         "title": "KI-E-Mail-Support-Agent",
-        "description": "Ein vollautonomer E-Mail-Support-Agent, der eingehende Kundenanfragen per E-Mail selbststaendig analysiert, verarbeitet und beantwortet — mit Zugriff auf Echtzeit-Shopdaten ueber Shopify und eine firmenspezifische Wissensdatenbank.",
+        "description": "Ein vollautonomer E-Mail-Support-Agent, der eingehende Kundenanfragen per E-Mail selbstständig analysiert, verarbeitet und beantwortet — mit Zugriff auf Echtzeit-Shopdaten über Shopify und eine firmenspezifische Wissensdatenbank.",
         "features": {
-          "f1": "24/7 verfuegbar ohne Personalkosten",
+          "f1": "24/7 verfügbar ohne Personalkosten",
           "f2": "RAG-basiertes Wissen aus Shop-Dokumenten via Pinecone",
-          "f3": "Shopify-Integration fuer Bestellstatus, Produkte & Retouren",
+          "f3": "Shopify-Integration für Bestellstatus, Produkte & Retouren",
           "f4": "Eskalation an menschlichen Support bei Bedarf via Google Sheets"
         }
       },
       "accounting": {
         "title": "Automatische Finanzberichterstattung",
-        "description": "Finanzdaten aus Shopify, Facebook Ads und Bankkonten werden automatisch zusammengefuehrt und als visualisierte Berichte mit relevanten KPIs per WhatsApp versendet — auf Knopfdruck oder automatisch monatlich.",
+        "description": "Finanzdaten aus Shopify, Facebook Ads und Bankkonten werden automatisch zusammengeführt und als visualisierte Berichte mit relevanten KPIs per WhatsApp versendet — auf Knopfdruck oder automatisch monatlich.",
         "features": {
           "f1": "Datenabfrage aus Shopify, Facebook Ads & Bankdaten",
           "f2": "Automatische Berechnung zentraler KPIs (Umsatz, Werbekosten, Gewinn)",
           "f3": "Visualisierte Berichte mit Grafiken per WhatsApp",
-          "f4": "Monatlich automatisch oder manuell per WhatsApp-Nachricht ausloesbar"
+          "f4": "Monatlich automatisch oder manuell per WhatsApp-Nachricht auslösbar"
         }
       }
     },
@@ -81,17 +81,17 @@
     }
   },
   "about": {
-    "title": "Ueber das Projekt",
+    "title": "Über das Projekt",
     "subtitle": "Die Geschichte hinter ShopControl AI",
     "author": {
       "name": "Lucas Nessel",
-      "role": "Entwickler & Gruender",
-      "description": "Lucas Nessel ist Schueler der HTL Lastenstrasse Klagenfurt, Abteilung Mechatronik. ShopControl AI ist seine Diplomarbeit — ein vollstaendig eigenstaendig entwickeltes Projekt, das KI-Automatisierung fuer Online-Shops zugaenglich macht. Lucas besitzt bereits einen Gewerbeschein und plant die kommerzielle Weiterentwicklung als SaaS-Produkt."
+      "role": "Entwickler & Gründer",
+      "description": "Lucas Nessel ist Schüler der HTL Lastenstraße Klagenfurt, Abteilung Mechatronik. ShopControl AI ist seine Diplomarbeit — ein vollständig eigenständig entwickeltes Projekt, das KI-Automatisierung für Online-Shops zugänglich macht. Lucas besitzt bereits einen Gewerbeschein und plant die kommerzielle Weiterentwicklung als SaaS-Produkt."
     },
     "school": {
-      "title": "HTL Lastenstrasse Klagenfurt",
+      "title": "HTL Lastenstraße Klagenfurt",
       "department": "Abteilung Mechatronik",
-      "description": "Die HTL Lastenstrasse ist eine der fuehrenden technischen Schulen Kaerntens. Das Projekt wurde im Rahmen des Mechatronik-Diploms umgesetzt."
+      "description": "Die HTL Lastenstraße ist eine der führenden technischen Schulen Kärntens. Das Projekt wurde im Rahmen des Mechatronik-Diploms umgesetzt."
     },
     "supervisors": {
       "title": "Betreuer",
@@ -106,82 +106,82 @@
     },
     "competition": {
       "title": "Jugend Innovativ",
-      "description": "ShopControl AI tritt in der Kategorie Entrepreneurship / Businesskonzepte beim Jugend Innovativ Wettbewerb an — Oesterreichs groesstem Innovationswettbewerb fuer Schuelerinnen und Schueler."
+      "description": "ShopControl AI tritt in der Kategorie Entrepreneurship / Businesskonzepte beim Jugend Innovativ Wettbewerb an — Österreichs größtem Innovationswettbewerb für Schülerinnen und Schüler."
     }
   },
   "technology": {
     "title": "Technologie",
     "subtitle": "So funktioniert ShopControl AI unter der Haube",
-    "overview": "ShopControl AI basiert auf n8n-Workflows, die zwei Hauptsysteme orchestrieren: einen vollautonomen KI-E-Mail-Support-Agenten mit RAG-Wissensabfrage und eine automatisierte Finanzberichterstattung. Hier zeigen wir Schritt fuer Schritt, wie jede E-Mail-Anfrage verarbeitet wird.",
+    "overview": "ShopControl AI basiert auf n8n-Workflows, die zwei Hauptsysteme orchestrieren: einen vollautonomen KI-E-Mail-Support-Agenten mit RAG-Wissensabfrage und eine automatisierte Finanzberichterstattung. Hier zeigen wir Schritt für Schritt, wie jede E-Mail-Anfrage verarbeitet wird.",
     "workflow": {
       "title": "Der Workflow in 6 Schritten",
       "step1": {
         "title": "E-Mail-Abruf",
-        "description": "Der Workflow startet, indem alle neuen E-Mails aus Gmail abgerufen werden. Aus jedem E-Mail-Thread wird nur die letzte Nachricht herausgefiltert, da diese die aktuelle Kundenanfrage enthaelt. So wird sichergestellt, dass bei laufenden Konversationen immer die neueste Nachricht bearbeitet wird."
+        "description": "Der Workflow startet, indem alle neuen E-Mails aus Gmail abgerufen werden. Aus jedem E-Mail-Thread wird nur die letzte Nachricht herausgefiltert, da diese die aktuelle Kundenanfrage enthält. So wird sichergestellt, dass bei laufenden Konversationen immer die neueste Nachricht bearbeitet wird."
       },
       "step2": {
         "title": "Filterung",
-        "description": "Im zweiten Schritt werden alle E-Mails automatisch gefiltert. Werbe-Mails, automatische Benachrichtigungen und Newsletter werden aussortiert. Eine KI prueft, ob es sich um echte Support-Anfragen handelt. Zusaetzlich wird kontrolliert, ob die E-Mail gegen Kommunikationsrichtlinien verstoesst. Nur echte, angemessene Kundenanfragen gelangen weiter."
+        "description": "Im zweiten Schritt werden alle E-Mails automatisch gefiltert. Werbe-Mails, automatische Benachrichtigungen und Newsletter werden aussortiert. Eine KI prüft, ob es sich um echte Support-Anfragen handelt. Zusätzlich wird kontrolliert, ob die E-Mail gegen Kommunikationsrichtlinien verstößt. Nur echte, angemessene Kundenanfragen gelangen weiter."
       },
       "step3": {
         "title": "Bild-Analyse",
-        "description": "Wenn Bilder an die E-Mail angehaengt sind, z.B. Fotos von beschaedigten Produkten, werden diese separat von einer KI analysiert. Das System erkennt, was auf den Bildern zu sehen ist, und erstellt eine textuelle Beschreibung als zusaetzlichen Kontext fuer den Support-Agenten."
+        "description": "Wenn Bilder an die E-Mail angehängt sind, z.B. Fotos von beschädigten Produkten, werden diese separat von einer KI analysiert. Das System erkennt, was auf den Bildern zu sehen ist, und erstellt eine textuelle Beschreibung als zusätzlichen Kontext für den Support-Agenten."
       },
       "step4": {
         "title": "Support-Agent-Verarbeitung",
-        "description": "Der eigentliche KI-Support-Agent verarbeitet die Anfrage. Er nimmt den E-Mail-Text samt eventueller Bildbeschreibungen entgegen und entscheidet selbststaendig, welche Tools er benoetigt — z.B. den Shopify-Agent fuer Bestelldaten oder die RAG-Wissensdatenbank fuer Rueckgaberichtlinien. Basierend auf allen gesammelten Informationen generiert er eine fundierte Antwort."
+        "description": "Der eigentliche KI-Support-Agent verarbeitet die Anfrage. Er nimmt den E-Mail-Text samt eventueller Bildbeschreibungen entgegen und entscheidet selbstständig, welche Tools er benötigt — z.B. den Shopify-Agent für Bestelldaten oder die RAG-Wissensdatenbank für Rückgaberichtlinien. Basierend auf allen gesammelten Informationen generiert er eine fundierte Antwort."
       },
       "step5": {
         "title": "E-Mail-Versand",
-        "description": "Bevor die Antwort versendet wird, durchlaeuft sie eine automatische Sicherheitspruefung (Output Guardrails), die kontrolliert, ob die Antwort korrekt, vollstaendig und angemessen formuliert ist. Erst wenn diese Validierung bestanden ist, wird die Antwort-E-Mail tatsaechlich versendet."
+        "description": "Bevor die Antwort versendet wird, durchläuft sie eine automatische Sicherheitsprüfung (Output Guardrails), die kontrolliert, ob die Antwort korrekt, vollständig und angemessen formuliert ist. Erst wenn diese Validierung bestanden ist, wird die Antwort-E-Mail tatsächlich versendet."
       },
       "step6": {
         "title": "Performance-Logging",
-        "description": "Im letzten Schritt wird der gesamte Durchlauf dokumentiert: welche Anfrage eingegangen ist, welche Tools verwendet wurden, was geantwortet wurde und wie lange die Verarbeitung gedauert hat. Diese Performance-Daten werden in Google Sheets gespeichert und ermoeglichen eine langfristige Ueberwachung und Optimierung."
+        "description": "Im letzten Schritt wird der gesamte Durchlauf dokumentiert: welche Anfrage eingegangen ist, welche Tools verwendet wurden, was geantwortet wurde und wie lange die Verarbeitung gedauert hat. Diese Performance-Daten werden in Google Sheets gespeichert und ermöglichen eine langfristige Überwachung und Optimierung."
       }
     },
     "rag": {
       "title": "RAG-System",
       "subtitle": "Retrieval-Augmented Generation im Detail",
-      "description": "RAG (Retrieval-Augmented Generation) ermoeglicht dem KI-Agenten, auf firmenspezifisches Wissen zuzugreifen. Dokumente wie FAQs, Produktkataloge und Rueckgaberichtlinien werden in Vektoren umgewandelt und in der Pinecone-Vektordatenbank gespeichert. Bei jeder Anfrage werden die relevantesten Textabschnitte automatisch gefunden, durch einen Cohere Reranker nach Relevanz sortiert und dem Agenten als Kontext uebergeben. Ein Embedding-Modell wandelt Texte in mathematische Zahlendarstellungen um, sodass die Suche nach Bedeutung statt nach exakten Woertern funktioniert.",
-      "caption": "Der RAG-Upload-Workflow konvertiert Dokumente automatisch in Vektoren fuer Pinecone"
+      "description": "RAG (Retrieval-Augmented Generation) ermöglicht dem KI-Agenten, auf firmenspezifisches Wissen zuzugreifen. Dokumente wie FAQs, Produktkataloge und Rückgaberichtlinien werden in Vektoren umgewandelt und in der Pinecone-Vektordatenbank gespeichert. Bei jeder Anfrage werden die relevantesten Textabschnitte automatisch gefunden, durch einen Cohere Reranker nach Relevanz sortiert und dem Agenten als Kontext übergeben. Ein Embedding-Modell wandelt Texte in mathematische Zahlendarstellungen um, sodass die Suche nach Bedeutung statt nach exakten Wörtern funktioniert.",
+      "caption": "Der RAG-Upload-Workflow konvertiert Dokumente automatisch in Vektoren für Pinecone"
     },
     "tools": {
       "title": "Tools & Sub-Agenten",
       "subtitle": "Die Werkzeuge des KI-Agenten",
       "tool1": {
         "title": "Chat Memory / PostgreSQL",
-        "description": "Der Agent verfuegt ueber ein Gedaechtnis, das in einer Supabase/PostgreSQL-Datenbank gespeichert wird. Bei wiederkehrenden Kunden kann er die vorherige Kommunikation abrufen und gezielt darauf Bezug nehmen."
+        "description": "Der Agent verfügt über ein Gedächtnis, das in einer Supabase/PostgreSQL-Datenbank gespeichert wird. Bei wiederkehrenden Kunden kann er die vorherige Kommunikation abrufen und gezielt darauf Bezug nehmen."
       },
       "tool2": {
         "title": "Shopify-Agent",
-        "description": "Ein spezialisierter Sub-Agent, der direkt mit der Shopify-API kommuniziert: Bestelldaten abrufen, Versandstatus pruefen, Retouren im System anlegen und Kundendaten fuer personalisierte Antworten abfragen."
+        "description": "Ein spezialisierter Sub-Agent, der direkt mit der Shopify-API kommuniziert: Bestelldaten abrufen, Versandstatus prüfen, Retouren im System anlegen und Kundendaten für personalisierte Antworten abfragen."
       },
       "tool3": {
         "title": "Support-Fall-Agent / Sheets-Agent",
-        "description": "Wenn der Agent eine Anfrage nicht selbststaendig loesen kann, erstellt der Sheets-Agent einen dokumentierten Support-Fall in Google Sheets — eine strukturierte Anfrage, die eine menschliche Fachkraft spaeter bearbeiten kann."
+        "description": "Wenn der Agent eine Anfrage nicht selbstständig lösen kann, erstellt der Sheets-Agent einen dokumentierten Support-Fall in Google Sheets — eine strukturierte Anfrage, die eine menschliche Fachkraft später bearbeiten kann."
       }
     },
     "security": {
-      "title": "Sicherheit & Zuverlaessigkeit",
-      "subtitle": "Vier Schutzebenen fuer den Produktiveinsatz",
+      "title": "Sicherheit & Zuverlässigkeit",
+      "subtitle": "Vier Schutzebenen für den Produktiveinsatz",
       "security1": {
         "title": "Jailbreak Detection",
         "description": "Erkennung von Manipulationsversuchen, bei denen Personen versuchen, das System mit speziell formulierten Nachrichten auszutricksen und die Sicherheitsrichtlinien zu umgehen. Der Agent reagiert auf solche Anfragen nicht."
       },
       "security2": {
         "title": "NSFW Content Filter",
-        "description": "Automatische Filterung unangemessener oder anstoessiger Inhalte. Bei derartigen Anfragen wird eine hoefliche Standard-Antwort geschickt, die auf die Kommunikationsrichtlinien hinweist."
+        "description": "Automatische Filterung unangemessener oder anstößiger Inhalte. Bei derartigen Anfragen wird eine höfliche Standard-Antwort geschickt, die auf die Kommunikationsrichtlinien hinweist."
       },
       "security3": {
         "title": "Topical Alignment",
-        "description": "Themenrelevanz-Pruefung, die sicherstellt, dass die Anfrage zum definierten Anwendungsbereich passt. Allgemeine Wissensfragen oder themenfremde Inhalte werden erkannt und entsprechend beantwortet."
+        "description": "Themenrelevanz-Prüfung, die sicherstellt, dass die Anfrage zum definierten Anwendungsbereich passt. Allgemeine Wissensfragen oder themenfremde Inhalte werden erkannt und entsprechend beantwortet."
       },
       "security4": {
         "title": "Output Guardrails",
-        "description": "Ausgabe-Sicherheitsschranken: Ein separates KI-Modell kontrolliert die generierte Antwort auf Korrektheit, Vollstaendigkeit und Angemessenheit. Erst wenn alle Checks bestanden sind, wird die Antwort tatsaechlich versendet."
+        "description": "Ausgabe-Sicherheitsschranken: Ein separates KI-Modell kontrolliert die generierte Antwort auf Korrektheit, Vollständigkeit und Angemessenheit. Erst wenn alle Checks bestanden sind, wird die Antwort tatsächlich versendet."
       },
-      "caption": "Mehrstufige Sicherheitsmechanismen schuetzen vor Manipulation und Fehlern"
+      "caption": "Mehrstufige Sicherheitsmechanismen schützen vor Manipulation und Fehlern"
     }
   },
   "results": {
@@ -192,24 +192,24 @@
       "subtitle": "Was wir erreicht haben und wie wir uns unterscheiden",
       "results": {
         "title": "Projektergebnisse",
-        "description": "ShopControl AI wurde als voll funktionsfaehiger Prototyp entwickelt und mit einem echten Shopify-Shop getestet. Der KI-Support-Agent beantwortet Kundenanfragen per E-Mail autonom, waehrend die automatisierte Finanzberichterstattung Daten aus Shopify, Facebook Ads und Bankkonten zusammenfuehrt und visualisierte Berichte per WhatsApp versendet — alles ohne manuellen Eingriff."
+        "description": "ShopControl AI wurde als voll funktionsfähiger Prototyp entwickelt und mit einem echten Shopify-Shop getestet. Der KI-Support-Agent beantwortet Kundenanfragen per E-Mail autonom, während die automatisierte Finanzberichterstattung Daten aus Shopify, Facebook Ads und Bankkonten zusammenführt und visualisierte Berichte per WhatsApp versendet — alles ohne manuellen Eingriff."
       },
       "differentiation": {
         "title": "Marktabgrenzung",
-        "description": "Im Gegensatz zu Enterprise-Loesungen wie Zendesk oder Freshdesk kombiniert ShopControl AI Kundenservice und Finanzberichterstattung in einer Loesung — speziell fuer kleine Shopify-Shops konzipiert und preislich zugaenglich. Keine teuren Einzelloesungen mehr."
+        "description": "Im Gegensatz zu Enterprise-Lösungen wie Zendesk oder Freshdesk kombiniert ShopControl AI Kundenservice und Finanzberichterstattung in einer Lösung — speziell für kleine Shopify-Shops konzipiert und preislich zugänglich. Keine teuren Einzellösungen mehr."
       },
       "competitors": {
         "title": "Wettbewerbsvergleich",
         "shopcontrol": "ShopControl AI",
-        "features": ["KI-E-Mail-Support-Agent", "Finanzberichterstattung", "Shopify-Integration", "Preislich fuer kleine Shops"]
+        "features": ["KI-E-Mail-Support-Agent", "Finanzberichterstattung", "Shopify-Integration", "Preislich für kleine Shops"]
       }
     },
     "financials": {
       "title": "Finanzplan",
-      "subtitle": "Umsatzprognosen und Preismodell fuer die naechsten drei Jahre",
+      "subtitle": "Umsatzprognosen und Preismodell für die nächsten drei Jahre",
       "pricing": {
         "title": "Preismodell",
-        "description": "Drei Preisstufen fuer unterschiedliche Shopgroessen — von Einzelunternehmern bis hin zu wachsenden E-Commerce-Unternehmen."
+        "description": "Drei Preisstufen für unterschiedliche Shopgrößen — von Einzelunternehmern bis hin zu wachsenden E-Commerce-Unternehmen."
       },
       "forecast": {
         "title": "3-Jahres-Prognose",
@@ -217,7 +217,7 @@
       },
       "scenario": {
         "title": "Szenarioanalyse",
-        "description": "Drei Szenarien zeigen die moegliche Umsatzentwicklung je nach Markterfolg."
+        "description": "Drei Szenarien zeigen die mögliche Umsatzentwicklung je nach Markterfolg."
       }
     },
     "charts": {
@@ -242,15 +242,15 @@
     "subtitle": "Rechtliche Informationen",
     "impressum": {
       "title": "Impressum",
-      "responsible": "Verantwortlich fuer den Inhalt",
+      "responsible": "Verantwortlich für den Inhalt",
       "name": "Lucas Nessel",
-      "school": "HTL Lastenstrasse Klagenfurt",
-      "address": "Lastenstrasse 1, 9020 Klagenfurt am Woerthersee",
-      "country": "Oesterreich",
-      "context": "Diese Webseite wurde im Rahmen der Diplomarbeit an der HTL Lastenstrasse erstellt und dient der Praesentation beim Wettbewerb Jugend Innovativ."
+      "school": "HTL Lastenstraße Klagenfurt",
+      "address": "Lastenstraße 1, 9020 Klagenfurt am Wörthersee",
+      "country": "Österreich",
+      "context": "Diese Webseite wurde im Rahmen der Diplomarbeit an der HTL Lastenstraße erstellt und dient der Präsentation beim Wettbewerb Jugend Innovativ."
     },
     "datenschutz": {
-      "title": "Datenschutzerklaerung",
+      "title": "Datenschutzerklärung",
       "intro": "Diese Webseite erhebt und speichert keine personenbezogenen Daten. Es werden keine Cookies gesetzt, kein Tracking verwendet und keine Daten an Dritte weitergegeben.",
       "hosting": {
         "title": "Hosting",
@@ -258,7 +258,7 @@
       },
       "rights": {
         "title": "Ihre Rechte",
-        "description": "Sie haben das Recht auf Auskunft, Berichtigung und Loeschung Ihrer Daten gemaess DSGVO. Kontaktieren Sie uns bei Fragen zum Datenschutz."
+        "description": "Sie haben das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten gemäß DSGVO. Kontaktieren Sie uns bei Fragen zum Datenschutz."
       }
     }
   }
