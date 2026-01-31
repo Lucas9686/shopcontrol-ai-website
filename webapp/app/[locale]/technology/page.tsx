@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { ShoppingCart, FileSpreadsheet, Mail, Image as ImageIcon, Shield, AlertTriangle, Users } from "lucide-react";
+import { Database, ShoppingCart, FileSpreadsheet, Shield, EyeOff, Target, ShieldCheck } from "lucide-react";
 import { SectionHeader } from "@/components/shared/section-header";
 import { FadeInSection } from "@/components/shared/fade-in-section";
 import { FeatureCard } from "@/components/features/feature-card";
@@ -16,12 +16,25 @@ export default async function TechnologyPage({
   const t = await getTranslations("technology");
 
   const steps = [
-    { key: "step1", image: "/images/workflows/gesamter-workflow.png" },
-    { key: "step2", image: "/images/workflows/support-agent-mit-tools.png" },
-    { key: "step3", image: "/images/workflows/rag-auto-upload.png" },
-    { key: "step4", image: "/images/workflows/tools-von-agent.png" },
-    { key: "step5", image: "/images/workflows/support-agent-ohne-tools.png" },
-    { key: "step6", image: "/images/diagrams/buchhaltung-workflow.png" },
+    { key: "step1", image: "/images/workflows/get-emails.png" },
+    { key: "step2", image: "/images/workflows/filter-sektion.png" },
+    { key: "step3", image: "/images/workflows/bildanalyse-sektion.png" },
+    { key: "step4", image: "/images/workflows/support-agent-mit-tools.png" },
+    { key: "step5", image: "/images/workflows/send-emails.png" },
+    { key: "step6", image: "/images/workflows/performance-logging.png" },
+  ] as const;
+
+  const securityItems = [
+    { key: "security1", icon: Shield },
+    { key: "security2", icon: EyeOff },
+    { key: "security3", icon: Target },
+    { key: "security4", icon: ShieldCheck },
+  ] as const;
+
+  const toolItems = [
+    { key: "tool1", icon: Database },
+    { key: "tool2", icon: ShoppingCart },
+    { key: "tool3", icon: FileSpreadsheet },
   ] as const;
 
   return (
@@ -75,61 +88,35 @@ export default async function TechnologyPage({
       {/* Tools & Sub-Agents */}
       <FadeInSection className="mt-20">
         <SectionHeader title={t("tools.title")} subtitle={t("tools.subtitle")} />
-        <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <FeatureCard
-            icon={ShoppingCart}
-            title={t("tools.shopify.title")}
-            description={t("tools.shopify.description")}
-          />
-          <FeatureCard
-            icon={FileSpreadsheet}
-            title={t("tools.sheets.title")}
-            description={t("tools.sheets.description")}
-          />
-          <FeatureCard
-            icon={Mail}
-            title={t("tools.email.title")}
-            description={t("tools.email.description")}
-          />
-          <FeatureCard
-            icon={ImageIcon}
-            title={t("tools.vision.title")}
-            description={t("tools.vision.description")}
-          />
-        </div>
-        <div className="mt-8">
-          <ScreenshotFigure
-            src="/images/workflows/bildanalyse-sektion.png"
-            alt={t("tools.vision.title")}
-            caption={t("tools.caption")}
-          />
+        <div className="mt-8 grid gap-6 md:grid-cols-3">
+          {toolItems.map((tool) => (
+            <FeatureCard
+              key={tool.key}
+              icon={tool.icon}
+              title={t(`tools.${tool.key}.title`)}
+              description={t(`tools.${tool.key}.description`)}
+            />
+          ))}
         </div>
       </FadeInSection>
 
       {/* Security */}
       <FadeInSection className="mt-20">
         <SectionHeader title={t("security.title")} subtitle={t("security.subtitle")} />
-        <div className="mt-8 grid gap-6 md:grid-cols-3">
-          <FeatureCard
-            icon={Shield}
-            title={t("security.injection.title")}
-            description={t("security.injection.description")}
-          />
-          <FeatureCard
-            icon={AlertTriangle}
-            title={t("security.errors.title")}
-            description={t("security.errors.description")}
-          />
-          <FeatureCard
-            icon={Users}
-            title={t("security.escalation.title")}
-            description={t("security.escalation.description")}
-          />
+        <div className="mt-8 grid gap-6 md:grid-cols-2">
+          {securityItems.map((item) => (
+            <FeatureCard
+              key={item.key}
+              icon={item.icon}
+              title={t(`security.${item.key}.title`)}
+              description={t(`security.${item.key}.description`)}
+            />
+          ))}
         </div>
         <div className="mt-8">
           <ScreenshotFigure
             src="/images/workflows/error-trigger.png"
-            alt={t("security.errors.title")}
+            alt={t("security.title")}
             caption={t("security.caption")}
           />
         </div>

@@ -25,7 +25,7 @@ export default async function SolutionPage({
     },
   ];
 
-  const techItems = ["n8n", "pinecone", "shopify", "openai", "sheets"] as const;
+  const techItems = ["n8n", "llm", "pinecone", "supabase", "cohere", "shopify", "whatsapp"] as const;
 
   return (
     <article className="mx-auto max-w-4xl px-4 pt-24 pb-16">
