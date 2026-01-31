@@ -34,16 +34,16 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| DEPLOY-01 | Phase 5 | Pending |
-| TECH-01 | Phase 5 | Pending |
-| TECH-02 | Phase 5 | Pending |
-| TECH-03 | Phase 5 | Pending |
-| TECH-04 | Phase 5 | Pending |
-| TECH-05 | Phase 5 | Pending |
-| TECH-06 | Phase 5 | Pending |
-| SOL-01 | Phase 5 | Pending |
-| SOL-02 | Phase 5 | Pending |
-| CROSS-01 | Phase 5 | Pending |
+| DEPLOY-01 | Phase 5 | Complete |
+| TECH-01 | Phase 5 | Complete |
+| TECH-02 | Phase 5 | Complete |
+| TECH-03 | Phase 5 | Complete |
+| TECH-04 | Phase 5 | Complete |
+| TECH-05 | Phase 5 | Complete |
+| TECH-06 | Phase 5 | Complete |
+| SOL-01 | Phase 5 | Complete |
+| SOL-02 | Phase 5 | Complete |
+| CROSS-01 | Phase 5 | Complete |
 | OG-01 | Phase 6 | Pending |
 | PERF-01 | Phase 6 | Pending |
 

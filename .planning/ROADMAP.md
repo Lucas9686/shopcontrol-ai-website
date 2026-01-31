@@ -13,7 +13,7 @@
 | 2. Core Content Pages | v1.0 | 3/3 | Complete | 2026-01-31 |
 | 3. Results & Financials | v1.0 | 1/1 | Complete | 2026-01-31 |
 | 4. Polish & Media | v1.0 | 2/2 | Complete | 2026-01-31 |
-| 5. Deploy Fix & Content Accuracy | v1.1 | 0/2 | Not started | - |
+| 5. Deploy Fix & Content Accuracy | v1.1 | 2/2 | Complete | 2026-01-31 |
 | 6. OG Image & Performance | v1.1 | 0/TBD | Not started | - |
 
 ---
@@ -36,8 +36,8 @@
 **Plans**: 2 plans
 
 Plans:
-- [ ] 05-01-PLAN.md — Fix git tracking (remove root ghost files, add webapp/ to git)
-- [ ] 05-02-PLAN.md — Correct all content inaccuracies (technology steps, security, tools, RAG, accounting, tech stack, chatbot refs)
+- [x] 05-01-PLAN.md — Fix git tracking (remove root ghost files, add webapp/ to git)
+- [x] 05-02-PLAN.md — Correct all content inaccuracies (technology steps, security, tools, RAG, accounting, tech stack, chatbot refs)
 
 ### Phase 6: OG Image & Performance
 
