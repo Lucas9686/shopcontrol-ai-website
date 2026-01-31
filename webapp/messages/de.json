@@ -19,7 +19,7 @@
   },
   "footer": {
     "project": "Diplomarbeit von Lucas Nessel — HTL Lastenstraße",
-    "copyright": "\u00a9 2026 ShopControl AI",
+    "copyright": "© 2026 ShopControl AI",
     "impressum": "Impressum"
   },
   "problem": {
@@ -187,12 +187,30 @@
     "techStack": {
       "title": "Technologie-Stack",
       "subtitle": "Die Bausteine von ShopControl AI",
-      "n8n": { "title": "n8n", "description": "Open-Source Workflow-Automatisierungsplattform für alle Prozesse" },
-      "openai": { "title": "OpenAI GPT-4o", "description": "Multimodales KI-Modell für Textverständnis, Bildanalyse und Antwortgenerierung" },
-      "qdrant": { "title": "Qdrant", "description": "Vektordatenbank für das RAG-System — speichert und durchsucht Wissensembeddings" },
-      "shopify": { "title": "Shopify API", "description": "Zugriff auf Bestellungen, Produkte und Kundendaten des Online-Shops" },
-      "sheets": { "title": "Google Sheets API", "description": "Datenspeicher für Konfigurationen, Logs und Finanzberichte" },
-      "whatsapp": { "title": "WhatsApp Business API", "description": "Versand automatisierter Finanzberichte direkt aufs Smartphone" }
+      "n8n": {
+        "title": "n8n",
+        "description": "Open-Source Workflow-Automatisierungsplattform für alle Prozesse"
+      },
+      "openai": {
+        "title": "OpenAI GPT-4o",
+        "description": "Multimodales KI-Modell für Textverständnis, Bildanalyse und Antwortgenerierung"
+      },
+      "qdrant": {
+        "title": "Qdrant",
+        "description": "Vektordatenbank für das RAG-System — speichert und durchsucht Wissensembeddings"
+      },
+      "shopify": {
+        "title": "Shopify API",
+        "description": "Zugriff auf Bestellungen, Produkte und Kundendaten des Online-Shops"
+      },
+      "sheets": {
+        "title": "Google Sheets API",
+        "description": "Datenspeicher für Konfigurationen, Logs und Finanzberichte"
+      },
+      "whatsapp": {
+        "title": "WhatsApp Business API",
+        "description": "Versand automatisierter Finanzberichte direkt aufs Smartphone"
+      }
     },
     "architecture": {
       "title": "Architektur-Überblick",
@@ -200,13 +218,19 @@
     },
     "detailPages": {
       "title": "Im Detail",
-      "supportAgent": { "title": "KI-Supportagent", "description": "6-Schritte-Workflow für autonome E-Mail-Kundenbetreuung" },
-      "accounting": { "title": "Buchhaltungstool", "description": "5-Schritte-Workflow für automatische Finanzberichterstattung" }
+      "supportAgent": {
+        "title": "KI-Supportagent",
+        "description": "6-Schritte-Workflow für autonome E-Mail-Kundenbetreuung"
+      },
+      "accounting": {
+        "title": "Buchhaltungstool",
+        "description": "5-Schritte-Workflow für automatische Finanzberichterstattung"
+      }
     }
   },
   "results": {
-    "title": "Ergebnisse & Finanzplan",
-    "subtitle": "Projektergebnisse, Marktpositionierung und finanzielle Prognosen von ShopControl AI",
+    "title": "Ergebnisse",
+    "subtitle": "Projektergebnisse, Marktpositionierung und Geschäftsmodell von ShopControl AI",
     "market": {
       "title": "Ergebnisse & Marktabgrenzung",
       "subtitle": "Was wir erreicht haben und wie wir uns unterscheiden",
@@ -221,40 +245,44 @@
       "competitors": {
         "title": "Wettbewerbsvergleich",
         "shopcontrol": "ShopControl AI",
-        "features": ["KI-E-Mail-Support-Agent", "Finanzberichterstattung", "Shopify-Integration", "Preislich für kleine Shops"]
+        "features": [
+          "KI-E-Mail-Support-Agent",
+          "Finanzberichterstattung",
+          "Shopify-Integration",
+          "Preislich für kleine Shops"
+        ]
       }
     },
-    "financials": {
-      "title": "Finanzplan",
-      "subtitle": "Umsatzprognosen und Preismodell für die nächsten drei Jahre",
-      "pricing": {
-        "title": "Preismodell",
-        "description": "Drei Preisstufen für unterschiedliche Shopgrößen — von Einzelunternehmern bis hin zu wachsenden E-Commerce-Unternehmen."
+    "targetGroup": {
+      "title": "Zielgruppe",
+      "subtitle": "Wer profitiert von ShopControl AI",
+      "primary": {
+        "title": "Kleine und mittlere Online-Shops",
+        "description": "Shopify-Händler mit 50–500 Bestellungen/Monat, die Support-Kosten senken und Finanzen automatisieren wollen."
       },
-      "forecast": {
-        "title": "3-Jahres-Prognose",
-        "description": "Geplante Umsatz- und Kostenentwicklung basierend auf konservativen Kundengewinnungsraten."
-      },
-      "scenario": {
-        "title": "Szenarioanalyse",
-        "description": "Drei Szenarien zeigen die mögliche Umsatzentwicklung je nach Markterfolg."
+      "secondary": {
+        "title": "Wachsende E-Commerce-Unternehmen",
+        "description": "Shops, die skalieren wollen, ohne proportional mehr Support-Personal einzustellen."
       }
     },
-    "charts": {
-      "revenue": "Umsatz",
-      "costs": "Kosten",
-      "profit": "Gewinn",
-      "year1": "Jahr 1",
-      "year2": "Jahr 2",
-      "year3": "Jahr 3",
-      "optimistic": "Optimistisch",
-      "realistic": "Realistisch",
-      "pessimistic": "Pessimistisch",
-      "basic": "Basic",
-      "pro": "Pro",
-      "enterprise": "Enterprise",
-      "pricePerMonth": "Preis/Monat",
-      "currency": "\u20ac"
+    "businessModel": {
+      "title": "Geschäftsmodell",
+      "subtitle": "SaaS mit hoher Marge und geringen variablen Kosten",
+      "description": "ShopControl AI wird als monatliches Abo vertrieben. Die KI-gestützten Agenten laufen auf bestehender Cloud-Infrastruktur — die variablen Kosten pro Kunde liegen bei 50–80 EUR/Monat, was Margen von 60–90% ermöglicht.",
+      "cta": "Zum Finanzplan",
+      "ctaHref": "/finance-plan"
+    },
+    "achievements": {
+      "title": "Erreichte Ergebnisse",
+      "subtitle": "Was im Rahmen der Diplomarbeit umgesetzt wurde",
+      "items": [
+        "Vollautonomer E-Mail-Support-Agent mit 6-Schritte-Workflow",
+        "RAG-System mit Pinecone-Vektordatenbank für kontextbasierte Antworten",
+        "Automatisierte Buchhaltung mit WhatsApp-KPI-Reporting",
+        "3 spezialisierte Sub-Agents (Shopify, Sheets, Rechnungs-Agent)",
+        "4-stufiges Sicherheitssystem gegen Halluzinationen",
+        "Gewerbeschein erhalten, SaaS-Launch geplant"
+      ]
     }
   },
   "impressum": {
@@ -296,12 +324,30 @@
     "workflow": {
       "title": "6-Schritte-Workflow",
       "subtitle": "So verarbeitet der Agent jede Kundenanfrage",
-      "step1": { "title": "E-Mails abrufen", "description": "Der Workflow wird durch einen Trigger gestartet und ruft alle neuen E-Mails aus dem Support-Postfach ab." },
-      "step2": { "title": "E-Mails filtern", "description": "Automatische Antworten, Newsletter und irrelevante Nachrichten werden herausgefiltert. Nur echte Kundenanfragen werden weiterverarbeitet." },
-      "step3": { "title": "Bildanalyse", "description": "Falls die E-Mail Bilder enthält (z.B. Fotos von beschädigten Produkten), werden diese analysiert und eine Beschreibung wird dem Kontext für den Support-Agenten hinzugefügt." },
-      "step4": { "title": "KI-Agent verarbeitet Anfrage", "description": "Der Haupt-Agent analysiert die Anfrage, nutzt ein RAG-System für Wissensbasis-Suche und greift auf Tools wie Shopify und Google Sheets zu, um relevante Daten abzurufen." },
-      "step5": { "title": "Antwort senden", "description": "Die generierte Antwort wird als professionelle E-Mail formatiert und automatisch an den Kunden gesendet." },
-      "step6": { "title": "Performance-Logging", "description": "Jede verarbeitete Anfrage wird protokolliert — Antwortzeit, Token-Verbrauch, genutztes Modell und Kategorie — für Qualitätskontrolle und Optimierung." }
+      "step1": {
+        "title": "E-Mails abrufen",
+        "description": "Der Workflow wird durch einen Trigger gestartet und ruft alle neuen E-Mails aus dem Support-Postfach ab."
+      },
+      "step2": {
+        "title": "E-Mails filtern",
+        "description": "Automatische Antworten, Newsletter und irrelevante Nachrichten werden herausgefiltert. Nur echte Kundenanfragen werden weiterverarbeitet."
+      },
+      "step3": {
+        "title": "Bildanalyse",
+        "description": "Falls die E-Mail Bilder enthält (z.B. Fotos von beschädigten Produkten), werden diese analysiert und eine Beschreibung wird dem Kontext für den Support-Agenten hinzugefügt."
+      },
+      "step4": {
+        "title": "KI-Agent verarbeitet Anfrage",
+        "description": "Der Haupt-Agent analysiert die Anfrage, nutzt ein RAG-System für Wissensbasis-Suche und greift auf Tools wie Shopify und Google Sheets zu, um relevante Daten abzurufen."
+      },
+      "step5": {
+        "title": "Antwort senden",
+        "description": "Die generierte Antwort wird als professionelle E-Mail formatiert und automatisch an den Kunden gesendet."
+      },
+      "step6": {
+        "title": "Performance-Logging",
+        "description": "Jede verarbeitete Anfrage wird protokolliert — Antwortzeit, Token-Verbrauch, genutztes Modell und Kategorie — für Qualitätskontrolle und Optimierung."
+      }
     },
     "rag": {
       "title": "RAG-Wissenssystem",
@@ -333,11 +379,26 @@
     "workflow": {
       "title": "5-Schritte-Workflow",
       "subtitle": "So entsteht der automatische Finanzbericht",
-      "step1": { "title": "Start", "description": "Der Workflow wird per WhatsApp-Nachricht oder automatisch nach Zeitplan gestartet." },
-      "step2": { "title": "Daten abrufen", "description": "Der Workflow fragt automatisch Umsatzdaten von Shopify, Werbeausgaben von Facebook Ads und Kontobewegungen von der Bank ab." },
-      "step3": { "title": "KPIs berechnen", "description": "Aus den Rohdaten werden zentrale Kennzahlen berechnet: Gesamtumsatz, Werbekosten, Return on Ad Spend (ROAS), Gewinnmarge und weitere KPIs." },
-      "step4": { "title": "Grafik & Bericht erstellen", "description": "Die berechneten KPIs werden in einen übersichtlichen, formatierten Bericht mit Grafiken zusammengestellt — mit Vergleichen zum Vormonat und Trendanalysen." },
-      "step5": { "title": "Bericht senden", "description": "Der fertige Bericht wird automatisch per WhatsApp an den Shop-Betreiber gesendet." }
+      "step1": {
+        "title": "Start",
+        "description": "Der Workflow wird per WhatsApp-Nachricht oder automatisch nach Zeitplan gestartet."
+      },
+      "step2": {
+        "title": "Daten abrufen",
+        "description": "Der Workflow fragt automatisch Umsatzdaten von Shopify, Werbeausgaben von Facebook Ads und Kontobewegungen von der Bank ab."
+      },
+      "step3": {
+        "title": "KPIs berechnen",
+        "description": "Aus den Rohdaten werden zentrale Kennzahlen berechnet: Gesamtumsatz, Werbekosten, Return on Ad Spend (ROAS), Gewinnmarge und weitere KPIs."
+      },
+      "step4": {
+        "title": "Grafik & Bericht erstellen",
+        "description": "Die berechneten KPIs werden in einen übersichtlichen, formatierten Bericht mit Grafiken zusammengestellt — mit Vergleichen zum Vormonat und Trendanalysen."
+      },
+      "step5": {
+        "title": "Bericht senden",
+        "description": "Der fertige Bericht wird automatisch per WhatsApp an den Shop-Betreiber gesendet."
+      }
     },
     "overview": {
       "title": "Workflow-Überblick",
@@ -356,31 +417,54 @@
       "title": "Kostenstruktur",
       "subtitle": "KI vs. menschlicher Support",
       "tokenCosts": "Pro Anfrage: ~4.000 Input-Tokens + ~17.000 Output-Tokens",
-      "monthlyCosts": "Monatliche KI-Kosten: 50\u201380 EUR",
-      "humanCosts": "Vergleich menschlicher Agent: 800\u20131.500 EUR/Monat",
-      "savings": "Kosteneinsparung: \u00fcber 90%"
+      "monthlyCosts": "Monatliche KI-Kosten: 50–80 EUR",
+      "humanCosts": "Vergleich menschlicher Agent: 800–1.500 EUR/Monat",
+      "savings": "Kosteneinsparung: über 90%"
     },
     "pricing": {
-      "title": "Preismodell \u2014 3 Stufen",
+      "title": "Preismodell — 3 Stufen",
       "description": "SaaS-Abo mit margenstarker Struktur",
-      "starter": { "name": "Starter", "price": "99 EUR/Monat", "original": "149 EUR/Monat (Einf\u00fchrungspreis)", "target": "Kleine Shops" },
-      "pro": { "name": "Pro", "price": "179 EUR/Monat", "original": "249 EUR/Monat (Einf\u00fchrungspreis)", "target": "Wachsende Shops" },
-      "enterprise": { "name": "Enterprise", "price": "Individuell", "target": "Gro\u00dfe H\u00e4ndler" },
-      "margin": "Marge: 60\u201390%"
+      "starter": {
+        "name": "Starter",
+        "price": "99 EUR/Monat",
+        "original": "149 EUR/Monat (Einführungspreis)",
+        "target": "Kleine Shops"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "179 EUR/Monat",
+        "original": "249 EUR/Monat (Einführungspreis)",
+        "target": "Wachsende Shops"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Individuell",
+        "target": "Große Händler"
+      },
+      "margin": "Marge: 60–90%"
     },
     "assumptions": {
       "title": "Kernannahmen",
       "avgRevenue": "Durchschnittlicher Umsatz pro Kunde: 180 EUR/Monat",
-      "cac": "Customer Acquisition Cost: 80\u2013120 EUR",
-      "churn": "Monatliche Churn-Rate: 5\u20138%",
-      "customers": "Kundenentwicklung: 15 \u2192 60 \u2192 180 (\u00fcber 3 Jahre)"
+      "cac": "Customer Acquisition Cost: 80–120 EUR",
+      "churn": "Monatliche Churn-Rate: 5–8%",
+      "customers": "Kundenentwicklung: 15 → 60 → 180 (über 3 Jahre)"
     },
     "forecast": {
       "title": "3-Jahres-Prognose",
       "description": "Umsatz- und Gewinnentwicklung",
-      "year1": { "revenue": "32.400 EUR", "profit": "28.800 EUR" },
-      "year2": { "revenue": "129.600 EUR", "profit": "106.100 EUR" },
-      "year3": { "revenue": "388.800 EUR", "profit": "321.800 EUR" }
+      "year1": {
+        "revenue": "32.400 EUR",
+        "profit": "28.800 EUR"
+      },
+      "year2": {
+        "revenue": "129.600 EUR",
+        "profit": "106.100 EUR"
+      },
+      "year3": {
+        "revenue": "388.800 EUR",
+        "profit": "321.800 EUR"
+      }
     },
     "scenario": {
       "title": "Szenarioanalyse",

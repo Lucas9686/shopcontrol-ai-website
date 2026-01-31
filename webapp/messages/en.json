@@ -18,8 +18,8 @@
     "subheading": "Watch how the AI agent answers customer inquiries via email and automates financial reporting"
   },
   "footer": {
-    "project": "Diploma thesis by Lucas Nessel \u2014 HTL Lastenstraße",
-    "copyright": "\u00a9 2026 ShopControl AI",
+    "project": "Diploma thesis by Lucas Nessel — HTL Lastenstraße",
+    "copyright": "© 2026 ShopControl AI",
     "impressum": "Legal Notice"
   },
   "problem": {
@@ -30,15 +30,15 @@
       "title": "Core Challenges",
       "support": {
         "title": "24/7 Customer Service",
-        "description": "Customers expect instant answers \u2014 even at 11 PM. Small shops can't afford a round-the-clock support team. Dissatisfied customers switch to competitors."
+        "description": "Customers expect instant answers — even at 11 PM. Small shops can't afford a round-the-clock support team. Dissatisfied customers switch to competitors."
       },
       "accounting": {
         "title": "Manual Accounting",
-        "description": "Consolidating financial data from multiple sources, calculating KPIs, and creating reports \u2014 all of this costs hours per week and is error-prone."
+        "description": "Consolidating financial data from multiple sources, calculating KPIs, and creating reports — all of this costs hours per week and is error-prone."
       },
       "scaling": {
         "title": "Growth Without Extra Costs",
-        "description": "More orders mean more support requests and more administrative work. Staff doesn't scale linearly \u2014 AI does."
+        "description": "More orders mean more support requests and more administrative work. Staff doesn't scale linearly — AI does."
       }
     },
     "conclusion": "ShopControl AI solves exactly these problems: A fully autonomous AI email support agent handles customer service while financial reporting runs automatically in the background."
@@ -50,7 +50,7 @@
     "pillars": {
       "support": {
         "title": "AI Email Support Agent",
-        "description": "A fully autonomous email support agent that independently analyzes, processes, and answers incoming customer inquiries via email \u2014 with access to real-time shop data via Shopify and a company-specific knowledge base.",
+        "description": "A fully autonomous email support agent that independently analyzes, processes, and answers incoming customer inquiries via email — with access to real-time shop data via Shopify and a company-specific knowledge base.",
         "features": {
           "f1": "24/7 available without personnel costs",
           "f2": "RAG-based knowledge from shop documents via Pinecone",
@@ -60,7 +60,7 @@
       },
       "accounting": {
         "title": "Automatic Financial Reporting",
-        "description": "Financial data from Shopify, Facebook Ads, and bank accounts is automatically consolidated and sent as visualized reports with relevant KPIs via WhatsApp \u2014 on demand or automatically every month.",
+        "description": "Financial data from Shopify, Facebook Ads, and bank accounts is automatically consolidated and sent as visualized reports with relevant KPIs via WhatsApp — on demand or automatically every month.",
         "features": {
           "f1": "Data retrieval from Shopify, Facebook Ads & bank accounts",
           "f2": "Automatic calculation of key KPIs (revenue, ad spend, profit)",
@@ -71,14 +71,14 @@
     },
     "techStack": {
       "title": "Technology Stack",
-      "n8n": "n8n \u2014 Workflow Automation",
-      "llm": "Claude & GPT \u2014 Language Models",
-      "pinecone": "Pinecone \u2014 Vector Database",
-      "supabase": "Supabase/PostgreSQL \u2014 Database",
-      "cohere": "Cohere \u2014 Reranking",
-      "shopify": "Shopify API \u2014 E-Commerce",
-      "whatsapp": "WhatsApp Business API \u2014 Reports",
-      "telegram": "Telegram \u2014 Error Notifications"
+      "n8n": "n8n — Workflow Automation",
+      "llm": "Claude & GPT — Language Models",
+      "pinecone": "Pinecone — Vector Database",
+      "supabase": "Supabase/PostgreSQL — Database",
+      "cohere": "Cohere — Reranking",
+      "shopify": "Shopify API — E-Commerce",
+      "whatsapp": "WhatsApp Business API — Reports",
+      "telegram": "Telegram — Error Notifications"
     }
   },
   "about": {
@@ -87,7 +87,7 @@
     "author": {
       "name": "Lucas Nessel",
       "role": "Developer & Founder",
-      "description": "Lucas Nessel is a student at HTL Lastenstraße Klagenfurt, Department of Mechatronics. ShopControl AI is his diploma thesis \u2014 a fully independently developed project that makes AI automation accessible for online shops. Lucas already holds a business license and plans to commercially develop the product as a SaaS solution."
+      "description": "Lucas Nessel is a student at HTL Lastenstraße Klagenfurt, Department of Mechatronics. ShopControl AI is his diploma thesis — a fully independently developed project that makes AI automation accessible for online shops. Lucas already holds a business license and plans to commercially develop the product as a SaaS solution."
     },
     "school": {
       "title": "HTL Lastenstraße Klagenfurt",
@@ -107,7 +107,7 @@
     },
     "competition": {
       "title": "Jugend Innovativ",
-      "description": "ShopControl AI competes in the Entrepreneurship / Business Concepts category at the Jugend Innovativ competition \u2014 Austria's largest innovation competition for students."
+      "description": "ShopControl AI competes in the Entrepreneurship / Business Concepts category at the Jugend Innovativ competition — Austria's largest innovation competition for students."
     }
   },
   "technology": {
@@ -130,7 +130,7 @@
       },
       "step4": {
         "title": "Support Agent Processing",
-        "description": "The AI support agent processes the inquiry. It takes the email text along with any image descriptions and autonomously decides which tools it needs \u2014 e.g., the Shopify agent for order data or the RAG knowledge base for return policies. Based on all collected information, it generates a well-founded response."
+        "description": "The AI support agent processes the inquiry. It takes the email text along with any image descriptions and autonomously decides which tools it needs — e.g., the Shopify agent for order data or the RAG knowledge base for return policies. Based on all collected information, it generates a well-founded response."
       },
       "step5": {
         "title": "Email Dispatch",
@@ -160,7 +160,7 @@
       },
       "tool3": {
         "title": "Support Case Agent / Sheets Agent",
-        "description": "When the agent cannot resolve an inquiry on its own, the Sheets Agent creates a documented support case in Google Sheets \u2014 a structured request that a human specialist can process later."
+        "description": "When the agent cannot resolve an inquiry on its own, the Sheets Agent creates a documented support case in Google Sheets — a structured request that a human specialist can process later."
       }
     },
     "security": {
@@ -187,12 +187,30 @@
     "techStack": {
       "title": "Technology Stack",
       "subtitle": "The building blocks of ShopControl AI",
-      "n8n": { "title": "n8n", "description": "Open-source workflow automation platform for all processes" },
-      "openai": { "title": "OpenAI GPT-4o", "description": "Multimodal AI model for text understanding, image analysis, and response generation" },
-      "qdrant": { "title": "Qdrant", "description": "Vector database for the RAG system — stores and searches knowledge embeddings" },
-      "shopify": { "title": "Shopify API", "description": "Access to orders, products, and customer data from the online store" },
-      "sheets": { "title": "Google Sheets API", "description": "Data storage for configurations, logs, and financial reports" },
-      "whatsapp": { "title": "WhatsApp Business API", "description": "Automated financial report delivery directly to smartphone" }
+      "n8n": {
+        "title": "n8n",
+        "description": "Open-source workflow automation platform for all processes"
+      },
+      "openai": {
+        "title": "OpenAI GPT-4o",
+        "description": "Multimodal AI model for text understanding, image analysis, and response generation"
+      },
+      "qdrant": {
+        "title": "Qdrant",
+        "description": "Vector database for the RAG system — stores and searches knowledge embeddings"
+      },
+      "shopify": {
+        "title": "Shopify API",
+        "description": "Access to orders, products, and customer data from the online store"
+      },
+      "sheets": {
+        "title": "Google Sheets API",
+        "description": "Data storage for configurations, logs, and financial reports"
+      },
+      "whatsapp": {
+        "title": "WhatsApp Business API",
+        "description": "Automated financial report delivery directly to smartphone"
+      }
     },
     "architecture": {
       "title": "Architecture Overview",
@@ -200,61 +218,71 @@
     },
     "detailPages": {
       "title": "In Detail",
-      "supportAgent": { "title": "AI Support Agent", "description": "6-step workflow for autonomous email customer support" },
-      "accounting": { "title": "Accounting Tool", "description": "5-step workflow for automated financial reporting" }
+      "supportAgent": {
+        "title": "AI Support Agent",
+        "description": "6-step workflow for autonomous email customer support"
+      },
+      "accounting": {
+        "title": "Accounting Tool",
+        "description": "5-step workflow for automated financial reporting"
+      }
     }
   },
   "results": {
-    "title": "Results & Financials",
-    "subtitle": "Project results, market positioning, and financial projections of ShopControl AI",
+    "title": "Results",
+    "subtitle": "Project results, market positioning, and business model of ShopControl AI",
     "market": {
       "title": "Results & Market Differentiation",
       "subtitle": "What we achieved and how we stand out",
       "results": {
         "title": "Project Results",
-        "description": "ShopControl AI was developed as a fully functional prototype and tested with a real Shopify shop. The AI support agent answers customer inquiries via email autonomously, while automated financial reporting consolidates data from Shopify, Facebook Ads, and bank accounts and sends visualized reports via WhatsApp \u2014 all without manual intervention."
+        "description": "ShopControl AI was developed as a fully functional prototype and tested with a real Shopify shop. The AI support agent answers customer inquiries via email autonomously, while automated financial reporting consolidates data from Shopify, Facebook Ads, and bank accounts and sends visualized reports via WhatsApp — all without manual intervention."
       },
       "differentiation": {
         "title": "Market Differentiation",
-        "description": "Unlike enterprise solutions like Zendesk or Freshdesk, ShopControl AI combines customer service and financial reporting in one solution \u2014 specifically designed for small Shopify shops and affordably priced. No more expensive individual solutions."
+        "description": "Unlike enterprise solutions like Zendesk or Freshdesk, ShopControl AI combines customer service and financial reporting in one solution — specifically designed for small Shopify shops and affordably priced. No more expensive individual solutions."
       },
       "competitors": {
         "title": "Competitive Comparison",
         "shopcontrol": "ShopControl AI",
-        "features": ["AI Email Support Agent", "Financial Reporting", "Shopify Integration", "Affordable for Small Shops"]
+        "features": [
+          "AI Email Support Agent",
+          "Financial Reporting",
+          "Shopify Integration",
+          "Affordable for Small Shops"
+        ]
       }
     },
-    "financials": {
-      "title": "Financial Plan",
-      "subtitle": "Revenue projections and pricing model for the next three years",
-      "pricing": {
-        "title": "Pricing Model",
-        "description": "Three pricing tiers for different shop sizes \u2014 from solo entrepreneurs to growing e-commerce businesses."
+    "targetGroup": {
+      "title": "Target Group",
+      "subtitle": "Who benefits from ShopControl AI",
+      "primary": {
+        "title": "Small and Medium Online Shops",
+        "description": "Shopify merchants with 50–500 orders/month looking to reduce support costs and automate finances."
       },
-      "forecast": {
-        "title": "3-Year Forecast",
-        "description": "Projected revenue and cost development based on conservative customer acquisition rates."
-      },
-      "scenario": {
-        "title": "Scenario Analysis",
-        "description": "Three scenarios show possible revenue development depending on market success."
+      "secondary": {
+        "title": "Growing E-Commerce Businesses",
+        "description": "Shops that want to scale without proportionally hiring more support staff."
       }
     },
-    "charts": {
-      "revenue": "Revenue",
-      "costs": "Costs",
-      "profit": "Profit",
-      "year1": "Year 1",
-      "year2": "Year 2",
-      "year3": "Year 3",
-      "optimistic": "Optimistic",
-      "realistic": "Realistic",
-      "pessimistic": "Pessimistic",
-      "basic": "Basic",
-      "pro": "Pro",
-      "enterprise": "Enterprise",
-      "pricePerMonth": "Price/Month",
-      "currency": "\u20ac"
+    "businessModel": {
+      "title": "Business Model",
+      "subtitle": "SaaS with high margins and low variable costs",
+      "description": "ShopControl AI is sold as a monthly subscription. The AI-powered agents run on existing cloud infrastructure — variable costs per customer are 50–80 EUR/month, enabling margins of 60–90%.",
+      "cta": "View Finance Plan",
+      "ctaHref": "/finance-plan"
+    },
+    "achievements": {
+      "title": "Achieved Results",
+      "subtitle": "What was built during the diploma thesis",
+      "items": [
+        "Fully autonomous email support agent with 6-step workflow",
+        "RAG system with Pinecone vector database for context-based answers",
+        "Automated accounting with WhatsApp KPI reporting",
+        "3 specialized sub-agents (Shopify, Sheets, Invoice Agent)",
+        "4-level security system against hallucinations",
+        "Business license obtained, SaaS launch planned"
+      ]
     }
   },
   "impressum": {
@@ -296,12 +324,30 @@
     "workflow": {
       "title": "6-Step Workflow",
       "subtitle": "How the agent processes each customer inquiry",
-      "step1": { "title": "Fetch Emails", "description": "The workflow is started by a trigger and retrieves all new emails from the support inbox." },
-      "step2": { "title": "Filter Emails", "description": "Auto-replies, newsletters, and irrelevant messages are filtered out. Only genuine customer inquiries are processed further." },
-      "step3": { "title": "Image Analysis", "description": "If the email contains images (e.g., photos of damaged products), these are analyzed and a description is added to the context for the support agent." },
-      "step4": { "title": "AI Agent Processes Request", "description": "The main agent analyzes the inquiry, uses a RAG system for knowledge base search, and accesses tools like Shopify and Google Sheets to retrieve relevant data." },
-      "step5": { "title": "Send Response", "description": "The generated response is formatted as a professional email and automatically sent to the customer." },
-      "step6": { "title": "Performance Logging", "description": "Every processed inquiry is logged — response time, token usage, model used, and category — for quality control and optimization." }
+      "step1": {
+        "title": "Fetch Emails",
+        "description": "The workflow is started by a trigger and retrieves all new emails from the support inbox."
+      },
+      "step2": {
+        "title": "Filter Emails",
+        "description": "Auto-replies, newsletters, and irrelevant messages are filtered out. Only genuine customer inquiries are processed further."
+      },
+      "step3": {
+        "title": "Image Analysis",
+        "description": "If the email contains images (e.g., photos of damaged products), these are analyzed and a description is added to the context for the support agent."
+      },
+      "step4": {
+        "title": "AI Agent Processes Request",
+        "description": "The main agent analyzes the inquiry, uses a RAG system for knowledge base search, and accesses tools like Shopify and Google Sheets to retrieve relevant data."
+      },
+      "step5": {
+        "title": "Send Response",
+        "description": "The generated response is formatted as a professional email and automatically sent to the customer."
+      },
+      "step6": {
+        "title": "Performance Logging",
+        "description": "Every processed inquiry is logged — response time, token usage, model used, and category — for quality control and optimization."
+      }
     },
     "rag": {
       "title": "RAG Knowledge System",
@@ -333,11 +379,26 @@
     "workflow": {
       "title": "5-Step Workflow",
       "subtitle": "How the automatic financial report is created",
-      "step1": { "title": "Start", "description": "The workflow is triggered via WhatsApp message or automatically on a schedule." },
-      "step2": { "title": "Fetch Data", "description": "The workflow automatically queries revenue data from Shopify, advertising spend from Facebook Ads, and account movements from the bank." },
-      "step3": { "title": "Calculate KPIs", "description": "Key metrics are calculated from the raw data: total revenue, advertising costs, Return on Ad Spend (ROAS), profit margin, and other KPIs." },
-      "step4": { "title": "Charts & Report", "description": "The calculated KPIs are compiled into a clear, formatted report with charts — with comparisons to the previous month and trend analyses." },
-      "step5": { "title": "Send Report", "description": "The finished report is automatically sent via WhatsApp to the store owner." }
+      "step1": {
+        "title": "Start",
+        "description": "The workflow is triggered via WhatsApp message or automatically on a schedule."
+      },
+      "step2": {
+        "title": "Fetch Data",
+        "description": "The workflow automatically queries revenue data from Shopify, advertising spend from Facebook Ads, and account movements from the bank."
+      },
+      "step3": {
+        "title": "Calculate KPIs",
+        "description": "Key metrics are calculated from the raw data: total revenue, advertising costs, Return on Ad Spend (ROAS), profit margin, and other KPIs."
+      },
+      "step4": {
+        "title": "Charts & Report",
+        "description": "The calculated KPIs are compiled into a clear, formatted report with charts — with comparisons to the previous month and trend analyses."
+      },
+      "step5": {
+        "title": "Send Report",
+        "description": "The finished report is automatically sent via WhatsApp to the store owner."
+      }
     },
     "overview": {
       "title": "Workflow Overview",
@@ -356,31 +417,54 @@
       "title": "Cost Structure",
       "subtitle": "AI vs. human support",
       "tokenCosts": "Per request: ~4,000 input tokens + ~17,000 output tokens",
-      "monthlyCosts": "Monthly AI costs: 50\u201380 EUR",
-      "humanCosts": "Human agent comparison: 800\u20131,500 EUR/month",
+      "monthlyCosts": "Monthly AI costs: 50–80 EUR",
+      "humanCosts": "Human agent comparison: 800–1,500 EUR/month",
       "savings": "Cost savings: over 90%"
     },
     "pricing": {
-      "title": "Pricing Model \u2014 3 Tiers",
+      "title": "Pricing Model — 3 Tiers",
       "description": "SaaS subscription with high-margin structure",
-      "starter": { "name": "Starter", "price": "99 EUR/month", "original": "149 EUR/month (introductory price)", "target": "Small shops" },
-      "pro": { "name": "Pro", "price": "179 EUR/month", "original": "249 EUR/month (introductory price)", "target": "Growing shops" },
-      "enterprise": { "name": "Enterprise", "price": "Custom", "target": "Large retailers" },
-      "margin": "Margin: 60\u201390%"
+      "starter": {
+        "name": "Starter",
+        "price": "99 EUR/month",
+        "original": "149 EUR/month (introductory price)",
+        "target": "Small shops"
+      },
+      "pro": {
+        "name": "Pro",
+        "price": "179 EUR/month",
+        "original": "249 EUR/month (introductory price)",
+        "target": "Growing shops"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "price": "Custom",
+        "target": "Large retailers"
+      },
+      "margin": "Margin: 60–90%"
     },
     "assumptions": {
       "title": "Key Assumptions",
       "avgRevenue": "Average revenue per customer: 180 EUR/month",
-      "cac": "Customer Acquisition Cost: 80\u2013120 EUR",
-      "churn": "Monthly churn rate: 5\u20138%",
-      "customers": "Customer growth: 15 \u2192 60 \u2192 180 (over 3 years)"
+      "cac": "Customer Acquisition Cost: 80–120 EUR",
+      "churn": "Monthly churn rate: 5–8%",
+      "customers": "Customer growth: 15 → 60 → 180 (over 3 years)"
     },
     "forecast": {
       "title": "3-Year Forecast",
       "description": "Revenue and profit development",
-      "year1": { "revenue": "32,400 EUR", "profit": "28,800 EUR" },
-      "year2": { "revenue": "129,600 EUR", "profit": "106,100 EUR" },
-      "year3": { "revenue": "388,800 EUR", "profit": "321,800 EUR" }
+      "year1": {
+        "revenue": "32,400 EUR",
+        "profit": "28,800 EUR"
+      },
+      "year2": {
+        "revenue": "129,600 EUR",
+        "profit": "106,100 EUR"
+      },
+      "year3": {
+        "revenue": "388,800 EUR",
+        "profit": "321,800 EUR"
+      }
     },
     "scenario": {
       "title": "Scenario Analysis",
