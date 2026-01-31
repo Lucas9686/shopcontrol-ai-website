@@ -1,11 +1,9 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { TrendingUp, Target } from "lucide-react";
+import { TrendingUp, Target, CheckCircle, Users, Briefcase, ArrowRight } from "lucide-react";
 import { SectionHeader } from "@/components/shared/section-header";
 import { FadeInSection } from "@/components/shared/fade-in-section";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { RevenueForecastChart } from "@/components/results/revenue-forecast-chart";
-import { PricingComparisonChart } from "@/components/results/pricing-comparison-chart";
-import { ScenarioChart } from "@/components/results/scenario-chart";
+import { Link } from "@/i18n/navigation";
 
 export default async function ResultsPage({
   params,
@@ -15,6 +13,8 @@ export default async function ResultsPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("results");
+
+  const achievementItems = t.raw("achievements.items") as string[];
 
   return (
     <article className="mx-auto max-w-5xl px-4 pt-24 pb-16">
@@ -26,8 +26,29 @@ export default async function ResultsPage({
         <p className="mt-3 text-lg text-muted-foreground">{t("subtitle")}</p>
       </header>
 
-      {/* Results & Market Differentiation */}
+      {/* Erreichte Ergebnisse */}
       <FadeInSection className="mt-16">
+        <SectionHeader
+          title={t("achievements.title")}
+          subtitle={t("achievements.subtitle")}
+        />
+      </FadeInSection>
+
+      <FadeInSection className="mt-8">
+        <div className="grid gap-4 sm:grid-cols-2">
+          {achievementItems.map((item, index) => (
+            <Card key={index}>
+              <CardContent className="flex items-start gap-3 pt-6">
+                <CheckCircle className="mt-0.5 h-5 w-5 shrink-0 text-green-600" />
+                <p className="text-muted-foreground leading-relaxed">{item}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </FadeInSection>
+
+      {/* Market & Differentiation */}
+      <FadeInSection className="mt-20">
         <SectionHeader
           title={t("market.title")}
           subtitle={t("market.subtitle")}
@@ -70,54 +91,80 @@ export default async function ResultsPage({
         </div>
       </FadeInSection>
 
-      {/* Financial Plan */}
+      {/* Zielgruppe */}
       <FadeInSection className="mt-20">
         <SectionHeader
-          title={t("financials.title")}
-          subtitle={t("financials.subtitle")}
+          title={t("targetGroup.title")}
+          subtitle={t("targetGroup.subtitle")}
         />
       </FadeInSection>
 
       <FadeInSection className="mt-8">
-        <PricingComparisonChart
-          title={t("financials.pricing.title")}
-          description={t("financials.pricing.description")}
-          labels={{
-            basic: t("charts.basic"),
-            pro: t("charts.pro"),
-            enterprise: t("charts.enterprise"),
-            pricePerMonth: t("charts.pricePerMonth"),
-          }}
+        <div className="grid gap-6 md:grid-cols-2">
+          <Card>
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <Users className="h-5 w-5 text-primary" />
+                </div>
+                <CardTitle>{t("targetGroup.primary.title")}</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground leading-relaxed">
+                {t("targetGroup.primary.description")}
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                  <TrendingUp className="h-5 w-5 text-primary" />
+                </div>
+                <CardTitle>{t("targetGroup.secondary.title")}</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="text-muted-foreground leading-relaxed">
+                {t("targetGroup.secondary.description")}
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+      </FadeInSection>
+
+      {/* Geschaeftsmodell */}
+      <FadeInSection className="mt-20">
+        <SectionHeader
+          title={t("businessModel.title")}
+          subtitle={t("businessModel.subtitle")}
         />
       </FadeInSection>
 
       <FadeInSection className="mt-8">
-        <RevenueForecastChart
-          title={t("financials.forecast.title")}
-          description={t("financials.forecast.description")}
-          labels={{
-            revenue: t("charts.revenue"),
-            costs: t("charts.costs"),
-            year1: t("charts.year1"),
-            year2: t("charts.year2"),
-            year3: t("charts.year3"),
-          }}
-        />
-      </FadeInSection>
-
-      <FadeInSection className="mt-8">
-        <ScenarioChart
-          title={t("financials.scenario.title")}
-          description={t("financials.scenario.description")}
-          labels={{
-            optimistic: t("charts.optimistic"),
-            realistic: t("charts.realistic"),
-            pessimistic: t("charts.pessimistic"),
-            year1: t("charts.year1"),
-            year2: t("charts.year2"),
-            year3: t("charts.year3"),
-          }}
-        />
+        <Card>
+          <CardContent className="pt-6">
+            <div className="flex items-start gap-4">
+              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10">
+                <Briefcase className="h-5 w-5 text-primary" />
+              </div>
+              <div>
+                <p className="text-muted-foreground leading-relaxed">
+                  {t("businessModel.description")}
+                </p>
+                <Link
+                  href="/finance-plan"
+                  className="mt-4 inline-flex items-center gap-2 text-primary font-medium hover:underline"
+                >
+                  {t("businessModel.cta")}
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
       </FadeInSection>
     </article>
   );
