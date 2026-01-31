@@ -95,7 +95,7 @@
       "llm": "Claude & GPT — Language Models",
       "pinecone": "Pinecone — Vector Database",
       "supabase": "Supabase/PostgreSQL — Database",
-      "cohere": "Cohere — Reranking",
+      "cohere": "Reranker — Relevance Sorting",
       "shopify": "Shopify API — E-Commerce",
       "whatsapp": "WhatsApp Business API — Reports",
       "telegram": "Telegram — Error Notifications"
@@ -164,7 +164,7 @@
     "rag": {
       "title": "RAG System",
       "subtitle": "Retrieval-Augmented Generation in Detail",
-      "description": "RAG (Retrieval-Augmented Generation) enables the AI agent to access company-specific knowledge. Documents like FAQs, product catalogs, and return policies are converted into vectors and stored in the Pinecone vector database. With each inquiry, the most relevant text passages are automatically found, ranked by a Cohere Reranker for relevance, and provided to the agent as context. An embedding model converts texts into mathematical representations, so the search works by meaning rather than exact words.",
+      "description": "RAG (Retrieval-Augmented Generation) enables the AI agent to access company-specific knowledge. Documents like FAQs, product catalogs, and return policies are converted into vectors and stored in the Pinecone vector database. With each inquiry, the most relevant text passages are automatically found, ranked by a reranker for relevance, and provided to the agent as context. An embedding model converts texts into mathematical representations, so the search works by meaning rather than exact words.",
       "caption": "The RAG upload workflow automatically converts documents into vectors for Pinecone"
     },
     "tools": {
@@ -212,11 +212,11 @@
         "description": "Open-source workflow automation platform for all processes"
       },
       "openai": {
-        "title": "OpenAI GPT-4o",
-        "description": "Multimodal AI model for text understanding, image analysis, and response generation"
+        "title": "Claude & GPT",
+        "description": "Anthropic Claude and OpenAI GPT — language models for text understanding, image analysis, and response generation"
       },
-      "qdrant": {
-        "title": "Qdrant",
+      "pinecone": {
+        "title": "Pinecone",
         "description": "Vector database for the RAG system — stores and searches knowledge embeddings"
       },
       "shopify": {
@@ -234,7 +234,7 @@
     },
     "architecture": {
       "title": "Architecture Overview",
-      "description": "All components are connected through n8n as the central automation platform. The AI support agent processes emails with GPT-4o and RAG, while the accounting tool collects financial data from multiple sources and delivers reports via WhatsApp."
+      "description": "All components are connected through n8n as the central automation platform. The AI support agent processes emails with Claude/GPT and RAG, while the accounting tool collects financial data from multiple sources and delivers reports via WhatsApp."
     },
     "detailPages": {
       "title": "In Detail",

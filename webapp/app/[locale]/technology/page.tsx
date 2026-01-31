@@ -17,7 +17,7 @@ export default async function TechnologyPage({
   const techStackItems = [
     { key: "n8n", icon: Workflow },
     { key: "openai", icon: Brain },
-    { key: "qdrant", icon: Database },
+    { key: "pinecone", icon: Database },
     { key: "shopify", icon: ShoppingCart },
     { key: "sheets", icon: FileSpreadsheet },
     { key: "whatsapp", icon: MessageCircle },

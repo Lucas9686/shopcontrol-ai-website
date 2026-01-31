@@ -95,7 +95,7 @@
       "llm": "Claude & GPT — Sprachmodelle",
       "pinecone": "Pinecone — Vektor-Datenbank",
       "supabase": "Supabase/PostgreSQL — Datenbank",
-      "cohere": "Cohere — Reranking",
+      "cohere": "Reranker — Relevanzsortierung",
       "shopify": "Shopify API — E-Commerce",
       "whatsapp": "WhatsApp Business API — Berichte",
       "telegram": "Telegram — Fehlerbenachrichtigungen"
@@ -164,7 +164,7 @@
     "rag": {
       "title": "RAG-System",
       "subtitle": "Retrieval-Augmented Generation im Detail",
-      "description": "RAG (Retrieval-Augmented Generation) ermöglicht dem KI-Agenten, auf firmenspezifisches Wissen zuzugreifen. Dokumente wie FAQs, Produktkataloge und Rückgaberichtlinien werden in Vektoren umgewandelt und in der Pinecone-Vektordatenbank gespeichert. Bei jeder Anfrage werden die relevantesten Textabschnitte automatisch gefunden, durch einen Cohere Reranker nach Relevanz sortiert und dem Agenten als Kontext übergeben. Ein Embedding-Modell wandelt Texte in mathematische Zahlendarstellungen um, sodass die Suche nach Bedeutung statt nach exakten Wörtern funktioniert.",
+      "description": "RAG (Retrieval-Augmented Generation) ermöglicht dem KI-Agenten, auf firmenspezifisches Wissen zuzugreifen. Dokumente wie FAQs, Produktkataloge und Rückgaberichtlinien werden in Vektoren umgewandelt und in der Pinecone-Vektordatenbank gespeichert. Bei jeder Anfrage werden die relevantesten Textabschnitte automatisch gefunden, durch einen Reranker nach Relevanz sortiert und dem Agenten als Kontext übergeben. Ein Embedding-Modell wandelt Texte in mathematische Zahlendarstellungen um, sodass die Suche nach Bedeutung statt nach exakten Wörtern funktioniert.",
       "caption": "Der RAG-Upload-Workflow konvertiert Dokumente automatisch in Vektoren für Pinecone"
     },
     "tools": {
@@ -212,11 +212,11 @@
         "description": "Open-Source Workflow-Automatisierungsplattform für alle Prozesse"
       },
       "openai": {
-        "title": "OpenAI GPT-4o",
-        "description": "Multimodales KI-Modell für Textverständnis, Bildanalyse und Antwortgenerierung"
+        "title": "Claude & GPT",
+        "description": "Anthropic Claude und OpenAI GPT — Sprachmodelle für Textverständnis, Bildanalyse und Antwortgenerierung"
       },
-      "qdrant": {
-        "title": "Qdrant",
+      "pinecone": {
+        "title": "Pinecone",
         "description": "Vektordatenbank für das RAG-System — speichert und durchsucht Wissensembeddings"
       },
       "shopify": {
@@ -234,7 +234,7 @@
     },
     "architecture": {
       "title": "Architektur-Überblick",
-      "description": "Alle Komponenten sind über n8n als zentrale Automatisierungsplattform verbunden. Der KI-Supportagent verarbeitet E-Mails mit GPT-4o und RAG, während das Buchhaltungstool Finanzdaten aus mehreren Quellen sammelt und per WhatsApp versendet."
+      "description": "Alle Komponenten sind über n8n als zentrale Automatisierungsplattform verbunden. Der KI-Supportagent verarbeitet E-Mails mit Claude/GPT und RAG, während das Buchhaltungstool Finanzdaten aus mehreren Quellen sammelt und per WhatsApp versendet."
     },
     "detailPages": {
       "title": "Im Detail",
