@@ -2,60 +2,38 @@
 
 ## Project Reference
 
-See: .planning/PROJECT.md (updated 2026-01-30)
+See: .planning/PROJECT.md (updated 2026-01-31)
 
 **Core value:** Jury und Besucher verstehen auf einen Blick was ShopControl AI macht, warum es innovativ ist, und wie es technisch funktioniert.
-**Current focus:** Phase 4 - Polish & Media
+**Current focus:** v1.0 shipped — planning next milestone or accepting as final
 
 ## Current Position
 
-Phase: 4 of 4 (Polish & Media)
-Plan: 1 of 2 in current phase
-Status: In progress
-Last activity: 2026-01-31 -- Completed 04-01-PLAN.md
+Phase: All v1.0 phases complete (4/4)
+Plan: N/A
+Status: Milestone v1.0 shipped
+Last activity: 2026-01-31 — v1.0 milestone archived
 
-Progress: [████████░░] 87%
+Progress: [##########] 100%
 
 ## Performance Metrics
 
-**Velocity:**
-- Total plans completed: 7
-- Average duration: 5min
-- Total execution time: 32min
-
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 1 | 2 | 16min | 8min |
-| 2 | 3 | 10min | 3min |
-| 3 | 1 | 3min | 3min |
-| 4 | 1 | 3min | 3min |
-
-**Recent Trend:**
-- Last 5 plans: 02-01 (5min), 02-02 (2min), 02-03 (3min), 03-01 (3min), 04-01 (3min)
-- Trend: stable
-
-*Updated after each plan completion*
+**v1.0 Velocity:**
+- Total plans completed: 8
+- Total commits: 39
+- Total LOC: ~9,600
+- Timeline: 1 day (2026-01-30 → 2026-01-31)
 
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- Roadmap: 4 phases derived from 18 requirements (standard depth)
-- 01-01: Used getTranslations (server) for async page components in Next.js 16
-- 01-01: Copied Web design template to project root as foundation
-- 01-01: Inter font replaces custom fonts from template
-- 02-01: FeatureCard for simple cards, inline Card for complex pillar layouts
-- 02-01: Kebab-case image naming convention for public/images/
-- 03-01: Chart data hardcoded in client components, only labels from translations
+All decisions logged in PROJECT.md Key Decisions table.
 
 ### Pending Todos
 
-None.
+- Replace placeholder YouTube demo video ID
+- Replace placeholder OG image with branded version
 
 ### Blockers/Concerns
 
@@ -64,5 +42,5 @@ None.
 ## Session Continuity
 
 Last session: 2026-01-31
-Stopped at: Completed 04-01-PLAN.md
+Stopped at: v1.0 milestone archived
 Resume file: None

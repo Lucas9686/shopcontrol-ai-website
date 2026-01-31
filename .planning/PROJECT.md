@@ -2,7 +2,15 @@
 
 ## What This Is
 
-Eine mehrseitige Prasentationswebseite fuer die Diplomarbeit "ShopControl AI" von Lucas Nessel (HTL Klagenfurt, Mechatronik). Die Webseite stellt das Projekt beim Jugend Innovativ Wettbewerb visuell und inhaltlich dar — ein vollautonomer KI-Support-Agent und eine automatisierte Buchhaltungsloesung fuer Online-Shops, gebaut mit n8n, RAG/Pinecone und Shopify-Integration.
+Eine mehrseitige, zweisprachige (DE/EN) Prasentationswebseite fuer die Diplomarbeit "ShopControl AI" von Lucas Nessel (HTL Klagenfurt, Mechatronik). Die Webseite stellt das Projekt beim Jugend Innovativ Wettbewerb visuell und inhaltlich dar — ein vollautonomer KI-Support-Agent und eine automatisierte Buchhaltungsloesung fuer Online-Shops, gebaut mit n8n, RAG/Pinecone und Shopify-Integration.
+
+## Current State
+
+**Shipped:** v1.0 (2026-01-31)
+**Live:** https://shopcontrol-ai-website.vercel.app
+**Repo:** https://github.com/Lucas9686/shopcontrol-ai-website
+
+v1.0 liefert 7 Seiten (Home, Problem, Solution, Technology, Results, About, Impressum) in DE/EN mit dunklem SaaS-Design, Framer Motion Animationen, 3 Finanz-Charts, SEO-Metadaten und Demo-Video-Embed. Web-App liegt in `webapp/` Unterordner.
 
 ## Core Value
 
@@ -12,26 +20,26 @@ Die Jury und Besucher muessen auf einen Blick verstehen, was ShopControl AI mach
 
 ### Validated
 
-(None yet — ship to validate)
+- Hero-Sektion mit Projekt-Headline und Kurzbeschreibung — v1.0
+- Problemdarstellung: Warum brauchen kleine Online-Shops KI-Automatisierung — v1.0
+- Feature-Uebersicht: KI-Support-Agent + Buchhaltungs-Automatisierung — v1.0
+- Technischer Deep-Dive: 6 Workflow-Schritte mit Diagrammen/Screenshots — v1.0
+- RAG-System Erklaerung mit Visualisierung — v1.0
+- Tools & Sub-Agents Sektion (Shopify-Agent, Sheets-Agent) — v1.0
+- Sicherheitsfeatures Darstellung — v1.0
+- Ergebnisse & Marktabgrenzung — v1.0
+- Finanzplan-Visualisierung (Preismodell, 3-Jahres-Prognose, Szenarioanalyse) — v1.0
+- Ueber-mich-Seite (Lucas Nessel, HTL Klagenfurt, Betreuer) — v1.0
+- Zweisprachig: Deutsch + Englisch mit Sprachwechsel — v1.0
+- Responsive Design (Mobile, Tablet, Desktop) — v1.0
+- Screenshots und Diagramme aus dem Projektbericht eingebunden — v1.0
+- Dunkles SaaS-Landing-Page-Design mit dunkelblauem Farbschema — v1.0
+- Framer Motion Animationen (Text-Reveal, Shimmer, Scroll-Effekte) — v1.0
+- Deployment-ready fuer Vercel via GitHub — v1.0
 
 ### Active
 
-- [ ] Hero-Sektion mit Projekt-Headline und Kurzbeschreibung
-- [ ] Problemdarstellung: Warum brauchen kleine Online-Shops KI-Automatisierung
-- [ ] Feature-Uebersicht: KI-Support-Agent + Buchhaltungs-Automatisierung
-- [ ] Technischer Deep-Dive: 6 Workflow-Schritte mit Diagrammen/Screenshots
-- [ ] RAG-System Erklaerung mit Visualisierung
-- [ ] Tools & Sub-Agents Sektion (Shopify-Agent, Sheets-Agent)
-- [ ] Sicherheitsfeatures Darstellung
-- [ ] Ergebnisse & Marktabgrenzung
-- [ ] Finanzplan-Visualisierung (Preismodell, 3-Jahres-Prognose, Szenarioanalyse)
-- [ ] Ueber-mich-Seite (Lucas Nessel, HTL Klagenfurt, Betreuer)
-- [ ] Zweisprachig: Deutsch + Englisch mit Sprachwechsel
-- [ ] Responsive Design (Mobile, Tablet, Desktop)
-- [ ] Screenshots und Diagramme aus dem Projektbericht eingebunden
-- [ ] Dunkles SaaS-Landing-Page-Design mit dunkelblauem Farbschema
-- [ ] Framer Motion Animationen (Text-Reveal, Shimmer, Scroll-Effekte)
-- [ ] Deployment-ready fuer Vercel via GitHub
+(None — define with /gsd:new-milestone)
 
 ### Out of Scope
 
@@ -46,28 +54,31 @@ Die Jury und Besucher muessen auf einen Blick verstehen, was ShopControl AI mach
 - **Schule**: HTL Klagenfurt Lastenstrasse, Abteilung Mechatronik
 - **Betreuer**: Mag. Albin Weiss B.Sc., MMag. Dr. Mario Kraiger
 - **Einzelarbeit**: Gesamtes Projekt von Lucas Nessel allein umgesetzt
-- **Bestehender Code**: v0-Template mit Next.js 16 + shadcn/ui + Tailwind v4 + Framer Motion liegt in `Web design/`
-- **Bilder/Assets**: ~12 Screenshots in `Neu Bilder/`, Workflow-Diagramme, Finanzdiagramm
+- **Tech Stack**: Next.js 16 + next-intl v4 + shadcn/ui + Tailwind v4 + Framer Motion + Recharts
+- **Codebase**: ~9,600 LOC TypeScript/TSX/CSS/JSON in `webapp/`
 - **Content-Quelle**: 27-seitiger Projektbericht (PDF) mit allen Inhalten
 - **Zielgruppe**: Primaer Jugend Innovativ Jury, sekundaer allgemeines Publikum
 - **Gewerbeschein**: Bereits vorhanden, SaaS-Produkt geplant
 
 ## Constraints
 
-- **Tech Stack**: Next.js + shadcn/ui + Tailwind CSS v4 + Framer Motion (basierend auf v0-Template)
-- **Deployment**: GitHub + Vercel
+- **Tech Stack**: Next.js + shadcn/ui + Tailwind CSS v4 + Framer Motion
+- **Deployment**: GitHub + Vercel (auto-deploy on push)
 - **Sprachen**: Deutsch (primaer) + Englisch
-- **Design**: Dunkles SaaS-Stil, dunkelblau statt zinc/grau, Animationen aus v0-Template
-- **Content**: Basiert auf fertigem Projektbericht — keine neue Recherche noetig
+- **Design**: Dunkles SaaS-Stil, dunkelblau OKLCH hue-260
+- **Struktur**: Web-App in `webapp/` Unterordner
 
 ## Key Decisions
 
 | Decision | Rationale | Outcome |
 |----------|-----------|---------|
-| Next.js + shadcn/ui Stack | v0-Template bereits vorhanden, modern, Vercel-optimiert | — Pending |
-| Dunkelblau statt Zinc | Passend zu ShopControl AI Branding, professioneller Look | — Pending |
-| Mehrseitige Struktur | Bessere Gliederung fuer technische Tiefe + Finanzplan | — Pending |
-| DE + EN bilingual | Jury ist DACH, aber internationaler Anspruch fuer SaaS-Produkt | — Pending |
+| Next.js + shadcn/ui Stack | v0-Template bereits vorhanden, modern, Vercel-optimiert | Good |
+| Dunkelblau statt Zinc | Passend zu ShopControl AI Branding, professioneller Look | Good |
+| Mehrseitige Struktur | Bessere Gliederung fuer technische Tiefe + Finanzplan | Good |
+| DE + EN bilingual | Jury ist DACH, aber internationaler Anspruch fuer SaaS-Produkt | Good |
+| getTranslations (server) | Next.js 16 async pages erfordern Server-Side API | Good |
+| Chart data hardcoded | Nur Labels aus Translations, Daten fix im Component | Good |
+| Web-App in webapp/ | Trennung von Projektdateien (Berichte, Screenshots) | Good |
 
 ---
-*Last updated: 2026-01-30 after initialization*
+*Last updated: 2026-01-31 after v1.0 milestone*
