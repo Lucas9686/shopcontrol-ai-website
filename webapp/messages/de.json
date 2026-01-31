@@ -1,7 +1,7 @@
 {
   "nav": {
     "home": "Startseite",
-    "supportAgent": "Supportagent",
+    "supportAgent": "Support-Agent",
     "accounting": "Buchhaltungstool",
     "technology": "Technologien",
     "results": "Ergebnisse",
@@ -296,26 +296,26 @@
     "workflow": {
       "title": "6-Schritte-Workflow",
       "subtitle": "So verarbeitet der Agent jede Kundenanfrage",
-      "step1": { "title": "E-Mails abrufen", "description": "Der Workflow wird durch einen Zeitplan-Trigger gestartet und ruft alle neuen E-Mails aus dem Support-Postfach über IMAP ab." },
+      "step1": { "title": "E-Mails abrufen", "description": "Der Workflow wird durch einen Trigger gestartet und ruft alle neuen E-Mails aus dem Support-Postfach ab." },
       "step2": { "title": "E-Mails filtern", "description": "Automatische Antworten, Newsletter und irrelevante Nachrichten werden herausgefiltert. Nur echte Kundenanfragen werden weiterverarbeitet." },
-      "step3": { "title": "Bildanalyse", "description": "Falls die E-Mail Bilder enthält (z.B. Fotos von beschädigten Produkten), werden diese mit GPT-4o Vision analysiert und die Beschreibung wird dem Kontext hinzugefügt." },
-      "step4": { "title": "KI-Agent verarbeitet Anfrage", "description": "Der Haupt-Agent analysiert die Anfrage, nutzt RAG für Wissensbasis-Suche und greift auf Tools wie Shopify-API und Google Sheets zu, um relevante Daten abzurufen." },
+      "step3": { "title": "Bildanalyse", "description": "Falls die E-Mail Bilder enthält (z.B. Fotos von beschädigten Produkten), werden diese analysiert und eine Beschreibung wird dem Kontext für den Support-Agenten hinzugefügt." },
+      "step4": { "title": "KI-Agent verarbeitet Anfrage", "description": "Der Haupt-Agent analysiert die Anfrage, nutzt ein RAG-System für Wissensbasis-Suche und greift auf Tools wie Shopify und Google Sheets zu, um relevante Daten abzurufen." },
       "step5": { "title": "Antwort senden", "description": "Die generierte Antwort wird als professionelle E-Mail formatiert und automatisch an den Kunden gesendet." },
       "step6": { "title": "Performance-Logging", "description": "Jede verarbeitete Anfrage wird protokolliert — Antwortzeit, Token-Verbrauch, genutztes Modell und Kategorie — für Qualitätskontrolle und Optimierung." }
     },
     "rag": {
       "title": "RAG-Wissenssystem",
-      "description": "Der Agent nutzt Retrieval-Augmented Generation (RAG) mit einer Qdrant-Vektordatenbank. Produktinformationen, FAQ-Einträge und Unternehmensrichtlinien werden als Embeddings gespeichert und bei jeder Anfrage durchsucht.",
+      "description": "Der Agent nutzt Retrieval-Augmented Generation (RAG) mit einer Vektordatenbank. Produktinformationen, FAQ-Einträge und Unternehmensrichtlinien werden als Embeddings gespeichert und bei jeder Anfrage durchsucht.",
       "link": "Mehr zur technischen Architektur auf der Technologien-Seite."
     },
     "tools": {
       "title": "Tools & Sub-Agents",
-      "description": "Der Agent greift auf spezialisierte Tools zu: Shopify-API für Bestelldaten, Google Sheets für interne Daten, und einen Retourenmanagement-Sub-Agent für komplexe Rücksendungen.",
+      "description": "Der Agent greift auf spezialisierte Tools zu: Shopify-Agent für Bestelldaten, Sheets-Agent um nicht lösbare Fälle zu dokumentieren, und eine Wissensdatenbank.",
       "link": "Details zur Tool-Integration auf der Technologien-Seite."
     },
     "security": {
       "title": "Sicherheitsfeatures",
-      "description": "Vier Sicherheitsebenen schützen vor Fehlfunktionen: Error-Trigger bei Workflow-Fehlern, Confidence-basierte Eskalation an Menschen, automatische Backup-Antworten und vollständige Antwortprotokollierung.",
+      "description": "Mehrere Sicherheitsebenen schützen den Agenten: Guardrails gegen Jailbreak-Versuche, Filterung von Beleidigungen, Prüfung der Kontextbezogenheit und weitere Schutzmechanismen.",
       "link": "Mehr zu Sicherheitskonzepten auf der Technologien-Seite."
     }
   },
@@ -333,11 +333,11 @@
     "workflow": {
       "title": "5-Schritte-Workflow",
       "subtitle": "So entsteht der automatische Finanzbericht",
-      "step1": { "title": "Daten abrufen", "description": "Der Workflow fragt automatisch Umsatzdaten von Shopify, Werbeausgaben von Facebook Ads und Kontobewegungen von der Bank ab." },
-      "step2": { "title": "KPIs berechnen", "description": "Aus den Rohdaten werden zentrale Kennzahlen berechnet: Gesamtumsatz, Werbekosten, Return on Ad Spend (ROAS), Gewinnmarge und weitere KPIs." },
-      "step3": { "title": "Bericht generieren", "description": "Die berechneten KPIs werden in einen übersichtlichen, formatierten Bericht zusammengestellt — mit Vergleichen zum Vormonat und Trendanalysen." },
-      "step4": { "title": "WhatsApp-Versand", "description": "Der fertige Bericht wird automatisch per WhatsApp an den Shop-Betreiber gesendet. Der Versand kann per Nachricht ausgelöst oder als monatlicher Zeitplan konfiguriert werden." },
-      "step5": { "title": "Archivierung", "description": "Alle Berichte werden in Google Sheets archiviert, um langfristige Trends nachverfolgen und historische Daten vergleichen zu können." }
+      "step1": { "title": "Start", "description": "Der Workflow wird per WhatsApp-Nachricht oder automatisch nach Zeitplan gestartet." },
+      "step2": { "title": "Daten abrufen", "description": "Der Workflow fragt automatisch Umsatzdaten von Shopify, Werbeausgaben von Facebook Ads und Kontobewegungen von der Bank ab." },
+      "step3": { "title": "KPIs berechnen", "description": "Aus den Rohdaten werden zentrale Kennzahlen berechnet: Gesamtumsatz, Werbekosten, Return on Ad Spend (ROAS), Gewinnmarge und weitere KPIs." },
+      "step4": { "title": "Grafik & Bericht erstellen", "description": "Die berechneten KPIs werden in einen übersichtlichen, formatierten Bericht mit Grafiken zusammengestellt — mit Vergleichen zum Vormonat und Trendanalysen." },
+      "step5": { "title": "Bericht senden", "description": "Der fertige Bericht wird automatisch per WhatsApp an den Shop-Betreiber gesendet." }
     },
     "overview": {
       "title": "Workflow-Überblick",

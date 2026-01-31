@@ -296,26 +296,26 @@
     "workflow": {
       "title": "6-Step Workflow",
       "subtitle": "How the agent processes each customer inquiry",
-      "step1": { "title": "Fetch Emails", "description": "The workflow is triggered on a schedule and retrieves all new emails from the support inbox via IMAP." },
+      "step1": { "title": "Fetch Emails", "description": "The workflow is started by a trigger and retrieves all new emails from the support inbox." },
       "step2": { "title": "Filter Emails", "description": "Auto-replies, newsletters, and irrelevant messages are filtered out. Only genuine customer inquiries are processed further." },
-      "step3": { "title": "Image Analysis", "description": "If the email contains images (e.g., photos of damaged products), these are analyzed using GPT-4o Vision and the description is added to the context." },
-      "step4": { "title": "AI Agent Processes Request", "description": "The main agent analyzes the inquiry, uses RAG for knowledge base search, and accesses tools like the Shopify API and Google Sheets to retrieve relevant data." },
+      "step3": { "title": "Image Analysis", "description": "If the email contains images (e.g., photos of damaged products), these are analyzed and a description is added to the context for the support agent." },
+      "step4": { "title": "AI Agent Processes Request", "description": "The main agent analyzes the inquiry, uses a RAG system for knowledge base search, and accesses tools like Shopify and Google Sheets to retrieve relevant data." },
       "step5": { "title": "Send Response", "description": "The generated response is formatted as a professional email and automatically sent to the customer." },
       "step6": { "title": "Performance Logging", "description": "Every processed inquiry is logged — response time, token usage, model used, and category — for quality control and optimization." }
     },
     "rag": {
       "title": "RAG Knowledge System",
-      "description": "The agent uses Retrieval-Augmented Generation (RAG) with a Qdrant vector database. Product information, FAQ entries, and company policies are stored as embeddings and searched with every inquiry.",
+      "description": "The agent uses Retrieval-Augmented Generation (RAG) with a vector database. Product information, FAQ entries, and company policies are stored as embeddings and searched with every inquiry.",
       "link": "More about the technical architecture on the Technology page."
     },
     "tools": {
       "title": "Tools & Sub-Agents",
-      "description": "The agent accesses specialized tools: Shopify API for order data, Google Sheets for internal data, and a returns management sub-agent for complex return cases.",
+      "description": "The agent accesses specialized tools: Shopify Agent for order data, Sheets Agent to document unresolvable cases, and a knowledge database.",
       "link": "Details about tool integration on the Technology page."
     },
     "security": {
       "title": "Security Features",
-      "description": "Four security layers protect against malfunctions: error triggers on workflow failures, confidence-based escalation to humans, automatic backup responses, and complete response logging.",
+      "description": "Multiple security layers protect the agent: guardrails against jailbreak attempts, filtering of offensive content, contextual relevance checks, and further protective mechanisms.",
       "link": "More about security concepts on the Technology page."
     }
   },
@@ -333,11 +333,11 @@
     "workflow": {
       "title": "5-Step Workflow",
       "subtitle": "How the automatic financial report is created",
-      "step1": { "title": "Fetch Data", "description": "The workflow automatically queries revenue data from Shopify, advertising spend from Facebook Ads, and account movements from the bank." },
-      "step2": { "title": "Calculate KPIs", "description": "Key metrics are calculated from the raw data: total revenue, advertising costs, Return on Ad Spend (ROAS), profit margin, and other KPIs." },
-      "step3": { "title": "Generate Report", "description": "The calculated KPIs are compiled into a clear, formatted report — with comparisons to the previous month and trend analyses." },
-      "step4": { "title": "WhatsApp Delivery", "description": "The finished report is automatically sent via WhatsApp to the store owner. Delivery can be triggered by message or configured as a monthly schedule." },
-      "step5": { "title": "Archival", "description": "All reports are archived in Google Sheets to track long-term trends and compare historical data." }
+      "step1": { "title": "Start", "description": "The workflow is triggered via WhatsApp message or automatically on a schedule." },
+      "step2": { "title": "Fetch Data", "description": "The workflow automatically queries revenue data from Shopify, advertising spend from Facebook Ads, and account movements from the bank." },
+      "step3": { "title": "Calculate KPIs", "description": "Key metrics are calculated from the raw data: total revenue, advertising costs, Return on Ad Spend (ROAS), profit margin, and other KPIs." },
+      "step4": { "title": "Charts & Report", "description": "The calculated KPIs are compiled into a clear, formatted report with charts — with comparisons to the previous month and trend analyses." },
+      "step5": { "title": "Send Report", "description": "The finished report is automatically sent via WhatsApp to the store owner." }
     },
     "overview": {
       "title": "Workflow Overview",

@@ -32,16 +32,16 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed top-4 left-1/2 z-50 w-[calc(100%-2rem)] max-w-4xl -translate-x-1/2">
+    <header className="fixed top-4 left-1/2 z-50 w-[calc(100%-2rem)] max-w-5xl -translate-x-1/2">
       <nav className="flex items-center justify-between rounded-full border border-border bg-background/40 px-4 py-2 backdrop-blur-md">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href="/" className="flex shrink-0 items-center">
           <Image
             src="/placeholder-logo.png"
             alt="ShopControl AI"
             width={140}
             height={38}
-            className="h-7 w-auto"
+            className="h-8 min-w-[120px] object-contain object-left"
             priority
           />
         </Link>
@@ -52,7 +52,7 @@ export function Navbar() {
             <Link
               key={item.key}
               href={item.href}
-              className={`rounded-full px-3 py-1.5 text-sm transition-colors hover:text-foreground ${
+              className={`whitespace-nowrap rounded-full px-3 py-1.5 text-sm transition-colors hover:text-foreground ${
                 pathname === item.href
                   ? "text-foreground"
                   : "text-muted-foreground"
