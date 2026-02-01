@@ -7,6 +7,7 @@ import { SectionHeader } from "@/components/shared/section-header";
 import { DemoVideo } from "@/components/shared/demo-video";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, CheckCircle, Briefcase, Users, TrendingUp } from "lucide-react";
+import Image from "next/image";
 
 const overviewCards = [
   { key: "supportAgent", href: "/support-agent" },
@@ -44,7 +45,16 @@ export default async function HomePage({
         />
 
         <HeroAnimated
-          headline={t("headline")}
+          headline={
+            <Image
+              src="/placeholder-logo.png"
+              alt="ShopControl AI"
+              width={400}
+              height={110}
+              className="mx-auto h-auto w-[280px] md:w-[400px]"
+              priority
+            />
+          }
           subheadline={t("subheadline")}
           cta={
             <Button asChild size="lg" className="shimmer-btn">
@@ -54,7 +64,7 @@ export default async function HomePage({
         />
       </section>
 
-      <section className="relative py-24">
+      <section className="relative py-12">
         <div className="mx-auto max-w-5xl px-6">
           <FadeInSection>
             <SectionHeader title={to("title")} subtitle={to("subtitle")} />

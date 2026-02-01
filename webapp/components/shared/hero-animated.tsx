@@ -4,7 +4,7 @@ import type React from "react";
 import { motion, type Variants } from "framer-motion";
 
 interface HeroAnimatedProps {
-  headline: string;
+  headline: React.ReactNode;
   subheadline: string;
   cta: React.ReactNode;
 }
