@@ -58,7 +58,7 @@ export default async function FinancePlanPage({
                 <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
                   <DollarSign className="h-5 w-5 text-green-500" />
                 </div>
-                <CardTitle className="text-base">KI-Kosten</CardTitle>
+                <CardTitle className="text-base">Kosten pro E-Mail</CardTitle>
               </div>
             </CardHeader>
             <CardContent>
@@ -168,28 +168,32 @@ export default async function FinancePlanPage({
       </FadeInSection>
 
       <FadeInSection className="mt-8">
-        <Card>
-          <CardContent className="pt-6">
-            <ul className="space-y-3 text-muted-foreground">
-              <li className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                {t("assumptions.avgRevenue")}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                {t("assumptions.cac")}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                {t("assumptions.churn")}
-              </li>
-              <li className="flex items-start gap-2">
-                <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                {t("assumptions.customers")}
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <p className="text-3xl font-bold text-primary">180 €</p>
+              <p className="mt-1 text-sm text-muted-foreground">{t("assumptions.avgRevenueLabel")}</p>
+            </CardContent>
+          </Card>
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <p className="text-3xl font-bold text-primary">80–120 €</p>
+              <p className="mt-1 text-sm text-muted-foreground">{t("assumptions.cacLabel")}</p>
+            </CardContent>
+          </Card>
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <p className="text-3xl font-bold text-primary">5–8%</p>
+              <p className="mt-1 text-sm text-muted-foreground">{t("assumptions.churnLabel")}</p>
+            </CardContent>
+          </Card>
+          <Card className="text-center">
+            <CardContent className="pt-6">
+              <p className="text-3xl font-bold text-primary">15 → 180</p>
+              <p className="mt-1 text-sm text-muted-foreground">{t("assumptions.customersLabel")}</p>
+            </CardContent>
+          </Card>
+        </div>
       </FadeInSection>
 
       {/* 3-Jahres-Prognose */}
