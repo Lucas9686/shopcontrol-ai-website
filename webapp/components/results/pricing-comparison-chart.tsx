@@ -27,9 +27,9 @@ interface PricingComparisonChartProps {
 }
 
 const DATA = [
-  { tier: "basic", price: 29 },
-  { tier: "pro", price: 79 },
-  { tier: "enterprise", price: 199 },
+  { tier: "basic", price: 99 },
+  { tier: "pro", price: 179 },
+  { tier: "enterprise", price: 299 },
 ];
 
 export function PricingComparisonChart({
