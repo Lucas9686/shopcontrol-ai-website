@@ -33,7 +33,7 @@ export default async function HomePage({
 
   return (
     <>
-      <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-[67.5vh] md:min-h-[60vh] items-center justify-center overflow-hidden">
         {/* Radial glow */}
         <div
           className="pointer-events-none absolute inset-0"
@@ -64,7 +64,7 @@ export default async function HomePage({
         />
       </section>
 
-      <section className="relative py-12">
+      <section className="relative py-[42px] md:py-12">
         <div className="mx-auto max-w-5xl px-6">
           <FadeInSection>
             <SectionHeader title={to("title")} subtitle={to("subtitle")} />
