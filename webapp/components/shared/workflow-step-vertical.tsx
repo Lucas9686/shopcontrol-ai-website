@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { ZoomableImage } from "@/components/shared/zoomable-image";
 import { FadeInSection } from "@/components/shared/fade-in-section";
 
 interface WorkflowStepVerticalProps {
@@ -35,12 +35,11 @@ export function WorkflowStepVertical({
           </p>
           {imageSrc && (
             <div className="mt-4 overflow-hidden rounded-lg border border-border">
-              <Image
+              <ZoomableImage
                 src={imageSrc}
                 alt={imageAlt ?? title}
                 width={1200}
                 height={675}
-                className="w-full"
               />
             </div>
           )}

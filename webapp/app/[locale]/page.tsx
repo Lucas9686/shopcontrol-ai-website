@@ -32,7 +32,7 @@ export default async function HomePage({
 
   return (
     <>
-      <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-[60vh] items-center justify-center overflow-hidden">
         {/* Radial glow */}
         <div
           className="pointer-events-none absolute inset-0"
