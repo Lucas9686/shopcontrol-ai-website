@@ -1,9 +1,17 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Workflow, Brain, Database, ShoppingCart, FileSpreadsheet, MessageCircle, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { SectionHeader } from "@/components/shared/section-header";
 import { FadeInSection } from "@/components/shared/fade-in-section";
 import { FeatureCard } from "@/components/features/feature-card";
 import { Link } from "@/i18n/navigation";
+import {
+  N8nLogo,
+  OpenAILogo,
+  PineconeLogo,
+  ShopifyLogo,
+  GoogleSheetsLogo,
+  WhatsAppLogo,
+} from "@/components/technology/tech-logos";
 
 export default async function TechnologyPage({
   params,
@@ -15,13 +23,13 @@ export default async function TechnologyPage({
   const t = await getTranslations("technology");
 
   const techStackItems = [
-    { key: "n8n", icon: Workflow },
-    { key: "openai", icon: Brain },
-    { key: "pinecone", icon: Database },
-    { key: "shopify", icon: ShoppingCart },
-    { key: "sheets", icon: FileSpreadsheet },
-    { key: "whatsapp", icon: MessageCircle },
-  ] as const;
+    { key: "n8n", icon: <N8nLogo className="h-5 w-5 text-primary" /> },
+    { key: "openai", icon: <OpenAILogo className="h-5 w-5 text-primary" /> },
+    { key: "pinecone", icon: <PineconeLogo className="h-5 w-5 text-primary" /> },
+    { key: "shopify", icon: <ShopifyLogo className="h-5 w-5 text-primary" /> },
+    { key: "sheets", icon: <GoogleSheetsLogo className="h-5 w-5 text-primary" /> },
+    { key: "whatsapp", icon: <WhatsAppLogo className="h-5 w-5 text-primary" /> },
+  ];
 
   return (
     <article className="mx-auto max-w-5xl px-4 pt-24 pb-16">

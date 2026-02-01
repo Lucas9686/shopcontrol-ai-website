@@ -53,11 +53,22 @@ export default async function AboutPage({
       <FadeInSection className="mt-12">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl">{t("author.name")}</CardTitle>
-            <Badge className="w-fit">{t("author.role")}</Badge>
-            <CardDescription className="mt-3 text-base leading-relaxed">
-              {t("author.description")}
-            </CardDescription>
+            <div className="flex items-start gap-5">
+              <Image
+                src="/images/team/lucas-nessel.jpeg"
+                alt={t("author.name")}
+                width={96}
+                height={96}
+                className="h-24 w-24 shrink-0 rounded-full object-cover"
+              />
+              <div>
+                <CardTitle className="text-2xl">{t("author.name")}</CardTitle>
+                <Badge className="mt-1 w-fit">{t("author.role")}</Badge>
+                <CardDescription className="mt-3 text-base leading-relaxed">
+                  {t("author.description")}
+                </CardDescription>
+              </div>
+            </div>
           </CardHeader>
         </Card>
       </FadeInSection>

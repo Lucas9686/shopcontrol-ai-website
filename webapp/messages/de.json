@@ -4,7 +4,6 @@
     "supportAgent": "Support-Agent",
     "accounting": "Buchhaltungstool",
     "technology": "Technologien",
-    "results": "Ergebnisse",
     "financePlan": "Finanzplan",
     "about": "Über uns"
   },
@@ -24,13 +23,17 @@
       "title": "Buchhaltungstool",
       "description": "Automatische Finanzberichte per WhatsApp — Umsatz, Gewinn, Trends."
     },
-    "results": {
-      "title": "Ergebnisse",
-      "description": "Erreichte Ergebnisse, Marktabgrenzung und Geschäftsmodell."
-    },
     "financePlan": {
       "title": "Finanzplan",
       "description": "Kostenstruktur, Preismodell und 3-Jahres-Wachstumsprognose."
+    },
+    "technology": {
+      "title": "Technologien",
+      "description": "Tech-Stack, Architektur und Herausforderungen hinter ShopControl AI."
+    },
+    "about": {
+      "title": "Über uns",
+      "description": "Das Team und die Geschichte hinter dem Projekt."
     }
   },
   "demo": {
@@ -296,12 +299,11 @@
       "title": "Erreichte Ergebnisse",
       "subtitle": "Was im Rahmen der Diplomarbeit umgesetzt wurde",
       "items": [
-        "Vollautonomer E-Mail-Support-Agent mit 6-Schritte-Workflow",
+        "Vollautonomer E-Mail-Support-Agent",
         "RAG-System mit Pinecone-Vektordatenbank für kontextbasierte Antworten",
-        "Automatisierte Buchhaltung mit WhatsApp-KPI-Reporting",
-        "3 spezialisierte Sub-Agents (Shopify, Sheets, Rechnungs-Agent)",
-        "4-stufiges Sicherheitssystem gegen Halluzinationen",
-        "Gewerbeschein erhalten, SaaS-Launch geplant"
+        "Automatisiertes KPI-Reporting mit WhatsApp",
+        "2 spezialisierte Sub-Agents (Shopify-Agent, Sheets-Agent)",
+        "Mehrstufiges Sicherheitssystem gegen Prompt-Injektionen"
       ]
     }
   },
@@ -368,6 +370,14 @@
         "title": "Performance-Logging",
         "description": "Jede verarbeitete Anfrage wird protokolliert — Antwortzeit, Token-Verbrauch, genutztes Modell und Kategorie — für Qualitätskontrolle und Optimierung."
       }
+    },
+    "overviewDiagram": {
+      "title": "Vereinfachter Ablauf",
+      "subtitle": "So verarbeitet der KI-Agent eine Kundenanfrage — Schritt für Schritt"
+    },
+    "n8nWorkflow": {
+      "title": "Gesamter Workflow in n8n",
+      "subtitle": "Die vollständige Automatisierungs-Pipeline als n8n-Workflow"
     },
     "rag": {
       "title": "RAG-Wissenssystem",
@@ -437,7 +447,7 @@
       "title": "Kostenstruktur",
       "subtitle": "KI vs. menschlicher Support",
       "tokenCosts": "Pro Anfrage: ~4.000 Input-Tokens + ~17.000 Output-Tokens",
-      "monthlyCosts": "Monatliche KI-Kosten: 50–80 EUR",
+      "monthlyCosts": "Kosten pro E-Mail: ca. 5–8 Cent",
       "humanCosts": "Vergleich menschlicher Agent: 800–1.500 EUR/Monat",
       "savings": "Kosteneinsparung: über 90%"
     },
@@ -447,13 +457,13 @@
       "starter": {
         "name": "Starter",
         "price": "99 EUR/Monat",
-        "original": "149 EUR/Monat (Einführungspreis)",
+        "original": "bei jährlicher Abrechnung — 149 EUR/Monat bei monatlicher",
         "target": "Kleine Shops"
       },
       "pro": {
         "name": "Pro",
         "price": "179 EUR/Monat",
-        "original": "249 EUR/Monat (Einführungspreis)",
+        "original": "bei jährlicher Abrechnung — 249 EUR/Monat bei monatlicher",
         "target": "Wachsende Shops"
       },
       "enterprise": {
@@ -461,14 +471,28 @@
         "price": "Individuell",
         "target": "Große Händler"
       },
-      "margin": "Marge: 60–90%"
+      "margin": "Marge: 60–90%",
+      "features": {
+        "title": "Feature-Vergleich",
+        "emailSupport": "KI-E-Mail-Support",
+        "ragSystem": "RAG-Wissenssystem",
+        "shopifyIntegration": "Shopify-Integration",
+        "financialReports": "Finanzberichte",
+        "whatsappReports": "WhatsApp-Reporting",
+        "prioritySupport": "Priority Support",
+        "customWorkflows": "Individuelle Workflows"
+      }
     },
     "assumptions": {
       "title": "Kernannahmen",
       "avgRevenue": "Durchschnittlicher Umsatz pro Kunde: 180 EUR/Monat",
+      "avgRevenueLabel": "Umsatz pro Kunde / Monat",
       "cac": "Customer Acquisition Cost: 80–120 EUR",
+      "cacLabel": "Customer Acquisition Cost",
       "churn": "Monatliche Churn-Rate: 5–8%",
-      "customers": "Kundenentwicklung: 15 → 60 → 180 (über 3 Jahre)"
+      "churnLabel": "Monatliche Churn-Rate",
+      "customers": "Kundenentwicklung: 15 → 60 → 180 (über 3 Jahre)",
+      "customersLabel": "Kunden über 3 Jahre"
     },
     "forecast": {
       "title": "3-Jahres-Prognose",

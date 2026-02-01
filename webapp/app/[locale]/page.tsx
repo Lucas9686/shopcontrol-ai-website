@@ -6,15 +6,16 @@ import { FadeInSection } from "@/components/shared/fade-in-section";
 import { SectionHeader } from "@/components/shared/section-header";
 import { DemoVideo } from "@/components/shared/demo-video";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, CheckCircle, Briefcase, Users, TrendingUp } from "lucide-react";
+import { ArrowRight, CheckCircle, Briefcase, Users, TrendingUp, Bot, Calculator, BarChart3, Cpu, UserCircle } from "lucide-react";
 import Image from "next/image";
+import { Badge } from "@/components/ui/badge";
 
 const overviewCards = [
-  { key: "supportAgent", href: "/support-agent" },
-  { key: "accounting", href: "/accounting" },
-  { key: "financePlan", href: "/finance-plan" },
-  { key: "technology", href: "/technology" },
-  { key: "about", href: "/about" },
+  { key: "supportAgent", href: "/support-agent", icon: Bot, highlight: true },
+  { key: "accounting", href: "/accounting", icon: Calculator, highlight: true },
+  { key: "financePlan", href: "/finance-plan", icon: BarChart3 },
+  { key: "technology", href: "/technology", icon: Cpu },
+  { key: "about", href: "/about", icon: UserCircle },
 ] as const;
 
 export default async function HomePage({
@@ -46,16 +47,26 @@ export default async function HomePage({
 
         <HeroAnimated
           headline={
-            <Image
-              src="/placeholder-logo.png"
-              alt="ShopControl AI"
-              width={400}
-              height={110}
-              className="mx-auto h-auto w-[280px] md:w-[400px]"
-              priority
-            />
+            <>
+              <Image
+                src="/logo.svg"
+                alt="ShopControl AI"
+                width={400}
+                height={110}
+                className="mx-auto h-auto w-[280px] md:w-[400px]"
+                priority
+              />
+              <span className="mt-4 block text-2xl font-medium tracking-tight text-muted-foreground md:text-3xl">
+                {t("subheadline")}
+              </span>
+            </>
           }
-          subheadline={t("subheadline")}
+          subheadline=""
+          badge={
+            <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-xs font-medium tracking-wide">
+              Jugend Innovativ 2026 — HTL Klagenfurt
+            </Badge>
+          }
           cta={
             <Button asChild size="lg" className="shimmer-btn">
               <Link href="/support-agent">{t("cta")}</Link>
@@ -71,17 +82,28 @@ export default async function HomePage({
           </FadeInSection>
           <FadeInSection>
             <div className="mt-10 grid gap-6 md:grid-cols-2 [&>:last-child:nth-child(odd)]:md:col-span-2 [&>:last-child:nth-child(odd)]:md:max-w-[calc(50%-0.75rem)]  [&>:last-child:nth-child(odd)]:md:mx-auto">
-              {overviewCards.map(({ key, href }) => (
+              {overviewCards.map(({ key, href, icon: Icon, highlight }) => (
                 <Link
                   key={key}
                   href={href}
-                  className="group rounded-lg border border-border/50 bg-card/50 p-6 transition-colors hover:border-primary/30 hover:bg-card"
+                  className={`group rounded-lg border p-6 transition-colors hover:border-primary/30 hover:bg-card ${
+                    highlight
+                      ? "border-primary/20 bg-card/70"
+                      : "border-border/50 bg-card/50"
+                  }`}
                 >
                   <div className="flex items-center justify-between">
-                    <h3 className="text-lg font-semibold">{to(`${key}.title`)}</h3>
+                    <div className="flex items-center gap-3">
+                      <div className={`flex h-9 w-9 items-center justify-center rounded-lg ${
+                        highlight ? "bg-primary/15" : "bg-primary/10"
+                      }`}>
+                        <Icon className="h-4.5 w-4.5 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold">{to(`${key}.title`)}</h3>
+                    </div>
                     <ArrowRight className="h-5 w-5 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-primary" />
                   </div>
-                  <p className="mt-2 text-sm text-muted-foreground">
+                  <p className="mt-2 ml-12 text-sm text-muted-foreground">
                     {to(`${key}.description`)}
                   </p>
                 </Link>

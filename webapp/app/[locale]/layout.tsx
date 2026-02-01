@@ -7,6 +7,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { Navbar } from "@/components/shared/navbar";
 import { Footer } from "@/components/shared/footer";
+import { ScrollToTop } from "@/components/shared/scroll-to-top";
 import { SmoothScroll } from "@/components/smooth-scroll";
 import "../globals.css";
 
@@ -79,6 +80,7 @@ export default async function LocaleLayout({
             <Navbar />
             <main>{children}</main>
             <Footer />
+            <ScrollToTop />
           </SmoothScroll>
         </NextIntlClientProvider>
       </body>

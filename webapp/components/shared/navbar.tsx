@@ -21,7 +21,6 @@ const navItems = [
   { key: "supportAgent", href: "/support-agent" },
   { key: "accounting", href: "/accounting" },
   { key: "technology", href: "/technology" },
-  { key: "results", href: "/results" },
   { key: "financePlan", href: "/finance-plan" },
   { key: "about", href: "/about" },
 ] as const;
@@ -37,7 +36,7 @@ export function Navbar() {
         {/* Logo */}
         <Link href="/" className="flex shrink-0 items-center">
           <Image
-            src="/placeholder-logo.png"
+            src="/logo.svg"
             alt="ShopControl AI"
             width={140}
             height={38}
@@ -54,7 +53,7 @@ export function Navbar() {
               href={item.href}
               className={`whitespace-nowrap rounded-full px-3 py-1.5 text-sm transition-colors hover:text-foreground ${
                 pathname === item.href
-                  ? "text-foreground"
+                  ? "bg-primary/10 text-foreground font-medium"
                   : "text-muted-foreground"
               }`}
             >
@@ -87,7 +86,7 @@ export function Navbar() {
                       href={item.href}
                       className={`rounded-md px-3 py-2 text-sm transition-colors hover:bg-accent ${
                         pathname === item.href
-                          ? "text-foreground font-medium"
+                          ? "bg-primary/10 text-foreground font-medium"
                           : "text-muted-foreground"
                       }`}
                     >
