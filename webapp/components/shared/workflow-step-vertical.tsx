@@ -10,6 +10,7 @@ interface WorkflowStepVerticalProps {
   imageSrc?: string;
   imageAlt?: string;
   isLast?: boolean;
+  isFirst?: boolean;
 }
 
 export function WorkflowStepVertical({
@@ -19,43 +20,46 @@ export function WorkflowStepVertical({
   imageSrc,
   imageAlt,
   isLast = false,
+  isFirst = false,
 }: WorkflowStepVerticalProps) {
   const stepRef = useRef<HTMLDivElement>(null);
+  const circleRef = useRef<HTMLSpanElement>(null);
   const lineRef = useRef<HTMLDivElement>(null);
   const [isActive, setIsActive] = useState(false);
   const [lineProgress, setLineProgress] = useState(0);
 
   useEffect(() => {
-    const stepEl = stepRef.current;
+    const circleEl = circleRef.current;
     const lineEl = lineRef.current;
-    if (!stepEl) return;
+    if (!circleEl) return;
 
-    // Intersection observer to detect when step enters viewport
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsActive(true);
-        }
-      },
-      { threshold: 0.3 }
-    );
-    observer.observe(stepEl);
-
-    // Scroll handler for line fill progress
     const handleScroll = () => {
+      const viewportH = window.innerHeight;
+      const trigger = viewportH * 0.6;
+
+      // Circle activates when its top reaches 60% of viewport
+      // For first step, just check visibility; for others, the line from
+      // the previous step reaching this circle triggers it
+      const circleRect = circleEl.getBoundingClientRect();
+      const circleCenter = circleRect.top + circleRect.height / 2;
+
+      if (isFirst) {
+        setIsActive(circleCenter < trigger);
+      } else {
+        // Activate when circle center passes the trigger line
+        setIsActive(circleCenter < trigger);
+      }
+
+      // Line progress
       if (!lineEl || isLast) return;
       const rect = lineEl.getBoundingClientRect();
-      const viewportH = window.innerHeight;
-
-      // Line starts filling when its top reaches 60% of viewport
-      const startTrigger = viewportH * 0.6;
       const lineTop = rect.top;
       const lineHeight = rect.height;
 
-      if (lineTop > startTrigger || lineHeight === 0) {
+      if (lineTop > trigger || lineHeight === 0) {
         setLineProgress(0);
       } else {
-        const progress = Math.min(1, Math.max(0, (startTrigger - lineTop) / lineHeight));
+        const progress = Math.min(1, Math.max(0, (trigger - lineTop) / lineHeight));
         setLineProgress(progress);
       }
     };
@@ -64,10 +68,9 @@ export function WorkflowStepVertical({
     handleScroll();
 
     return () => {
-      observer.disconnect();
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isLast]);
+  }, [isLast, isFirst]);
 
   return (
     <div ref={stepRef}>
@@ -76,9 +79,10 @@ export function WorkflowStepVertical({
         <div className="flex flex-col items-center">
           {/* Number circle */}
           <span
-            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-bold transition-all duration-700 ${
+            ref={circleRef}
+            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full font-bold transition-all duration-500 ${
               isActive
-                ? "bg-[#1a6fff] text-white scale-110 shadow-[0_0_20px_rgba(26,111,255,0.6),0_0_40px_rgba(26,111,255,0.3)]"
+                ? "bg-[#1456c8] text-white scale-110 shadow-[0_0_18px_rgba(20,86,200,0.55),0_0_36px_rgba(20,86,200,0.25)]"
                 : "bg-muted text-muted-foreground scale-100"
             }`}
           >
@@ -89,7 +93,7 @@ export function WorkflowStepVertical({
           {!isLast && (
             <div ref={lineRef} className="relative mt-2 w-px flex-1 bg-border">
               <div
-                className="absolute inset-x-0 top-0 w-full bg-[#1a6fff] shadow-[0_0_8px_rgba(26,111,255,0.5)] transition-none"
+                className="absolute inset-x-0 top-0 w-full bg-[#1456c8] shadow-[0_0_6px_rgba(20,86,200,0.45)] transition-none"
                 style={{ height: `${lineProgress * 100}%` }}
               />
             </div>

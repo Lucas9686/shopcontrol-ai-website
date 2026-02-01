@@ -95,6 +95,7 @@ export default async function SupportAgentPage({
               number={index + 1}
               title={t(`workflow.${step.key}.title`)}
               description={t(`workflow.${step.key}.description`)}
+              isFirst={index === 0}
               isLast={index === workflowSteps.length - 1}
               imageSrc={step.image}
               imageAlt={t(`workflow.${step.key}.title`)}
