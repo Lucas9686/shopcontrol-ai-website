@@ -6,23 +6,13 @@ Eine mehrseitige, zweisprachige (DE/EN) Prasentationswebseite fuer die Diplomarb
 
 ## Current State
 
-**Shipped:** v1.1 (2026-01-31)
+**Shipped:** v1.2 (2026-02-01)
 **Live:** https://shopcontrol-ai-website.vercel.app
 **Repo:** https://github.com/Lucas9686/shopcontrol-ai-website
 
-v1.1 baut auf v1.0 auf: Vercel-Deployment repariert, alle Inhalte mit Projektbericht abgeglichen (6 Workflow-Schritte, 4 Sicherheitsebenen, 3 Tools, WhatsApp-basierte Finanzberichterstattung), gebrandetes OG-Bild, Lighthouse 90+ mobile. 7 Seiten in DE/EN, dunkles SaaS-Design, Framer Motion, 3 Finanz-Charts.
+v1.2 shipped: Seitenstruktur umgebaut mit dedizierten Supportagent- und Buchhaltungstool-Seiten (Problem→Lösung→Workflow), Finanzplan als eigene Seite, echte Unicode-Umlaute, scroll-basierte Workflow-Animationen mit Metallic-Blue-Glow, alle Inhalte gegen Projektbericht verifiziert. 8 Seiten in DE/EN, dunkles SaaS-Design, Framer Motion + scroll-reaktive Animationen, 3 Finanz-Charts.
 
-## Current Milestone: v1.2 Content Restructure & Accuracy
-
-**Goal:** Seitenstruktur umbauen (je eine Seite für Supportagent und Buchhaltungstool mit Problem→Lösung→Detail-Aufbau), Finanzplan als eigene Seite, alle ASCII-Umlaute durch echte Zeichen ersetzen, alle Inhalte gegen Projektbericht verifizieren.
-
-**Target features:**
-- Neue Seitenstruktur: Startseite | Supportagent | Buchhaltungstool | Technologien | Ergebnisse | Finanzplan | Über uns
-- Supportagent-Seite: Problem → Lösung → 6-Schritte-Workflow step-by-step mit Bildern
-- Buchhaltungstool-Seite: Problem → Lösung → 5-Schritte-Workflow step-by-step mit Bildern
-- Finanzplan als eigene Seite (aus Results herausgelöst)
-- Echte Umlaute (ä, ö, ü, ß) statt ASCII-Ersatz (ae, oe, ue, ss)
-- Content-Accuracy gegen beide PDFs
+## Current Milestone: Planning next milestone
 
 ## Core Value
 
@@ -53,12 +43,15 @@ Die Jury und Besucher muessen auf einen Blick verstehen, was ShopControl AI mach
 - Gebrandetes OG-Bild fuer Social Sharing — v1.1
 - Lighthouse Performance 90+ mobile — v1.1
 
-### Active
-
 - Echte Umlaute in allen Translations — v1.2
 - Seitenstruktur: Supportagent + Buchhaltungstool eigene Seiten mit Problem→Lösung→Detail — v1.2
 - Finanzplan als eigene Seite — v1.2
 - Content-Accuracy gegen Projektbericht — v1.2
+- Scroll-reaktive Workflow-Animationen mit Metallic-Blue-Glow — v1.2
+
+### Active
+
+(None — define in next milestone)
 
 ### Out of Scope
 
@@ -104,4 +97,4 @@ Die Jury und Besucher muessen auf einen Blick verstehen, was ShopControl AI mach
 | Lenis autoRaf | Saubereres Lifecycle-Management statt manueller RAF-Loop | Good |
 
 ---
-*Last updated: 2026-01-31 after v1.2 milestone start*
+*Last updated: 2026-02-01 after v1.2 milestone complete*
