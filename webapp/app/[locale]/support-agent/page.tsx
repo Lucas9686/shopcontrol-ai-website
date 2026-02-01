@@ -1,7 +1,10 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { BookOpen, Wrench, ShieldCheck } from "lucide-react";
 import { SectionHeader } from "@/components/shared/section-header";
 import { FadeInSection } from "@/components/shared/fade-in-section";
 import { WorkflowStepVertical } from "@/components/shared/workflow-step-vertical";
+import { ZoomableImage } from "@/components/shared/zoomable-image";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default async function SupportAgentPage({
   params,
@@ -63,6 +66,22 @@ export default async function SupportAgentPage({
         </FadeInSection>
       </section>
 
+      {/* Simplified Workflow Diagram */}
+      <section className="mt-16">
+        <FadeInSection>
+          <h2 className="text-2xl font-bold text-center">{t("overviewDiagram.title")}</h2>
+          <p className="mt-2 text-center text-muted-foreground">{t("overviewDiagram.subtitle")}</p>
+          <div className="mt-6 overflow-hidden rounded-lg border border-border">
+            <ZoomableImage
+              src="/images/workflows/support-agent-ablauf-vereinfacht.png"
+              alt={t("overviewDiagram.title")}
+              width={1200}
+              height={675}
+            />
+          </div>
+        </FadeInSection>
+      </section>
+
       {/* Workflow */}
       <section className="mt-16">
         <SectionHeader
@@ -76,6 +95,7 @@ export default async function SupportAgentPage({
               number={index + 1}
               title={t(`workflow.${step.key}.title`)}
               description={t(`workflow.${step.key}.description`)}
+              isLast={index === workflowSteps.length - 1}
               imageSrc={step.image}
               imageAlt={t(`workflow.${step.key}.title`)}
             />
@@ -83,42 +103,83 @@ export default async function SupportAgentPage({
         </div>
       </section>
 
-      {/* RAG */}
+      {/* Full n8n Workflow */}
       <section className="mt-16">
         <FadeInSection>
-          <h2 className="text-2xl font-bold">{t("rag.title")}</h2>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            {t("rag.description")}
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground italic">
-            {t("rag.link")}
-          </p>
+          <h2 className="text-2xl font-bold text-center">{t("n8nWorkflow.title")}</h2>
+          <p className="mt-2 text-center text-muted-foreground">{t("n8nWorkflow.subtitle")}</p>
+          <div className="mt-6 overflow-hidden rounded-lg border border-border">
+            <ZoomableImage
+              src="/images/workflows/gesamter-workflow-n8n.png"
+              alt={t("n8nWorkflow.title")}
+              width={1200}
+              height={675}
+            />
+          </div>
         </FadeInSection>
       </section>
 
-      {/* Tools */}
+      {/* RAG / Tools / Security */}
       <section className="mt-16">
         <FadeInSection>
-          <h2 className="text-2xl font-bold">{t("tools.title")}</h2>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            {t("tools.description")}
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground italic">
-            {t("tools.link")}
-          </p>
-        </FadeInSection>
-      </section>
+          <div className="grid gap-6 md:grid-cols-3">
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-blue-500/10">
+                    <BookOpen className="h-5 w-5 text-blue-500" />
+                  </div>
+                  <CardTitle className="text-lg">{t("rag.title")}</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {t("rag.description")}
+                </p>
+                <p className="mt-3 text-xs text-muted-foreground italic">
+                  {t("rag.link")}
+                </p>
+              </CardContent>
+            </Card>
 
-      {/* Security */}
-      <section className="mt-16">
-        <FadeInSection>
-          <h2 className="text-2xl font-bold">{t("security.title")}</h2>
-          <p className="mt-4 text-muted-foreground leading-relaxed">
-            {t("security.description")}
-          </p>
-          <p className="mt-2 text-sm text-muted-foreground italic">
-            {t("security.link")}
-          </p>
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-orange-500/10">
+                    <Wrench className="h-5 w-5 text-orange-500" />
+                  </div>
+                  <CardTitle className="text-lg">{t("tools.title")}</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {t("tools.description")}
+                </p>
+                <p className="mt-3 text-xs text-muted-foreground italic">
+                  {t("tools.link")}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
+                    <ShieldCheck className="h-5 w-5 text-green-500" />
+                  </div>
+                  <CardTitle className="text-lg">{t("security.title")}</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {t("security.description")}
+                </p>
+                <p className="mt-3 text-xs text-muted-foreground italic">
+                  {t("security.link")}
+                </p>
+              </CardContent>
+            </Card>
+          </div>
         </FadeInSection>
       </section>
     </article>

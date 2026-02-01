@@ -90,6 +90,7 @@ export default async function AccountingPage({
               number={index + 1}
               title={t(`workflow.${key}.title`)}
               description={t(`workflow.${key}.description`)}
+              isLast={index === workflowSteps.length - 1}
             />
           ))}
         </div>
